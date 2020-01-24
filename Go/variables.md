@@ -8,7 +8,7 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
 ## Declaration
 변수 선언시 <code>var</code> 를 사용하여 선언  
 **Syntax :**  
-  * 단일 변수 선언  
+  * 단일 변수 선언    
   <code>var \<variableName> \<dataType></code>
   ```
   var age int
@@ -36,7 +36,7 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
 | Functions   | nil         |
 
 ## Assignment
-1. The Normal Assignment  
+1. **The Normal Assignment**  
   **Operator :** <code>=</code>  
   **Syntax :** 
   * 선언과 할당 동시에 하기  
@@ -54,42 +54,15 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
   ```
   age = 22
   ```
-  * 복수 변수들의 선언과 할당  
+  * 복수 변수들의 선언과 할당    
   <code>var \<variable1>, \<variable2>, \<variable3> \<dataType> = \<value1>, \<value2>, \<value3>
-</code>  
+</code> 
+   
   ```
   var SF, NY, LA = 415, 212, 213
   ```
 
-2. The Short Assignment  
-  변수의 짧은 선언은 자료형을 생략할 수 있다.   
-  함수 안에서만 사용 가능하다.  
-  > 즉, 함수 밖에서는 반드시 <code>var</code> 키워드를 통해 변수를 선언해야 한다.  
-
-  **Operator :** <code>:=</code>  
-  **Syntax :** 
-  * 단일 변수 선언 및 할당  
-  <code>\<variableName> := \<value></code>
-  * 복수 변수 선언 및 할당  
-  <code>\<variable1>, \<variable2> := \<value1>, \<value2></code>
-  ```
-  tom := "Brown"
-  tom, tim := "Brown", "Black"
-  ```
-  ```
-  * 할당하기  
-  <code>\<variableName> = \<value></code>
-  ```
-  age = 22
-  ```
-  * 복수 변수들의 선언과 할당  
-  <code>var \<variable1>, \<variable2>, \<variable3> \<dataType> = \<value1>, \<value2>, \<value3>
-</code>  
-  ```
-  var SF, NY, LA = 415, 212, 213
-  ```
-
-2. The Short Assignment  
+2. **The Short Assignment**  
   변수의 짧은 선언은 자료형을 생략할 수 있다.   
   함수 안에서만 사용 가능하다.  
   > 즉, 함수 밖에서는 반드시 <code>var</code> 키워드를 통해 변수를 선언해야 한다.  
