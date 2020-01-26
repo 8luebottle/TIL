@@ -8,16 +8,19 @@ Go 에서 상수를 선언할 때는 <code>const</code> 키워드를 사용한�
   * 단일 상수 선언 및 초기화  
   <code>const \<constantName> = \<value></code>  
   자료형은 생략 가능하다.  
-  <code>const \<constantName> \<dataType> = \<value>
-  </code> 
+  <code>const \<constantName> \<dataType> = \<value></code> 
+   
   ```
   const jordan = "Amman"
   const peru string = "Lima"
   ```
+  
   * 복수 상수 선언 및 초기화 (같은 자료형)  
   Comma(,) 로 구분  
+  
   <code>const \<constant1>, \<costant2> = \<value1>, \<value2></code>  
   <code>const \<constant1>, \<costant2> \<dataType> = \<value1>, \<value2></code>  </code>
+   
   ```
   const barium, lanthanum = 56, 57
   const thorium, protactinium int = 90, 91
