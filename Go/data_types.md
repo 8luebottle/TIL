@@ -56,3 +56,38 @@ Go에서 실수를 표현할때는 '고정소수점 방식'과 '부동소수점 
 * **complex**
   * **complex64**
   * **complex128**
+  
+## Booleans
+Go 의 불리언 값은 true 와 false 로 나뉜다.
+Boolean은 논리값을 나타내는 자료형이다.
+  * true와 false의 크기는 1 byte.
+  ```
+  var b2 bool = false
+	fmt.Println(unsafe.Sizeof(b2)) // 1
+  ```
+
+Boolean은 논리연산자와 함께 쓰인다.
+  * 논리합 AND  
+    <code>&&</code>
+  * 논리곱 OR  
+    <code>||</code>
+  * 논리 부정 NOT  
+    <code>!</code>   
+    ```
+    // AND, OR, NOT
+    fmt.Println(true && true)   // true
+    fmt.Println(true && false)  // false
+    fmt.Println(false && true)  // false
+    fmt.Println(false && false) // false
+
+    fmt.Println(true || true)   // true
+    fmt.Println(true || false)  // true
+    fmt.Println(false || true)  // true
+    fmt.Println(false || false) // false
+
+    fmt.Println(!false) // true
+    fmt.Println(!true)  // false
+
+    fmt.Println(!!false) // false
+    fmt.Println(!!true)  // true
+  ```
