@@ -61,7 +61,7 @@ Go에서 실수를 표현할때는 '고정소수점 방식'과 '부동소수점 
 Go 의 불리언 값은 true 와 false 로 나뉜다.
 Boolean은 논리값을 나타내는 자료형이다.
   * true와 false의 크기는 1 byte.
-  ```
+  ```go
   var b2 bool = false
 	fmt.Println(unsafe.Sizeof(b2)) // 1
   ```
@@ -73,7 +73,7 @@ Boolean은 논리연산자와 함께 쓰인다.
     <code>||</code>
   * 논리 부정 NOT  
     <code>!</code>   
-    ```
+    ```go
     // AND, OR, NOT
     fmt.Println(true && true)   // true
     fmt.Println(true && false)  // false
