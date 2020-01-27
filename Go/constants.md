@@ -10,7 +10,7 @@ Go 에서 상수를 선언할 때는 <code>const</code> 키워드를 사용한�
   자료형은 생략 가능하다.  
   <code>const \<constantName> \<dataType> = \<value></code> 
    
-  ```
+  ```go
   const jordan = "Amman"
   const peru string = "Lima"
   ```
@@ -21,12 +21,12 @@ Go 에서 상수를 선언할 때는 <code>const</code> 키워드를 사용한�
   <code>const \<constant1>, \<costant2> = \<value1>, \<value2></code>  
   <code>const \<constant1>, \<costant2> \<dataType> = \<value1>, \<value2></code>  </code>
    
-  ```
+  ```go
   const barium, lanthanum = 56, 57
   const thorium, protactinium int = 90, 91
   ```
   * 복수 상수 선언 및 초기화 (다른 자료형)  
-  ```
+  ```go
   const (
       <constant1> = <value1>
       <constant2> = <value2>
@@ -44,7 +44,7 @@ Go 에서 상수의 연속되는 값을 위해 <code>iota</code> 를 사용할 �
 많은 경우 상수는 연속되는 값을 가진다. 
 
 대표적으로 요일의 표현이 있다.
-  ```
+  ```go
   // w/o iota
   const Sunday    = 0
   const Monday    = 1
@@ -66,7 +66,7 @@ Go 에서 상수의 연속되는 값을 위해 <code>iota</code> 를 사용할 �
   )
   ```
 Truthy value 와 Falsy value의 표현
-  ```
+  ```go
   const (
       zero, off, wrong = iota, iota, iota // 상수의 개수만큼 iota를 써주어야 한다.
       one, on, right
@@ -76,7 +76,7 @@ Truthy value 와 Falsy value의 표현
    1 1 1
   ``` 
 1 부터 시작하기 위해서는 아래와 같은 방법을 사용한다.
-  ```
+  ```go
   const (
      usa = iota + 1 // 1
      africa         // 2
@@ -85,7 +85,7 @@ Truthy value 와 Falsy value의 표현
   ```
 값 skip 하기
   * 원치 않는 값을 skip 하기 위해 unserscore <code>_</code> 를 사용할 수 있다.
-  ```
+  ```go
   const (
         Math = iota // 0
         English     // 1
