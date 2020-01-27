@@ -11,13 +11,13 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
 **Syntax :**  
   * 단일 변수 선언    
   <code>var \<variableName> \<dataType></code>
-  ```
+  ```go
   var age int
   var price float32
   ```
   * 복수 변수 선언 (같은 자료형)  
   <code>var \<variable1>, \<variable2> \<dataType></code>
-  ```
+  ```go
   var width, height int
   ```
   * 복수 변수 선언 (서로 다른 자료형)  
@@ -29,7 +29,7 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
    )
    ```
    
-  ```
+  ```go
   var (
       age int
       name string
@@ -62,21 +62,21 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
   선언과 할당을 동시에 할 때 자료형(data type)은 생략 가능  
   Go는 할당되는 값을 보고 자료형을 대신 정해준다.  
   <code>var \<variableName> = \<value></code>  
-  ```
+  ```go
   var age int = 22
   var price float32 = 590.30
   var width = 10.10
   ```
   * 할당하기  
   <code>\<variableName> = \<value></code>
-  ```
-  age = 22
+  ```go
+  age = 22 
   ```
   * 복수 변수들의 선언과 할당    
   <code>var \<variable1>, \<variable2>, \<variable3> \<dataType> = \<value1>, \<value2>, \<value3>
 </code>  
 
-  ```
+  ```go
   var SF, NY, LA = 415, 212, 213
   ```  
 2. **The Short Assignment**  
@@ -90,7 +90,7 @@ Go에서 변수를 선언할때는 <code>var</code> 를 사용한다.
   <code>\<variableName> := \<value></code>
   * 복수 변수 선언 및 할당  
   <code>\<variable1>, \<variable2> := \<value1>, \<value2></code>
-  ```
+  ```go
   tom := "Brown"
   tom, tim := "Brown", "Black"
   ```
