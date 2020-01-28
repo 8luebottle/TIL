@@ -1,7 +1,7 @@
 # Arrays
 Go에서 Arrays는 길이가 고정되어 있다.
 * 배열의 Index는 0부터 시작
-* 배열은 연속된 메모리 공간을 순차적으로 시용하는 자료구조
+* 배열은 연속된 메모리 공간을 순차적으로 사용하는 자료구조
 * 배열의 요소는 자료형이 동일해야 한다.
 
 ## Declaration
@@ -37,7 +37,7 @@ Go에서 Arrays는 길이가 고정되어 있다.
   * 배열 선언 및 초기화 3 (더 간단하게)  
   <code>\<arrayName> := [length]\<dataType>{...}</code>
   ```go
-  c = [5]int{5, 4, 3, 2, 1}
+  c := [5]int{5, 4, 3, 2, 1}
   ```
 
   * 배열 선언 및 초기화 4 (여러 줄 사용)
@@ -147,10 +147,10 @@ Go에서 Arrays는 길이가 고정되어 있다.
   }
   ```
   * 배열 순회 3 (outside)  
-  Loop Variable (<code>i</code>)를 함수 밖에 선언하여 사용 
+  Loop Variable (<code>i</code>)를 for문 밖에 선언하여 사용 
   ```go
   i := 0
-	for range <arrayName> {
+  for range <arrayName> {
 		fmt.Println(<arrayName>[j])
 		i++
   }
