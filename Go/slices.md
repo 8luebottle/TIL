@@ -6,11 +6,15 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
   * 가변적인 **길이**<small>(length)</small>  
     * 길이 함수 : <code>len()</code>
     * *Index로 접근할 수 있는* 공간.
-    * 길이가 고정적이지 않음. 그렇기에 <code>[]</code> 안에 길이를 지정하지 않음.  
+    * 길이가 고정적이지 않음. 그렇기에 <code>[]</code> 안에 길이를 지정하지 않음.
+    * 슬라이스 길이는 용량보다 크게 설정할 수 없다.  
   * **용량**<small>(capacity)</small>을 지님
     * 용량 함수 : <code>cap()</code>    
     * 용량은 실제 *메모리에 할당된* 공간 을 말한다.  
     * 용량을 생략하면 슬라이스의 길이와 동일하게 설정된다.
+    * 용량이 길이보다 크더라도 길이를 벗어난 Index에는 접근할 수 없다.  
+      --> 접근 시도시 <code>runtime error</code> 발생
+    * 용량이 가득차면 용량은 자동으로 늘어난다.
   * Reference Type 
 
 **Syntax**
@@ -60,3 +64,55 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
       fmt.Println("len(bbb)", len(bbb)) // 3
       fmt.Println("cap(bbb)", cap(bbb)) // 3
       ```
+      * 이렇게 생성된 슬라이스의 요소는 Zero Values를 갖는다.
+      ```go
+      b1 := make([]int, 3)
+      fmt.Println("b1[0]", b1[0]) // 0
+      b2 := make([]string, 3)
+      fmt.Println("b2[0]", b2[0]) // ""
+      b3 := make([]bool, 3)
+      fmt.Println("b3[0]", b3[0]) // false
+      ```
+  * 슬라이스 선언 및 초기화  
+    <code>{}</code> 중괄호를 사용하여 값을 할당한다.
+    * 한줄로 선언 및 초기화
+      <code>\<sliceName> :=[]\<dataType>{\<value1>,\<value2>}</code>
+      ```go
+      cc := []int{1, 2, 3}
+      ```
+    * 여러줄로 선언 및 초기화  
+      반드시 Comma(<code>,</code>)로 마무리
+      ```go
+      <sliceName> := []{
+          <value1>,
+          <value2>,
+          ...
+          <lastValue>,
+      }
+      ```
+      ```go
+      cc := []int{
+        1, 
+        2, 
+        3,
+      }
+      ```
+
+## Slice에 값 추가
+append() 함수를 통해 슬라이스의 끝에 값을 추가할 수 있다.
+```go
+cc := []int{1, 2, 3}
+cc = append(cc, 7, 0, 88)
+fmt.Println(cc) // [1 2 3 7 0 88]
+```
+
+### Slice + Slice
+slice 에 다른 slice를 append 시킬 때는 <code>...</code>를 사용한다
+```go
+d := []int{10, 100, 1000}
+e := []int{11, 111, 1111}
+d = append(d, e...) // 슬라이스 d에 e를 추가
+fmt.Println(d) // Slice d :  [10 100 1000 11 111 1111]
+```
+
+### Reference Type
