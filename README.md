@@ -20,4 +20,8 @@
 * Linux
 * MySQL
 * Python
-* Vim
+* IDE
+```
+    ├── Vim
+    └── VSCode
+```
