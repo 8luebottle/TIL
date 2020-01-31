@@ -25,10 +25,10 @@
   }
   ```
   함수가 정의된 시작 줄에서 여는 중괄호(<code>{</code>)를 써주어야 한다.  
-    * 줄바꿈을 하여 <code>{</code> 를 써주게 되면 컴파일 에러가 발생한다.  
+  줄바꿈을 하여 <code>{</code> 를 써주게 되면 컴파일 에러가 발생한다.  
 
   * Parameters  
-  <code>func \<funcName>(\<param1> \<dataType>, \<param2> \<dataType>) (returnValue's_dataType)</code>  
+  <code>func \<funcName>(\<param1> \<Type>, \<param2> \<Type>) (returnValue's_Type)</code>  
   ```go
   func main{
     r := sum(1000, 90)
@@ -43,10 +43,10 @@
 
   * Multiple return values  
   ```bash
-  func <funcName>(<param1> <dataType>, <param2> <dataType>) (<returnValue1's_dataType>, <returnValue2's_dataType>){
-        return <returnValue1>, <returnValue2>
+  func <funcName>(<param1> <Type>, <param2> <Type>) (<returnVal1's_Type>, <returnVal2's_Type>){
+        return <returnVal1>, <returnVal2>
   }
-  ``` 
+  ```  
   ```go
   func sumAndDiff(v1 int, v2 int) (int, int) { 
         return v1 + v2, v1 - v2
@@ -55,21 +55,21 @@
   func main(){
         sum, diff := sumAndDiff(8, 4)
         fmt.Println(sum, diff) // 12 4
-  }
-  ```
-    * 반환 값이 여러 개일 경우 <code>,</code> 로 구분해준다.
-    * <code>()</code> 괄호 안에 리턴값 자료형을 <code>,</code> 로 구분하여 지정해준다.
-    * 리턴값은 함수에서 지정한 순서대로 리턴된다.
-      * 만약 리턴값이 여러개인데도 불구하고 리턴값을 받을 변수 하나만 적으면 첫 번째 리턴값만 저장된다.
-    * Blank identifier을 통해 원하는 값만 리턴 가능하다.
-    ```go
-    func sumAndDiff(v1 int, v2 int) (int, int) { 
-          return v1 + v2, v1 - v2
-    } 
-    func main() {
-          _, diff := sumAndDiff(8, 8) // sum은 제외하고 diff 값만 받고 싶을 때
-          fmt.Println(diff) // 4
-    }
-    ```
-      * <code>_</code> 를 통해 특정 값을 생략
-  
+  }  
+  ```  
+   반환 값이 여러 개일 경우 <code>,</code> 로 구분해준다.  
+   <code>()</code> 괄호 안에 리턴값 자료형을 <code>,</code> 로 구분하여 지정해준다.    
+   리턴값은 함수에서 지정한 순서대로 리턴된다.  
+   만약 리턴값이 여러개인데도 불구하고 리턴값을 받을 변수 하나만 적으면 첫 번째 리턴값만 저장된다.  
+   Blank identifier을 통해 원하는 값만 리턴 가능하다.  
+    
+   ```go
+   func sumAndDiff(v1 int, v2 int) (int, int) { 
+         return v1 + v2, v1 - v2
+   } 
+   func main() {
+         _, diff := sumAndDiff(8, 8) // sum은 제외하고 diff 값만 받고 싶을 때
+         fmt.Println(diff) // 4
+   }
+   ``` 
+   <code>_</code> 를 통해 특정 값을 생략
