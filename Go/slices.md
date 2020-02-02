@@ -23,10 +23,11 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
 ### Slice Internals
 슬라이스 내부의 모습을 살펴보자.  
 슬라이스를 구성하는 요소는 세가지가 있다.  
+<img width="419" alt="slice internals" src="https://user-images.githubusercontent.com/48475824/73604669-c7c3bb00-45d7-11ea-88ea-51bbc0970c18.png"> 
   1. ptr | Pointer 포인터  
     슬라이스의 포인터는 배열의 첫 번재 요소를 가리킨다. 
   1. len | Length 길이
-  1. cap | Capacity 용량
+  1. cap | Capacity 용량 
 
 **용량과 길이가 구분되어 있는 이유는?**  
   * 동적 배열을 구현하기 위해서 길이와 용량을 구분해 놓았다.  
