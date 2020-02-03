@@ -5,6 +5,10 @@
 ### Commit Message Convention
 > DD.MM.YYYY : \<Categories>
 
+### TIL File Extensions
+* .md
+* .ipynb
+
 ## Categories
 * Cloud
 ```
