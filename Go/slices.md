@@ -8,6 +8,7 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
     * *Index로 접근할 수 있는* 공간.
     * 길이가 고정적이지 않음. 그렇기에 <code>[]</code> 안에 길이를 지정하지 않음.
     * 슬라이스 길이는 용량보다 크게 설정할 수 없다.  
+  
   * **용량**<small>(capacity)</small>을 지님
     * 용량 함수 : <code>cap()</code>    
     * 용량은 실제 *메모리에 할당된* 공간 을 말한다.  
@@ -15,10 +16,27 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
     * 용량이 길이보다 크더라도 길이를 벗어난 Index에는 접근할 수 없다.  
       --> 접근 시도시 <code>runtime error</code> 발생
     * 용량이 가득차면 용량은 자동으로 늘어난다.
+  
   * **Reference Type**
     * 슬라이스를 참조가 아니라 복사하고자 한다면 <code>copy()</code>함수를 사용해야 한다.
+
   * **nil**
     * 슬라이스를 선언만 하고 초기화 하지 않은 경우 값은 **nil**이 자동 할당 된다.
+
+  * **비교 연산자** 사용 불가
+    * 슬라이스에는 비교연산자(<code>==</code>)를 사용할 수 없다.
+      * 슬라이스의 원소는 배열의 원소와는 달리 간접 참조이기 때문이다. 그로인해 슬라이스의 값은 내부 배열이 변경됨에 따라 비교 시 다른 값을 가질 수 있게 된다.
+      ```go
+      sl1 := []int{1, 2}
+      sl2 := []int{1, 2}
+      fmt.Println("sl1 == sl2 : ", sl1 == sl2) // invalid operation: sl1 == sl2 (slice can only be compared to nil) 
+      ```
+    * 슬라이스끼리의 비교는 <code>nil</code> 만이 유일하게 가능하다.    
+  
+  * 빈 슬라이스의 확인
+    * 빈 슬라이스인지 확인하기 위해서는 <code>s == nil</code> 이 아닌 <code>len(s) == 0</code> 를 사용.
+      * 빈 슬라이스는 <code>nil</code> 과 비교할 때 외에는 길이가 0인 슬라이스처럼 동작하기 때문.
+
 
 ### Slice Internals
 슬라이스 내부의 모습을 살펴보자.  
@@ -118,6 +136,9 @@ Go 에서는 Array 보다는 Slice 더 자주 사용한다. 이유는 Slice의 �
       ```
 
 ## Slice에 값 추가
+> append() 함수는 슬라이스 동작 원리를 이해하는데 매우 중요하다.
+
+
 append() 함수를 통해 슬라이스의 끝에 값을 추가할 수 있다.
   * 추가할 수 있는 개수에는 제한이 없다.
 
@@ -238,3 +259,14 @@ end index는 인덱스보다 1 많다.
 	// len(ss2) :  6 cap(ss2) :  8
 	fmt.Println("ss2 : ", ss2) // [1 2 3 2 1 2]
   ```
+
+
+### Reverse Slice
+Reverse Slice의 구현
+```go
+func reverse(s []int) {
+  for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+      s[i], s[j] = s[j], s[i]
+  }
+}
+```
