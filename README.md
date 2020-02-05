@@ -26,6 +26,8 @@
 * Python
 * IDE
 ```
+    ├── IntelliJ
     ├── Vim
     └── VSCode
 ```
+* Infrastructure
