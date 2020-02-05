@@ -97,12 +97,10 @@ Vim has 3 modes.
 
 ## Jumping around
   * Jump to specific line.  
-  > In command mode
-
   <code>:\<line#></code>
     * e.g.  
-    <code>:14</code> : Will be Jump to line 14.  
-    <code>:55</code> : Will be Jump to line 55.
+    <code>:14</code> : Will Jump to line 14.  
+    <code>:55</code> : Will Jump to line 55.
 
   * Jump to end of a word.  
   <code>e</code>
