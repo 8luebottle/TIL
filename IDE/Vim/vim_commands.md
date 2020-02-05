@@ -158,7 +158,7 @@ Vim has 3 modes.
   <code>f</code>
 
   * Serach string.  
-  <code>/\<striFƒng></code>
+  <code>/\<string></code>
     * e.g  
     <code>/baby</code> : baby will be searched  
     <code>/tiger</code> : tiger will be searched
