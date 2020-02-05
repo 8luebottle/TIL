@@ -4,7 +4,7 @@
 * IdeaVim for Golang <small>(IntellJ)</small>
 * VSCodeVim for JavaScript <small>(VS Code)</small>
 
-![vim](https://user-images.githubusercontent.com/48475824/73815318-f4224600-4828-11ea-96c8-3e7f4dd45c6a.png)
+![vimvim](https://user-images.githubusercontent.com/48475824/73815465-672bbc80-4829-11ea-8683-6e890c7d276d.png)
 
 Vim has 3 modes.
 1. **Insert Mode**  
