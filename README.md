@@ -41,6 +41,9 @@
 
 
 ## Computer Science
++ [Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md#Serial)
+    + Serial | Prallel
+    + Synchronous | Asynchronous | Isochronous
 
 
 ## Docker
