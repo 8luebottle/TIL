@@ -20,7 +20,7 @@ Digital Data 즉, 0과 1의 데이터를 보낼때는 고려해야 할 점들이
 직렬과 병렬, 각각의 장단점에 대해 알아보자.
 
 
-### Seial
+### Serial
 직렬 전송 : 1차선 도로  
 데이터<small>(비트들)</small>가 하나의 통로로만 직렬로 줄지어진채 전송된다.  
 ![serial-data](https://user-images.githubusercontent.com/48475824/74102304-bd7c6080-4b85-11ea-8cad-81c2a944d419.png)
