@@ -73,7 +73,7 @@
 
 
 ## Linux
-
++ [GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)
 
 ## MacOS
 + [Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)
