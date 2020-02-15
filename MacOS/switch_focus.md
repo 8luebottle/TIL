@@ -46,7 +46,7 @@
 여기까지는 마우스 커서를 단순히 Monitor 1 에서 다른 Monitor 2 또는 Monitor 3으로 옮기기만 가능하다.   
 포커스를 바꾸기 위해서는 그 다음 세팅을 해주어야 한다.  
 
-<!-- ![multi-monitor](https://user-images.githubusercontent.com/48475824/74579026-4ad31100-4fdb-11ea-8dbe-a717de45fea2.png) -->
+![multi-monitor](https://user-images.githubusercontent.com/48475824/74579026-4ad31100-4fdb-11ea-8dbe-a717de45fea2.png)
 
 
 
