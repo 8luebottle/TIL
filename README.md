@@ -23,6 +23,7 @@
 * Go
 * JavaScript
 * Linux
+* MacOS
 * MySQL
 * Python
 * IDE
@@ -73,6 +74,9 @@
 
 ## Linux
 
+
+## MacOS
++ [Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)
 
 ## MySQL
 
