@@ -78,8 +78,8 @@
 2. Karabiner-elements Set up  
    단축키 세팅해주기  
    ![setup-shortcut](https://user-images.githubusercontent.com/48475824/74579966-5d9d1400-4fe2-11ea-84f7-81a8ce81d4da.png)  
-   * button1 : 마우스 오른쪽 클릭
-   * button2 : 마우스 왼쪽 클릭
+   * button1 : 마우스 왼쪽 클릭
+   * button2 : 마우스 오른쪽 클릭
 
 
 이로서 세팅이 모두 끝났다 :)  
