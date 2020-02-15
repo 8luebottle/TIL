@@ -20,8 +20,8 @@
 이를 가능하게 하기 위해 필요한 Application은 [Maxim Leyzerovich](http://round.is/about/) 가 만든 **CatchMouse** 이다.  
 
 ### How to set up
-1. Dowload the Application  
-   * [CatchMouse](https://github.com/round/CatchMouse) App 이 위치한 Github 페이지로 접속
+1. Download the Application  
+   * [CatchMouse App 이 위치한 Github 페이지](https://github.com/round/CatchMouse)로 접속
    * Download the ZIP file  
       <img width="395" alt="download-zip" src="https://user-images.githubusercontent.com/48475824/74579299-f6c92c00-4fdc-11ea-9ea7-62a36619ddf0.png">
 1. Unzip it
@@ -60,7 +60,7 @@
 
 
 ### How to set up
-1. Dowload it
+1. Download it
    * 간단히 brew 를 통해 install  
     <code>brew cask install karabiner-elements</code>  
       ```bash
