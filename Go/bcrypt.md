@@ -13,13 +13,11 @@
 - [signup.html](#signuphtml)
 - [login.html](#loginhtml)
 
-[Table of Contents](#table-of-contents)
 
 ## Bcrypt 연습 코드
 > 아래는 Bcrypt 를 사용한 User SignUp, LogIn 구현하는 연습 코드 (0219.2020)
 
 Session, Redis, Bcrypt를 사용하여 구현.  
-
 User는 ID, PW를 입력한 후 가입(SignUp)하여 로그인(LogIn)을 해야 Comment를 쓸 수 있다.
 
  
@@ -45,7 +43,7 @@ type User struct {
 }
 
 var client *redis.Client  // For reids DB
-var store = sessions.NewCookieStore([]byte("teSt-oo20ce20vc")) // Session Our secret Key "t0p-s3cr3t"
+var store = sessions.NewCookieStore([]byte("teSt-oo20ce20vc")) // Session Our secret Key "teSt-oo20ce20vc"
 var templates *template.Template
 
 /* Get Data from Client*/
