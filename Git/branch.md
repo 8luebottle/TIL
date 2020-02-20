@@ -58,7 +58,7 @@
     master
     ```
 
-    ### Show Remote Branches Only
+    #### Show Remote Branches Only
     원격 저장소의 브랜치 보기  
     <code>git branch -r</code>  
     ```
@@ -67,7 +67,7 @@
     origin/master
     ```
 
-    ### Show Branch w/ Last Commit Info
+    #### Show Branch w/ Last Commit Info
     로컬 브랜치의 마지막 커밋 정보 보기  
     <code>git branch -v</code>
     ```
