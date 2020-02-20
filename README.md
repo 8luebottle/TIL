@@ -69,6 +69,7 @@
 + [For Loop](https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md)  
 + [Functions](https://github.com/8luebottle/TIL/blob/master/Go/functions.md)  
 + [Go Playground](https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md)  
++ [Package gorm](https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md)
 + [Pointer](https://github.com/8luebottle/TIL/blob/master/Go/pointer.md)  
 + [Setup Go Compiler](https://github.com/8luebottle/TIL/blob/master/Go/setup_go_compiler.md)  
 + [Slices](https://github.com/8luebottle/TIL/blob/master/Go/slices.md)  
