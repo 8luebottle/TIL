@@ -1,6 +1,6 @@
 # Package json
 
-Go에서 JSON을 사용하기 위해서는 <code>encoding/json</code> 패키지를 이용한다.
+Go 에서 JSON을 사용하기 위해서는 <code>encoding/json</code> 패키지를 이용한다.
 
 
 ### Table of Contents
@@ -12,17 +12,16 @@ Go에서 JSON을 사용하기 위해서는 <code>encoding/json</code> 패키지�
     * [json.Unmarshal](json.Unmarshal)
     * [json.MarshalIndent](#jsonmarshalindent)
 
-[Return to TOC](#table-of-contents)
 
 ## JSON Basic
 웹 서버와 클라이언트의 통신을 하기 위해 JSON 이라는 데이터 표현법을 사용한다.  
-텍스트로 이루어진 JSON 이기에 사람 뿐만 아니라 기계도 이해하기 편하기 때문이다.  
+텍스트로 이루어진 JSON 이기에 사람 뿐만 아니라 기계도 이해하기 편하다.  
 
 JSON (JavaScript Object Notation) 은 자바스크립트 구문을 따르지만, 프로그래밍 언어와 독립적이다.   
-대부분의 클라이언트(JavScript)와 서버(Go, Python, C++, JAVA etc)간에 데이터를 전송하기 위해 JSON 을 사용한다.
+대부분의 클라이언트(JavaScript)와 서버(Go, Python, C++, JAVA etc)간에 데이터를 전송하기 위해 JSON 을 사용한다.
 
-JSON은 key 와 value 쌍으로 이루어져 있다. key의 위치에는 반드시 string 타입이 와야하지만 value 에는 타입에 제한이 없다.  
-이러한 특징을 갖춘 데이터를 저장 공간을 만든다면 아래와 같다.  
+JSON은 key 와 value 쌍으로 이루어져 있다. key 의 위치에는 반드시 string 타입이 와야하지만 value 에는 타입 제한이 없다.  
+이러한 특징을 갖춘 데이터 저장 공간을 만든다면 아래와 같다.  
 ```go
 var data map[string]interface{}
 ```
@@ -39,7 +38,7 @@ var data map[string]interface{}
 * Encoding 이라고도 함.
 * json.Marshal
 
-**Unmarshaling :** byte slice 나 문자열을 객체 구조로 변경하는 것을 말한다.  
+**Unmarshaling :** byte slice 나 string을 객체 구조로 변경하는 것을 말한다.  
 * Decoding 이라고도 함.
 * json.Unmarshal
 
@@ -73,7 +72,7 @@ func Marshal(v interface{}) ([]byte, error) {
 ```
 * <code>Marshal</code> 은 <code>MarshalJSON</code> 메서드를 불러 JSON을 만든다.  
 * Return Value 는 <code>[]byte</code> 와 <code>error</code> 이다.
-    * 출력하고자 한다면 string 으로 타입을 변환시켜 주어야 한다.  
+    * 출력하고자 한다면 byte 를 string 으로 형변환시켜 주어야 한다.  
         ```go
         data := make(map[string]interface{})
         
@@ -152,11 +151,11 @@ func MarshalIndent(v interface{}, prefix, indent string) ([]byte, error) {
 * Return Value 는 <code>[]byte</code> 와 <code>error</code> 이다.  
 * JSON 요소들을 새 라인에서 출력시켜준다.
 * 매개변수  
-    1. 번째 매개변수 : Data  
+    * 첫번째 매개변수 : Data  
     JSON 문서로 변화시켜줄 데이터  
-    1. 번째 매개변수 : Prefix  
+    * 두번째 매개변수 : Prefix  
     보통 Empty string
-    1. 번째 매개변수 : indent  
+    * 세번째 매개변수 : indent  
     보통 Whitespace 또는 Tab  
         ```go
         json.MarshalIndent(data, "", "  ")
