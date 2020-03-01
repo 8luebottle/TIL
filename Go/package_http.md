@@ -23,7 +23,7 @@
 
 
 ## HTTP Basic
-> HTTP 에 대해 더 자세히 알고자 한다면 [HTTP](https://babytiger.netlify.com/posts/http/#about-http) 블로그 글을 참고하자.
+> HTTP 에 대해 더 자세히 알고자 한다면 [HTTP에 대한 블로그 글](https://babytiger.netlify.com/posts/http/) 을 참고하자.
 
 **HTTP :** **H**yper**T**ext **T**ransfer **P**rotocol  
 현재 전세계 대부분의 클라이언트와 서버는 HTTP 를 통해 통신한다.  
