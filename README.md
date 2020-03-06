@@ -43,12 +43,6 @@
 
 -----------
 
-<style>
-    th {display: none;}
-    td {width:150px;}
-    ul {list-style-type: none; margin-left: -18px;}
-</style>
-
 ## Categories
 ### Cloud
 
@@ -59,7 +53,7 @@
 |---------------------| :--------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### Computer Science
@@ -67,7 +61,7 @@
 |---------------------| :--------- |
 |[Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md#Serial)| 02.10.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### Database
@@ -78,7 +72,7 @@
 |---------------------| :--------- |
 | [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md) | 01.30.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### Django
@@ -92,7 +86,7 @@
 |---------------------| :--------- |
 | [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 02.20.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### Go
@@ -114,7 +108,7 @@
 | [Slices](https://github.com/8luebottle/TIL/blob/master/Go/slices.md)  | 02.04.2020 |
 | [Variables](https://github.com/8luebottle/TIL/blob/master/Go/variables.md)  | 01.27.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### JavaScript
@@ -125,7 +119,7 @@
 |---------------------| :--------- |
 |[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### MacOS
@@ -133,7 +127,7 @@
 |---------------------| :--------- |
 |[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
 
 
 ### Python
@@ -163,4 +157,4 @@
 |---------------------| :--------- |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
 
-* [↑ return to TOC](#return-to-toc)
+[↑ return to TOC](#table-of-contents)
