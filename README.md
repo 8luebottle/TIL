@@ -94,6 +94,9 @@
 
 
 ## IDE
+### IntelliJ
++ [IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)
+
 ### VS Code
 + [VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)
 
