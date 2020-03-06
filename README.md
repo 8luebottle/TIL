@@ -10,99 +10,157 @@
 * .md
 * .ipynb
 
-## Categories
-* Cloud
-```
+## Table of Contents
+* [Cloud](#cloud)
+    ```
     ├── AWS
     ├── Cloud Computing
     └── GCP
-```
-* ComputerScience
-* Docker
-* Django
-* Echo
-* Git
-* Go
-* JavaScript
-* Linux
-* MacOS
-* MySQL
-* Python
-* IDE
-```
+    ```
+* [ComputerScience](#computer-science)
+* [Database](#database)
+    ```
+    ├── SQL
+    └── NoSQL
+    ```
+* [Docker](#docker)
+* [Django](#django)
+* [Echo](#echo)
+* [Git](#git)
+* [Go](#go)
+* [JavaScript](#javascript)
+* [Linux](#linux)
+* [MacOS](#macos)
+* [Python](#python)
+* [IDE](#ide)
+    ```
     ├── IntelliJ
     ├── Vim
     └── VSCode
-```
-* Infrastructure  
+    ```
+* [Infrastructure](#infrastructure)
+
 
 -----------
 
-## Cloud
+<style>
+    th {display: none;}
+    td {width:150px;}
+    ul {list-style-type: none; margin-left: -18px;}
+</style>
+
+## Categories
+### Cloud
+
+
+
 ### AWS
-+ [AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)
+|                     |            |
+|---------------------| :--------- |
+|[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
+
+* [↑ return to TOC](#return-to-toc)
 
 
-## Computer Science
-+ [Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md#Serial)
-    + Serial | Prallel
-    + Synchronous | Asynchronous | Isochronous
+### Computer Science
+|                     |            |
+|---------------------| :--------- |
+|[Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md#Serial)| 02.10.2020 |
+
+* [↑ return to TOC](#return-to-toc)
 
 
-## Docker
-+ [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md)
-
-## Django
+### Database
 
 
-## Echo
+### Docker
+|                     |            |
+|---------------------| :--------- |
+| [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md) | 01.30.2020 |
+
+* [↑ return to TOC](#return-to-toc)
 
 
-## Git
-+ [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md)
+### Django
 
 
-## Go
-+ [Arrays](https://github.com/8luebottle/TIL/blob/master/Go/arrays.md)  
-+ [Constants](https://github.com/8luebottle/TIL/blob/master/Go/constants.md)  
-+ [Data Types](https://github.com/8luebottle/TIL/blob/master/Go/data_types.md)  
-+ [Duck Typing](https://github.com/8luebottle/TIL/blob/master/Go/duck_typing.go)  
-+ [For Loop](https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md)  
-+ [Functions](https://github.com/8luebottle/TIL/blob/master/Go/functions.md)  
-+ [Go Playground](https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md)  
-+ [Package gorm](https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md)
-+ [Package http](https://github.com/8luebottle/TIL/blob/master/Go/package_http.md)
-+ [Package json](https://github.com/8luebottle/TIL/blob/master/Go/package_json.md)
-+ [Pointer](https://github.com/8luebottle/TIL/blob/master/Go/pointer.md)  
-+ [Setup Go Compiler](https://github.com/8luebottle/TIL/blob/master/Go/setup_go_compiler.md)  
-+ [Slices](https://github.com/8luebottle/TIL/blob/master/Go/slices.md)  
-+ [Variables](https://github.com/8luebottle/TIL/blob/master/Go/variables.md)  
-
-## JavaScript
+### Echo
 
 
-## Linux
-+ [GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)
+### Git
+|                     |            |
+|---------------------| :--------- |
+| [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 02.20.2020 |
 
-## MacOS
-+ [Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)
-
-## MySQL
-
-
-## Python
+* [↑ return to TOC](#return-to-toc)
 
 
-## IDE
-### IntelliJ
-+ [IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)
+### Go
+|                     |            |
+|---------------------| :--------- |
+| [Arrays](https://github.com/8luebottle/TIL/blob/master/Go/arrays.md)  | 01.27.2020 |
+|[Bcrypt](https://github.com/8luebottle/TIL/blob/master/Go/bcrypt.md)|02.19.2020|
+| [Constants](https://github.com/8luebottle/TIL/blob/master/Go/constants.md) | 01.27.2020 |
+| [Data Types](https://github.com/8luebottle/TIL/blob/master/Go/data_types.md)  | 01.27.2020 |
+| [Duck Typing](https://github.com/8luebottle/TIL/blob/master/Go/duck_typing.go)  | 02.05.2020 |
+| [For Loop](https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md) | 02.05.2020 |
+| [Functions](https://github.com/8luebottle/TIL/blob/master/Go/functions.md) | 02.01.2020 |
+| [Go Playground](https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md) | 01.21.2020 |
+| [Package gorm](https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md) | 02.21.2020 |
+| [Package http](https://github.com/8luebottle/TIL/blob/master/Go/package_http.md) | 03.01.2020 |
+| [Package json](https://github.com/8luebottle/TIL/blob/master/Go/package_json.md) | 02.25.2020 |
+| [Pointer](https://github.com/8luebottle/TIL/blob/master/Go/pointer.md) | 02.02.2020 |
+| [Setup Go Compiler](https://github.com/8luebottle/TIL/blob/master/Go/setup_go_compiler.md)   | 01.22.2020 |
+| [Slices](https://github.com/8luebottle/TIL/blob/master/Go/slices.md)  | 02.04.2020 |
+| [Variables](https://github.com/8luebottle/TIL/blob/master/Go/variables.md)  | 01.27.2020 |
 
-### VS Code
-+ [VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)
+* [↑ return to TOC](#return-to-toc)
 
-### Vim
-+ [Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md)  
-+ [Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)
 
-## Infrastructure
-+ [Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md)
+### JavaScript
+
+
+### Linux
+|                     |            |
+|---------------------| :--------- |
+|[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
+
+* [↑ return to TOC](#return-to-toc)
+
+
+### MacOS
+|                     |            |
+|---------------------| :--------- |
+|[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
+
+* [↑ return to TOC](#return-to-toc)
+
+
+### Python
+
+
+### IDE
+#### IntelliJ
+|                     |            |
+|---------------------| :--------- |
+|[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 03.06.2020 |
+
+#### VS Code
+|                     |            |
+|---------------------| :--------- |
+|[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 01.30.2020 |
+
+#### Vim
+|                     |            |
+|---------------------| :--------- |
+|[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
+|[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 02.05.2020 |
+
+
+
+### Infrastructure
+|                     |            |
+|---------------------| :--------- |
+|[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
+
+* [↑ return to TOC](#return-to-toc)
