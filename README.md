@@ -1,16 +1,27 @@
-# TIL
+# 🗃 TIL
 ![Made with love by 8luebottle](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8Fby-%208luebottle%20-blue)  
-> Consistency is one of the biggest factors to accomplishment and success. 
-<img width="444" alt="TIL" src="https://user-images.githubusercontent.com/48475824/72317542-f9361e80-36dc-11ea-9633-ef6bf88725c7.png">
+> Consistency is one of the biggest factors to accomplishment and success.  
+<img width="530" alt="TIL" src="https://user-images.githubusercontent.com/48475824/72317542-f9361e80-36dc-11ea-9633-ef6bf88725c7.png">
 
-### Commit Message Convention
-> DD.MM.YYYY : \<Categories>
 
-### TIL File Extensions
+#### 📌 Available Languages
+* 🇰🇷 Korean
+
+#### 📌 Commit Message Convention
+``` DD.MM.YYYY : <Categories>```
+
+#### 📌 TIL File Extensions
 * .md
 * .ipynb
 
-## Table of Contents
+#### 📌 Table Format
+| Title |Last Updated|
+|-------| :--------: |
+|ABCDEFG| DD.MM.YYYY |
+
+
+
+### 📄Table of Contents
 * [Cloud](#cloud)
     ```
     ├── AWS
@@ -41,13 +52,11 @@
 * [Infrastructure](#infrastructure)
 
 
------------
 
-## Categories
-### Cloud
+# 🗂 Categories
 
 
-
+## Cloud
 ### AWS
 |                     |            |
 |---------------------| :--------- |
@@ -56,7 +65,8 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### Computer Science
+
+## Computer Science
 |                     |            |
 |---------------------| :--------- |
 |[Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md#Serial)| 02.10.2020 |
@@ -64,10 +74,11 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### Database
+
+## Database
 
 
-### Docker
+## Docker
 |                     |            |
 |---------------------| :--------- |
 | [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md) | 01.30.2020 |
@@ -75,13 +86,14 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### Django
+
+## Django
 
 
-### Echo
+## Echo
 
 
-### Git
+## Git
 |                     |            |
 |---------------------| :--------- |
 | [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 02.20.2020 |
@@ -89,7 +101,7 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### Go
+## Go
 |                     |            |
 |---------------------| :--------- |
 | [Arrays](https://github.com/8luebottle/TIL/blob/master/Go/arrays.md)  | 01.27.2020 |
@@ -111,10 +123,9 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### JavaScript
+## JavaScript
 
-
-### Linux
+## Linux
 |                     |            |
 |---------------------| :--------- |
 |[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
@@ -122,7 +133,7 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### MacOS
+## MacOS
 |                     |            |
 |---------------------| :--------- |
 |[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
@@ -130,29 +141,28 @@
 [↑ return to TOC](#table-of-contents)
 
 
-### Python
+## Python
 
 
-### IDE
-#### IntelliJ
+## IDE
+### IntelliJ
 |                     |            |
 |---------------------| :--------- |
 |[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 03.06.2020 |
 
-#### VS Code
+### VS Code
 |                     |            |
 |---------------------| :--------- |
 |[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 01.30.2020 |
 
-#### Vim
+### Vim
 |                     |            |
 |---------------------| :--------- |
 |[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
 |[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 02.05.2020 |
 
 
-
-### Infrastructure
+## Infrastructure
 |                     |            |
 |---------------------| :--------- |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
