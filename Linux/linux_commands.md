@@ -3,7 +3,7 @@
 
 리눅스는 개발자 친화적이기에 많은 엔지니어들의 사랑을 받는다. 리눅스는 시스템을 운영을 위한 OS로써 제일 높은 점유율을 갖고 있다. 리눅스가 가진 특징을 꼽자면 오픈소스, 보안성, 신뢰성, 호환성, 그리고 안정성이라 할 수 있겠다.
 
-[리눅스 관련 포스트](#https://babytiger.netlify.com/posts/intro-linux/)
+[리눅스 관련 포스트](https://babytiger.netlify.com/posts/intro-linux/)
 
 > 링크를 클릭하여 이동 
 
