@@ -132,6 +132,7 @@
 |                     |            |
 |---------------------| :--------- |
 |[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
+|[Linux Commands](https://github.com/8luebottle/TIL/blob/master/Linux/linux_commands.md)| 03.09.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
