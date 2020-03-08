@@ -3,13 +3,22 @@
 DB에서 데이터를 가져올때 적지않은 시간이 걸린다.   
 DB 튜닝을 잘 하기 위해서는 INDEX에 대한 이해가 필수적이다.
 
-### Table of Contetns
-* [Index Basic](#index-basic)
-* [속도](#속도)
-* [선정](#선정)
-* [종류](#종류)
+### Table of Contents
+* [Index Basic](#index-basic)  
+  Index의 특징
+* [속도](#속도)  
+  Index의 손익 분기점
+* [선정](#선정)  
+  Do | Don't  
+* [종류](#종류)  
+  B-Tree Index | B+Tree Index | Bitmap Index | Composite Index
+* [분류](#분류)  
+  Key | 파일 조직 | Data 범윈
 * [생성](#생성)
-* [스캔](#스캔)
+* [스캔](#스캔)  
+  INDEX FAST FULL SCAN | INDEX FULL SCAN  
+  INDEX RANGE SCAN | INDEX RANGE SCAN DESCENDING  
+  INDEX SKIP SCAN | INDEX UNIQUE SCAN
 
 ## Index Basic
 **INDEX 색인** : 원하는 데이터를 빠르고 쉽게 찾을수 있도록 특정 순서에 따라 배열해놓은 목록.
@@ -35,6 +44,7 @@ DB Index의 특징을 알아보기 위해 책의 Index와 비교해보도록 하
   각각의 포인터는 하나의 Full Table Record 를 가리키고 있다.  
   포인터를 타고 원하는 데이터에 접근함으로써 데이터의 탐색 속도가 향상된다.  
 
+[↑ return to TOC](#table-of-contents)
 
 
 ## 속도
@@ -58,6 +68,8 @@ DB Index의 특징을 알아보기 위해 책의 Index와 비교해보도록 하
     1000개의 레코드에서 150개 이상을 읽을 때, FULL SCAN 을 사용하는 것아 더 효율적임을 의미.
 * 손익 분기점을 넘어서게 되면 인덱스를 사용하는 것 보다 못하다.
   * 이때는 FULL SCAN 을 사용할 것
+
+[↑ return to TOC](#table-of-contents)
 
 
 ## 선정
@@ -84,6 +96,8 @@ Index는 ```SELECT``` 문의 ```WHERE```, ```JOIN``` 에서 높은 성능을 발
     테이블에 ```INSERT``` 하려는 데이터의 적합한 위치를 찾아서 저장을 해야하기 때문.  
     또한 Index 에도 데이터를 추가해줘야 한다. 
 
+[↑ return to TOC](#table-of-contents)
+
 
 ## 종류
 다양한 인덱스 종류가 있다.  
@@ -100,8 +114,15 @@ Index는 ```SELECT``` 문의 ```WHERE```, ```JOIN``` 에서 높은 성능을 발
 ### B-Tree Index
 Balanced Tree Index  
 가장 많이 사용되는 인덱스 구조.  
+대부분의 관계형 데이터베이스의 Default Index 타입이다.
 
-![btree](https://user-images.githubusercontent.com/48475824/76155139-625d6f80-612b-11ea-92ad-8310f9e64ca3.png)  
+트리의 형태를 가진다.
+  * Root
+  * Branch (non-leaf)
+  * Leaf
+
+<img width="600" alt="B-Tree" src="https://user-images.githubusercontent.com/48475824/76155139-625d6f80-612b-11ea-92ad-8310f9e64ca3.png">
+  
 [Image Source](https://www.qwertee.io/blog/postgresql-b-tree-index-explained-part-1/)
 
 
@@ -115,27 +136,64 @@ Balanced Tree Index
 [Image Source](https://www.computer.org/csdl/journal/tk/2012/09/ttk2012091570/13rRUIIVlkJ)
 
 
-
 ### Composite Index
 여러 컬럼을 조합(결합)하여 인덱스를 구성하는 방법.  
-결하려는 컬럼들의 순서가 중요하다.
+결합하려는 컬럼들의 순서가 중요하다.  
+
+```WHERE``` 의 조건 컬럼 2개 이상이 ```AND``` 로 연결되어 사용되는 경우 → 결합 인덱스 사용.
+
+![composite-index](https://user-images.githubusercontent.com/48475824/76155317-fd574900-612d-11ea-8516-8fce19420937.png)
+
+[Image Source](https://mapr.com/docs/60/MapR-DB/Indexes/design-composite-index.html)
+
+[↑ return to TOC](#table-of-contents)
 
 
 ## 분류
 다양한 인덱스 종류를 분류하는 법도 여러가지이다.  
 ![Index-Methods](https://user-images.githubusercontent.com/48475824/76146961-32867b80-60db-11ea-95ce-2a3b1f38c3f9.png)
 
+### Key
 * Primary Index 기본 인덱스
 * Secondary Index 보조 인덱스
 
+### 파일 조직
 * Clustered Index 집중 인덱스
 * Nonclustred Index 비집중 인덱스
 
+### DATA 범위
 * Dense Index 밀집 인덱스
 * Sparse Index 희소 인덱스
+
+[↑ return to TOC](#table-of-contents)
 
 
 ## 생성
 인덱스는 열 단위로 생성된다.
 
+[↑ return to TOC](#table-of-contents)
+
+
 ## 스캔
+INDEX SCAN 방식은 아래와 같다.
+
+* **INDEX FAST FULL SCAN**  
+  Multi Block I/O
+
+* **INDEX FULL SCAN**  
+  모두 스캔  
+  Single Block I/O
+
+* **INDEX RANGE SCAN**  
+  특정 범위 스캔
+
+* **INDEX RANGE SCAN DESCENDING**  
+  특정 범위를 역순으로 스캔
+
+* **INDEX SKIP SCAN**  
+  중간 중간 스킵하며 스캔
+
+* **INDEX UNIQUE SCAN**  
+  Unique Index를 사용하여 스캔
+
+[↑ return to TOC](#table-of-contents)
