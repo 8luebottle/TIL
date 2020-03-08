@@ -76,7 +76,7 @@
 ## Database
 |                     |            |
 |---------------------| :--------- |
-|[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.08.2020 |
+|[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
