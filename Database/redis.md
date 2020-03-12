@@ -170,30 +170,38 @@ Key-Value 매핑 구조
 Max Memory 최대 메모리 용량을 설정함으로써 그 이상을 사용하지 못하도록 함.   
 이 이상을 넘어갈 시에는 Option을 설정.  
 
-**maxmemory policy**
-1. noeviction  
+#### maxmemory policy
+1. **noeviction**  
   기존 데이터를 보존.  
   OOM 오류를 반환하고 새로운 데이터는 버림.
     * OOM : Out Of Memory
-1. allkeys-lru  
+    
+1. **allkeys-lru**  
   LRU 알고리즘을 통해 데이터를 삭제.  
     * LRU : Least Recently Used
-1. volatile-lru  
+    
+1. **volatile-lru**  
   기본 값  
-1. allkeys-random  
+  
+1. **allkeys-random**  
   렌덤하게 데이터를 삭제시켜 저장 공간 확보.  
-1. volatile-random
+  
+1. **volatile-random**   
   expire set 중 렌덤으로 데이터를 삭제.  
-1. volatile-ttl 
+  
+1. **volatile-ttl**   
   expire set 중 TTL 값이 짧은 것 부터 삭제.  
     * TTL : Time To Live
-1. allkeys-lfu  
+    
+1. **allkeys-lfu**  
   가장 적게 엑세스된 키를 제거하여 저장 공간 확보.  
-1. volatile-lfu
+  
+1. **volatile-lfu**  
   expire set 중 가장 적게 엑세스 된 키 순으로 삭제.  
 
 **eviction**  
 Eviction 이란 Maxmemory 초과로 데이터가 지워지는 것을 뜻한다.  
+ 
  
 ### 메모리 관리  
 하나의 큰 Instance 를 사용하는 것 보다는 여러개의 작은 Instances 를 사용하는 것이 안정성이 높다.
