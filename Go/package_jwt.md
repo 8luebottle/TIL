@@ -2,14 +2,15 @@
 **J**ason **W**eb **T**oken
 
 ### Table of Contents
-* jwt Basic
+* [JWT Basic](#jwt-basic)
     * Token의 필요성
     * [JWT 구조](#jwt-구조)  
-      Header | Payload | Signature
-    * JWT 발급 과정
-    * JWT 사용 과정
+      [Header](#header) | [Payload](#payload) | [Signature](#signature)
+    * JWT 인증
+    * JWT 발급
+    * JWT 사용
 
-* jwt 코드 열어보기
+* [jwt 코드 열어보기](#jwt-코드-열어보기)
     * [MapClaims](#MapClaims)
     * [SigningMethodHMAC](#SigningMethodHMAC)
     * [Parser](#parser)
@@ -21,21 +22,65 @@
     * [jwt.VerifyNotBefore](#jwt.verifynotbefore)
 
 
-## jwt Basic
+## JWT Basic  
+JWT 가 유용하게 사용되는 경우는 아래와 같다.
+* Authentication  
+  token에 유저의 정보를 담아 인증시 사용
+* Information Exchanges  
+  정보를 안전하게 전송하고 싶을 때  
+
 ### JWT 구조  
 JWT 는 세 파트로 나뉜다.
 1. Header
 1. Payload
-1. Signature
+1. Signature 
+
+중요한 정보는 header 와 payload 에 적재해서는 안된다.
+* base64로 인코딩되어 있기에 간단하게 디코딩 가능하기 때문.  
+
+반면 Signature(Header + Payload + Signature Key)은 복호화 되어 있기에 Signature Key를 모른다면 해석불가.  
+* 보안성 강화 → Signaure key 를 모르기에 위변조 어려움.
+
+#### JWT Structure
+각각의 JSON 형태의 데이터를 base64로 인코딩한 후 합친다(header.payload.signature).  
+
+<img width="400" alt="jwt-structure" src="https://user-images.githubusercontent.com/48475824/76694158-bd0a4480-66b2-11ea-9f96-3959e6936bc2.png">  
+
+
+#### Encoded JWT
+JSON은 개행 문자가 있다. 이는 base64로 인코딩 되면서 사라진다.  
+
+<img width="400" alt="jwt-encoded" src="https://user-images.githubusercontent.com/48475824/76694354-f9d73b00-66b4-11ea-9bb9-0bd1e5b103ca.png">  
+
+#### Decoded JWT
+<img width="320" alt="jwt-decoded" src="https://user-images.githubusercontent.com/48475824/76694367-11aebf00-66b5-11ea-8048-b687c35837ee.png">
+
+
 
 ### Header
+토큰의 타입과 사용하는 해싱 알고리즘의 정보가 담겨 있다.  
+* **typ**  
+  type  
+  토큰의 타입
+* **alg**  
+  algorithm  
+  해싱 알고리즘
 
 #### Payload  
-Payload 는 Claim 을 담고있다.   
-Claim 은 세 가지 타입으로 나뉜다.  
-1. Reserved Claim
-1. Public Claim
-1. Private Claim
+토큰으로 사용하려는 실질적인 데이터가 담겨 있다.  
+한 토큰에는 여러개의 Claim들로 이루어져 있다. Claim은 데이터의 조각이라 보면 된다.  
+
+**Claim 의 세 종류**  
+1. Reserved Claim  
+  예약된 클레임  
+  이름이 이미 예약되어 정해진 클레임들
+1. Public Claim  
+  공개 클레임  
+  서버-클라이언트 협의하에 사용되는 공개 클레임  
+  클레임 이름 충돌 방지를 위해 URI 형식으로 이름을 명명한다.
+1. Private Claim  
+  비공개 클레임  
+  서버-클라이언트의 협의하에 사용되는 비공개 클레임
 
 * **aud**  
   Audience  
@@ -60,10 +105,18 @@ Claim 은 세 가지 타입으로 나뉜다.
   Subject  
   토큰의 주제
 
+[↑ return to TOC](#table-of-contents)
+
 ### Signature
-Header + Payload + Signature Key
+Header + Payload + Signature Key  
+토큰의 무결성과 변조를 방지하기 위해 사용되는 서명.
 
 [↑ return to TOC](#table-of-contents)
+
+## JWT 인증
+## JWT 발급
+## JWT 사용
+
 
 
 ## jwt 코드 열어보기
@@ -75,7 +128,9 @@ type MapClaims map[string]interface{}
 
 
 ### SigningMethodHMAC
-HMAC-SHA 알고리즘 구현
+HMAC-SHA 알고리즘 구현  
+* HMAC  
+  **H**ash-based **M**essage **A**uthenti**c**ation
 ```go
 type SigningMethodHMAC struct {
   Name string
@@ -101,6 +156,9 @@ type Parse struct {
     SkipClaimsValidation   bool
 }
 ```
+* UseJSONNumber  
+  JSON decode 시에 JSON Number 포멧을 사용할지에 관한 여부
+
 [↑ return to TOC](#table-of-contents)
 
 
