@@ -11,13 +11,13 @@ Package SMTP는 [RFC 5321](https://tools.ietf.org/html/rfc5321) 의 SMTP, [RFC 1
  * [smtp 코드 열어보기](#smtp-코드-열어보기)
     * [type Client](#type-client)
     * [smtp.Close](#smtpclose)
-    * [smtp.Extension](#smtp.Extension)
-    * [smtp.Hello](#smtp.Hello)
-    * [smtp.Reset](#smtp.Reset)
-    * [smtp.Noop](#smtp.Noop)
-    * [smtp.Quit](#smtp.Quit)
-    * [smtp.ValidateLine](#smtp.ValidateLine)
-    * [smtp.SendMail](#smtp.SendMail)
+    * [smtp.Extension](#smtpExtension)
+    * [smtp.Hello](#smtpHello)
+    * [smtp.Reset](#smtpReset)
+    * [smtp.Noop](#smtpNoop)
+    * [smtp.Quit](#smtpQuit)
+    * [smtp.ValidateLine](#smtpValidateLine)
+    * [smtp.SendMail](#smtpSendMail)
 
 ## smtp 코드 열어보기
 ### type Client
