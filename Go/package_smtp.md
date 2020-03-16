@@ -10,7 +10,7 @@ Package SMTP는 [RFC 5321](https://tools.ietf.org/html/rfc5321) 의 SMTP, [RFC 1
  ### Table of Contents
  * [smtp 코드 열어보기](#smtp-코드-열어보기)
     * [type Client](#type-client)
-    * [smtp.Close](#smtp.close)
+    * [smtp.Close](#smtpclose)
     * [smtp.Extension](#smtp.Extension)
     * [smtp.Hello](#smtp.Hello)
     * [smtp.Reset](#smtp.Reset)
