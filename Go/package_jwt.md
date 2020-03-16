@@ -14,12 +14,12 @@
     * [MapClaims](#MapClaims)
     * [SigningMethodHMAC](#SigningMethodHMAC)
     * [Parser](#parser)
-    * [jwt.New](#jwt.new)
-    * [jwt.Parse](#jwt.parse)
-    * [jwt.Valid](#jwt.valid)
-    * [jwt.VerifyExpiresAt](#jwt.verifyexpiresat)
-    * [jwt.VerifyIssuedAt](#jwt.verifyissuedat)
-    * [jwt.VerifyNotBefore](#jwt.verifynotbefore)
+    * [jwt.New](#jwtnew)
+    * [jwt.Parse](#jwtparse)
+    * [jwt.Valid](#jwtvalid)
+    * [jwt.VerifyExpiresAt](#jwtverifyexpiresat)
+    * [jwt.VerifyIssuedAt](#jwtverifyissuedat)
+    * [jwt.VerifyNotBefore](#jwtverifynotbefore)
 
 
 ## JWT Basic  
