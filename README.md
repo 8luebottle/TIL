@@ -38,11 +38,6 @@
 * [Echo](#echo)
 * [Git](#git)
 * [Go](#go)
-* [JavaScript](#javascript)
-* [Linux](#linux)
-* [Network](#network)
-* [MacOS](#macos)
-* [Python](#python)
 * [IDE](#ide)
     ```
     ├── IntelliJ
@@ -50,6 +45,11 @@
     └── VSCode
     ```
 * [Infrastructure](#infrastructure)
+* [JavaScript](#javascript)
+* [Linux](#linux)
+* [MacOS](#macos)
+* [Network](#network)
+* [Python](#python)
 
 
 
@@ -129,34 +129,6 @@
 [↑ return to TOC](#table-of-contents)
 
 
-## JavaScript
-
-## Linux
-|                     |            |
-|---------------------| :--------- |
-|[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
-|[Linux Commands](https://github.com/8luebottle/TIL/blob/master/Linux/linux_commands.md)| 03.09.2020 |
-
-[↑ return to TOC](#table-of-contents)
-
-
-## MacOS
-|                     |            |
-|---------------------| :--------- |
-|[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
-
-[↑ return to TOC](#table-of-contents)
-
-## Network
-|                     |            |
-|---------------------| :--------- |
-|[SMTP](#)            | 03.16.2020 |
-
-[↑ return to TOC](#table-of-contents)
-
-## Python
-
-
 ## IDE
 ### IntelliJ
 |                     |            |
@@ -174,10 +146,46 @@
 |[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
 |[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 02.05.2020 |
 
+[↑ return to TOC](#table-of-contents)
+
+
 
 ## Infrastructure
 |                     |            |
 |---------------------| :--------- |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
+
+[↑ return to TOC](#table-of-contents)
+
+
+## JavaScript
+
+
+## Linux
+|                     |            |
+|---------------------| :--------- |
+|[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
+|[Linux Commands](https://github.com/8luebottle/TIL/blob/master/Linux/linux_commands.md)| 03.09.2020 |
+
+[↑ return to TOC](#table-of-contents)
+
+
+## MacOS
+|                     |            |
+|---------------------| :--------- |
+|[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Network
+|                     |            |
+|---------------------| :--------- |
+|[SMTP](https://github.com/8luebottle/TIL/blob/master/Network/smtp.md)| 03.16.2020 |
+
+[↑ return to TOC](#table-of-contents)
+
+## Python
+
 
 [↑ return to TOC](#table-of-contents)
