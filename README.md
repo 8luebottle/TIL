@@ -78,6 +78,7 @@
 |---------------------| :--------- |
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 |[Redis](https://github.com/8luebottle/TIL/blob/master/Database/redis.md)| 03.12.2020 |
+|[SQL Drop](https://github.com/8luebottle/TIL/blob/master/Database/sql_drop.md)| 03.18.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
