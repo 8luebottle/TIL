@@ -18,11 +18,11 @@ gorm 은 Go의 ORM 라이브러리이다.
 
 * gorm 코드 열어보기
     * [gorm DB 구조체](#gorm의-구조체)
-    * [gorm.Debug](#gorm.Debug())
-    * [gorm.clone](#gorm.clone())
-    * [gorm.LogMode](#gorm.LogMode())
-    * [gorm.AutoMigrate](#gorm.AutoMigrate())
-    * [gorm.Open](#gorm.Open())
+    * [gorm.Debug](#gormDebug)
+    * [gorm.clone](#gormclone)
+    * [gorm.LogMode](#gormLogMode)
+    * [gorm.AutoMigrate](#gormAutoMigrate)
+    * [gorm.Open](#gormOpen)
 
 
 
