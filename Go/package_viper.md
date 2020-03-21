@@ -9,6 +9,7 @@
     * [viper.Readconfig](#viperreadconfig)
     * [viper.ReadInConfig](#viperreadinconfig)
     * [viper.WriteConfig](#viperwriteconfig)
+    * [viper.SafeWriteConfig](#vipersafewriteconfig)
     * [viper.Set](#viperset)
     * [viper.MergeInConfig](#vipermergeinconfig)
 
@@ -121,6 +122,21 @@ func (v *Viper) WriteConfig() error {
 		return err
 	}
 	return v.writeConfig(filename, true)
+}
+```
+
+[↑ return to TOC](#table-of-contents)
+
+
+### viper.SafeWriteConfig
+SafeWriteConfig 는 해당 경로에 config 파일이 존재하지 않을시에만 파일을 작성한다.   
+그로인해 덮어쓰기가 발생하지 않는다. 안전한 파일 작성이 가능하다.  
+```go
+func (v *Viper) SafeWriteConfig() error {
+	if len(v.configPaths) < 1 {
+		return errors.New("missing configuration for 'configPath'")
+	}
+	return v.SafeWriteConfigAs(filepath.Join(v.configPaths[0], v.configName+"."+v.configType))
 }
 ```
 
