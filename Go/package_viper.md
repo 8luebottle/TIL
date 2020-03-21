@@ -12,7 +12,7 @@
     * [viper.Set](#viperset)
     * [viper.MergeInConfig](#vipermergeinconfig)
 
-## Viper Basic
+## viper Basic
 viper 은 유명한 configuration 패키지로써 많은 Go 프로젝트들 내에서 사용되었다. 
 
 * **Hugo** : 정적 사이트 생성기
@@ -28,7 +28,7 @@ Go 에서 env variable 을 관리하기 위해 자주 사용되는 패키지들�
 1. godotenv package
 1. viper package
 
-이 중에 viper package 에 대해 알아보자.
+이 중 viper package 에 대해 알아보자.
 
 ### Install
 ```go get github.com/spf13/viper```
@@ -69,7 +69,7 @@ func (v *Viper) ReadConfig(in io.Reader) error {
     return v.unmarshalReader(in, v.config)
 }
 ```
-* key 가 파일내에 존재하지 않을 때는 해당 key 는 nil 값으로 설정된다.
+* key 가 파일내에 존재하지 않을 때 해당 key 는 nil 값으로 설정된다.
 
 [↑ return to TOC](#table-of-contents)
 
@@ -112,7 +112,7 @@ func (v *Viper) ReadInConfig() error {
 
 
 ### viper.WriteConfig
-현재의 viper configuration 을 파일에 쓴다. 파일이 위치는 미리 지정해둔 경로이다.  
+현재의 viper configuration 을 파일에 쓴다. 파일이 작성되는 위치는 미리 지정해둔 경로이다.  
 만약 경로가 설정되 있지 않다면 err 를 리턴한다.
 ```go
 func (v *Viper) WriteConfig() error {
