@@ -65,8 +65,8 @@ viper 에서 config 파일을 읽어들이는 메서드는 두 가지가 있다.
 Configuration 파일을 읽어들인다.  
 ```go
 func (v *Viper) ReadConfig(in io.Reader) error {
-v.config = make(map[string]interface{})
-return v.unmarshalReader(in, v.config)
+    v.config = make(map[string]interface{})
+    return v.unmarshalReader(in, v.config)
 }
 ```
 * key 가 파일내에 존재하지 않을 때는 해당 key 는 nil 값으로 설정된다.
