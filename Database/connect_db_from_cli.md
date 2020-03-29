@@ -1,6 +1,6 @@
 # Connect Database From Commandline
 > MySQL 또는 MariaDB에 접속하기  
-여
+
 터미널을 통해 Database에 접속하는 법을 알아보자.  
 
 ```MariaDB``` 를 만든 사람은 ```MySQL``` 을 만든 사람(Monty Widenius)과 동일하다.  
@@ -11,7 +11,7 @@
 ```
 mysql -u <userName> -p
 ```
-* host address 를 써주지 않으면 localhost 로 결정된다.
+* host name 을 기입하지 않으면 localhost 로 결정된다.
 
 ### For Remote Server
 ```
