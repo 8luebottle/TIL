@@ -8,7 +8,7 @@
 * 🇰🇷 Korean
 
 #### 📌 Commit Message Convention
-``` DD.MM.YYYY : <Categories>```
+``` MM.DD.YYYY : <Categories>```
 
 #### 📌 TIL File Extensions
 * .md
