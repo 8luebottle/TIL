@@ -61,6 +61,11 @@
 |---------------------| :--------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
 
+### Cloud Computing
+|                     |            |
+|---------------------| :--------- |
+|[Cloud Computing](https://github.com/8luebottle/TIL/blob/master/Cloud/Cloud-Computing/cloud_computing.md)| 04.08.2020 |
+
 [↑ return to TOC](#table-of-contents)
 
 
