@@ -24,7 +24,7 @@
 * [Cloud](#cloud)
     ```
     ├── AWS
-    ├── Cloud Computing
+    ├── CloudComputing
     └── GCP
     ```
 * [ComputerScience](#computer-science)
@@ -64,7 +64,7 @@
 ### Cloud Computing
 |                     |            |
 |---------------------| :--------- |
-|[Cloud Computing](https://github.com/8luebottle/TIL/blob/master/Cloud/Cloud-Computing/cloud_computing.md)| 04.08.2020 |
+|[Cloud Computing](https://github.com/8luebottle/TIL/blob/master/Cloud/CloudComputing/cloud_computing.md)| 04.08.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
