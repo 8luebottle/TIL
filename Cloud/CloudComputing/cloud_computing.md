@@ -41,10 +41,11 @@ WIP : 틈틈이 지속적으로 작성중인 글 입니다.
 
 **클라우드 이전 : On-premise**  
 클라우드 서비스가 등장하기 전 모든 회사는 온프레미스 환경에서 고객들에게 서비스를 제공하였다. 
- 
-<img width="500" alt="on-premise" src="https://user-images.githubusercontent.com/48475824/78931900-97b9fc00-7ae1-11ea-9c33-409e0902d28e.png">
 
-On-premise는 시스템 운용시 필요한 설비들이 자체 회사 내에(on the  premises) 있는 것을 말한다.  
+<img width="550" alt="on-premise" src="https://user-images.githubusercontent.com/48475824/78931900-97b9fc00-7ae1-11ea-9c33-409e0902d28e.png">
+
+On-premise는 시스템 운용시 필요한 설비들이 자체 회사 내에(on the  premises) 있는 것을 말한다. 
+
 클라우드 컴퓨팅이 등장하기 전부터 사용 되어진 전통적인 방식이다. 서버와 네트워크 기기등을 모두 자사에서 관리하기에 기업이 원하는 방식대로 커스터마이징을 할 수 있다. 라이선스와 버전업도 직접 관리한다.
 
 **AWS**  
@@ -62,12 +63,13 @@ On-premise는 시스템 운용시 필요한 설비들이 자체 회사 내에(on
 #### 장점 | 유지관리
 
 간단한 유지관리.  
-Virtualization, Hardware, Storage, Server등 많은 부분을 관리할 필요가 없다. 최소한의 작업만으로 편리하게 시스템을 관리 할 수 있게 된다. 클라우드를 이용함으로써 개발자는 이전에 인프라에 썻던 시간들을 집중적으로 프로젝트에 사용 할 수 있게 된다.
+Virtualization, Hardware, Storage, Server등 많은 부분을 관리할 필요가 없다. 최소한의 작업만으로 편리하게 시스템을 관리 할 수 있게 된다.  
+클라우드를 이용함으로써 개발자는 이전에 인프라에 썻던 시간들을 집중적으로 프로젝트에 사용 할 수 있게 된다.
 
 #### 장점 | 유연성 증가
 
-인프라를 조정하는데 유연성이 확장되었다.  
-트래픽이 급변하거나 예측할 수 없는 환경에서도 유연성을 자랑한다. 오토스케일링(Auto Scaling)을 통해 용량을 동적으로 확장시키거나 축소시킬 수 있다.
+인프라를 조정하는데 유연성이 확장되었다. 트래픽이 급변하거나 예측할 수 없는 환경에서도 유연성을 자랑한다.  
+오토스케일링(Auto Scaling)을 통해 용량을 동적으로 확장시키거나 축소시킬 수 있다.
 
 #### 장점 | 글로벌 서비스
 
@@ -107,7 +109,7 @@ Virtualization, Hardware, Storage, Server등 많은 부분을 관리할 필요�
   * PaaS
   * SaaS
 
-<img width="520" alt="cloud-example" src="https://user-images.githubusercontent.com/48475824/78933059-9c7faf80-7ae3-11ea-8c65-69ca78d46e03.png">
+<img width="550" alt="cloud-example" src="https://user-images.githubusercontent.com/48475824/78933059-9c7faf80-7ae3-11ea-8c65-69ca78d46e03.png">
 
 피라미드 아래로 내려갈 수록 복잡성이 증가하는데 클라우드 이용자가 관리해야 하는 항목들이 많아지기 때문이다.  
 피라미드 위로 올라갈수록 직접 관리할 항목이 줄어들기에 컨트롤하기는 편하지만 그만큼 유연성이 떨어지게 된다.  
