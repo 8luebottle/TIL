@@ -1,7 +1,7 @@
 # Echo-Middleware
 > Reference : [Echo Doc](https://echo.labstack.com/)
 
-각각의 Middleware 의 세부적인 내용은 개별의 포스팅에서 다룰 것이다.  
+각 Middleware 의 세부적인 내용은 개별의 포스팅에서 다룰 것이다.  
 
 ### Table of Contents
 
@@ -65,7 +65,7 @@ e := echo.New()
 e.Pre(middleware.HTTPSRedirect())
 ```
 
-* **HTTPSRedirect**  
+* **HTTPSRedirect**   
   http 요청을 https 로 리다이렉트  
 
   ```http://github.com/8luebottle```  
@@ -78,7 +78,7 @@ e.Pre(middleware.HTTPSRedirect())
   e.Pre(middleware.HTTPSRedirect())
   ```
 
-* **HTTPSWWWRedirect**  
+* **HTTPSWWWRedirect**   
   http 요청을 www https 로 리다이렉트.  
 
   ```http://github.com/8luebottle```  
@@ -91,7 +91,7 @@ e.Pre(middleware.HTTPSRedirect())
   e.Pre(middleware.HTTPSWWWRedirect())
   ```
 
-* **WWWRedirect**
+* **WWWRedirect**   
   받은 요청을 http www 로 리다이렉트.
 
   ```http://github.com/8luebottle```  
@@ -104,7 +104,7 @@ e.Pre(middleware.HTTPSRedirect())
   e.Pre(middleware.WWWRedirect())
   ```
 
-* **NonWWWRedirect**
+* **NonWWWRedirect**   
   받은 요청을 https 로 리다이렉트. (w/o www)
 
   ```http://www.github.com/8luebottle```  
@@ -126,7 +126,7 @@ e.Pre(middleware.HTTPSRedirect())
 
 [↑ return to TOC](#table-of-contents)
 
-#### After Router
+#### After Router  
 이 레벨에서 미들웨어를 등록할 시에는 대부분의 경우 ```Use()``` 함수를 사용한다.  
 이곳에서 등록된 미들웨어는 라우터 이후(after)에 실행되게 된다.
 
@@ -153,7 +153,7 @@ e.Use(middleware.Recover())
 
 [↑ return to TOC](#table-of-contents)
 
-### Route Level
+### Route Level  
 새 Route 를 정의함을 통해 미들웨어를 특정 핸들러에게만 적용시킬 수 있다.
 
 ```go
@@ -187,3 +187,5 @@ e.User(middleware.LoggerWithConfig(middleware.LoggerConfig{
     },
 }))
 ```
+
+[↑ return to TOC](#table-of-contents)
