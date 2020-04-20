@@ -1,16 +1,35 @@
 # Echo-Middleware
 > Reference : [Echo Doc](https://echo.labstack.com/)
 
+각각의 Middleware 의 세부적인 내용은 개별의 포스팅에서 다룰 것이다.  
+
 ### Table of Contents
 
 * [3 Levels](#3-levels)
   * [Group Level](#group-level)
     * [Before Router](#before-router)
+      * HTTPSRedirect
+      * HTTPSWWWRedirect
+      * WWWRedirect
+      * NonWWWRedirect
+      * AddTrailingRedirect
+      * AddTrailingSlash
+      * RemoveTrailingSlash
+      * MethodOverride
+      * Rewrite
     * [After Router](#after-router)
+      * BodyLimit
+      * Logger
+      * GZip
+      * Recover
+      * BasicAuth
+      * JWTAuth
+      * Secure
+      * CORS
+      * Static
   * [Root Level](#root-level)
   * [Route Level](#route-level)
 * [Skipping Middleware](#skipping-middleware)
-
 
 ## 3 Levels
 
@@ -38,15 +57,72 @@ Root 레벨은 Router 가 '실행되기 이전'과 '실행된 후' 라는 두 �
 #### Before Router
 이 레벨에서 미들웨어를 등록할 시에는 ```Pre()``` 함수를 사용한다.  
 
-* HTTPSRedirect
-* HTTPSWWWRedirect
-* WWWRedirect
-* NonWWWRedirect
+```go
+// E.g.
+import "github.com/labstack/echo/middleware"
+
+e := echo.New()
+e.Pre(middleware.HTTPSRedirect())
+```
+
+* **HTTPSRedirect**  
+  http 요청을 https 로 리다이렉트  
+
+  ```http://github.com/8luebottle```  
+  ↓ ↓ ↓ ↓ ↓ ↓ ↓ Redirect ↓ ↓ ↓ ↓ ↓ ↓ ↓  
+  ```https://github.com/8luebottle```  
+
+  ```go
+  // E.g.
+  e := echo.New()
+  e.Pre(middleware.HTTPSRedirect())
+  ```
+
+* **HTTPSWWWRedirect**  
+  http 요청을 www https 로 리다이렉트.  
+
+  ```http://github.com/8luebottle```  
+  ↓ ↓ ↓ ↓ ↓ ↓ ↓ Redirect ↓ ↓ ↓ ↓ ↓ ↓ ↓  
+  ```https://www.github.com/8luebottle```  
+
+  ```go
+  // E.g.
+  e := echo.New()
+  e.Pre(middleware.HTTPSWWWRedirect())
+  ```
+
+* **WWWRedirect**
+  받은 요청을 http www 로 리다이렉트.
+
+  ```http://github.com/8luebottle```  
+  ↓ ↓ ↓ ↓ ↓ ↓ ↓ Redirect ↓ ↓ ↓ ↓ ↓ ↓ ↓  
+  ```http://www.github.com/8luebottle```  
+
+  ```go
+  // E.g.
+  e := echo.New()
+  e.Pre(middleware.WWWRedirect())
+  ```
+
+* **NonWWWRedirect**
+  받은 요청을 https 로 리다이렉트. (w/o www)
+
+  ```http://www.github.com/8luebottle```  
+  ↓ ↓ ↓ ↓ ↓ ↓ ↓ Redirect ↓ ↓ ↓ ↓ ↓ ↓ ↓  
+  ```https://github.com/8luebottle```  
+
+  ```go
+  // E.g.
+  e := echo.New()
+  e.Pre(middleware.NonWWWRedirect())
+  ```
+
 * AddTrailingRedirect
 * AddTrailingSlash
 * RemoveTrailingSlash
 * MethodOverride
 * Rewrite
+
 
 [↑ return to TOC](#table-of-contents)
 
@@ -56,9 +132,7 @@ Root 레벨은 Router 가 '실행되기 이전'과 '실행된 후' 라는 두 �
 
 ```go
 // E.g.
-import (
-    "github.com/labstack/echo/middleware"
-)
+import "github.com/labstack/echo/middleware"
 
 e := echo.New()
 e.Use(middleware.Logger())
@@ -98,6 +172,8 @@ e.GET("/", <HandlerA>, <MiddlewareB>)
   ```go	
   Skipper func(echo.Context) bool
   ```
+  Default 값은 false 로 설정되어 있다.
+  true 일 시 Processing 되고 있는 미들웨어를 skip.
 
 ```go
 // E.g.
