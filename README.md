@@ -133,6 +133,7 @@
 | [For Loop](https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md) | 02.05.2020 |
 | [Functions](https://github.com/8luebottle/TIL/blob/master/Go/functions.md) | 02.01.2020 |
 | [Go Playground](https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md) | 01.21.2020 |
+| [Package fmt](https://github.com/8luebottle/TIL/blob/master/Go/package_fmt.md) | 04.22.2020 |
 | [Package gorm](https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md) | 03.17.2020 |
 | [Package http](https://github.com/8luebottle/TIL/blob/master/Go/package_http.md) | 03.01.2020 |
 | [Package json](https://github.com/8luebottle/TIL/blob/master/Go/package_json.md) | 02.25.2020 |
