@@ -61,7 +61,7 @@
 |                     |            |
 |---------------------| :--------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
-|[SAM](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sam.md)| 04.23.2020 |
+|[SAM](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sam.md)| 04.24.2020 |
 |[SQS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sqs.md)| 04.23.2020 |
 
 
