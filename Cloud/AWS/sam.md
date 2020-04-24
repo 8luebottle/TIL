@@ -32,7 +32,11 @@ AWS SAM 을 사용하여 서버리스 어플리케이션을 정의할 수 있다
   - [CLI](#cli)
     - [Install SAM CLI](#install-sam-cli)
     - [Upgrade SAM CLI](#upgrade-sam-cli)
-  - [Deploy](#deploy)
+
+- [Deploy](#deploy)
+
+- [Commands](#commands)
+  - [Local](#local)
 
 ## AWS SAM Components
 
@@ -245,7 +249,7 @@ AWSTemplateFormatVersion: 2020-04-23
     STAGE: prod
   ```
 
-* EventInvokeConfig  
+* **EventInvokeConfig**  
   자료형 : EventInvokeConfig 객체  
 
   예)  
@@ -265,11 +269,11 @@ AWSTemplateFormatVersion: 2020-04-23
           Destination: ARN of [SQS | SNS | EventBridge | Function]
   ```
 
-* Events  
+* **Events**  
   자료형 : Map of string  
   Key 값은 알파벳과 숫자로만 이루어져 있다.  
 
-* FunctionName  
+* **FunctionName**  
   자료형 : string  
   람다 함수명.  
   최대 64 Characters 까지  
@@ -348,8 +352,8 @@ AWSTemplateFormatVersion: 2020-04-23
 
 
 ### CLI
-
-SAM Command Line Interface
+SAM Command Line Interface  
+람다 사용을 위한 명령줄 인터페이스  
 
 #### Install SAM CLI
 Brew 를 통한 설치법은 아래와 같다.
@@ -369,18 +373,81 @@ brew upgrade aws-sam-cli
 [↑ return to TOC](#table-of-contents)
 
 
-### Deploy
+## Deploy
 배포 과정은 다음과 같다. (대소문자는 구분 안함)
+
 * SAM build
 * SAM package
 * SAM deploy
 
-#### SAM Build
+### SAM Build
 
 
-#### SAM Package
+### SAM Package
 
 
-#### SAM Deploy
+### SAM Deploy
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Commands
+AWS SAM 명령어에 대해 알아보자.
+
+### Local
+
+#### generate-event
+
+```sam local generate-event [OPTIONS] COMMAND [ARGS]...```
+* COMMAND
+  * alexa-skills-kit
+  * alexa-smart-home
+  * apigateway
+  * batch
+  * cloudformation
+  * cloudfront
+  * cloudwatch
+  * codecommit
+  * codepipeline
+  * cognito
+  * config
+  * dynamodb
+  * kinesis
+  * lex
+  * rekognition
+  * s3
+  * ses
+  * sns
+  * sqs
+  * stepfunctions
+
+#### invoke
+```invoke``` 는 해당 함수를 한번만 실행시킨다. 함수는 실행이 완료된 후에는 종료된다.  
+<!-- 비동기 이벤트를  -->
+
+* sam local invoke  
+  로컬 람다 함수 실행시키기  
+  ```sam local invoke [OPTIONS] [FUNCTION_IDENTIFIER]```
+
+  * ```[OPTIONS]```  
+    OPTIONS 에 들어갈 flags
+    * ```--no-event```  
+      event 없이 함수를 실행할 때  
+
+    * ```-e``` 또는 ```--event```  
+      event 와 함께 함수를 실행할 때  
+      JSON 파일 명과 함께 적어 실행시킨다.  
+      예)
+      ```sam lambda invoke <fucntionName> --event <evnetName.json>```
+
+    * ```--skip-pull-image```  
+      최신 도커 이미지 다운로드를 skip 하고 싶을때  
+      skip 성공시 : ```Requested to skip pulling images ...```
+
+    * ```--region```  
+      AWS 리전 설정  
+      예) ```us-west-2```
+
+
 
 [↑ return to TOC](#table-of-contents)
