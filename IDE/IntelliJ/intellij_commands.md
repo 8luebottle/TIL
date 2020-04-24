@@ -30,6 +30,11 @@ Key Map : macOS
     * Extract Method : ```⌥ + ⌘ + m```
     * Extract Variable : ```⌥ + ⌘ + v```
 
+## N
+  * Navigate
+    * Navigate Back :  ```⌘ + [```
+    * Navigate Front : ```⌘ + ]```
+
 
 ## R
   * Refactor : ```⌃ + T```

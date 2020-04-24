@@ -156,7 +156,7 @@
 ### IntelliJ
 |                     |            |
 |---------------------| :--------- |
-|[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 03.06.2020 |
+|[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 04.24.2020 |
 
 ### VS Code
 |                     |            |
