@@ -65,7 +65,7 @@
 | 19   | CHARGEN                                | O   | O   |
 | 20   | FTP - Data Transfer                    | O   |     |
 | 21   | FTP - Control                          | O   |     |
-| 22   | SSH                                    | O   | O   |
+| 22   | [SSH](https://github.com/8luebottle/TIL/blob/master/Network/ssh.md)                                 | O   | O   |
 | 23   | Telnet Protocol                        | O   |     |
 | 24   | Private mail                           | O   | O   |
 | 25   | [SMTP](https://github.com/8luebottle/TIL/blob/master/Network/smtp.md)                                | O   |     |
