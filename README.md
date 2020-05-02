@@ -178,7 +178,7 @@
 |                     |            |
 |---------------------| :--------- |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
-|[IAC](https://github.com/8luebottle/TIL/blob/master/Infrastructure/iac.md) | 05.02.2020 |
+|[IaC](https://github.com/8luebottle/TIL/blob/master/Infrastructure/iac.md) | 05.02.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
