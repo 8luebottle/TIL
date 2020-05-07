@@ -189,7 +189,8 @@ container, image의 세부 정보를 JSON 형태로 출력하는 명령어.
           "Options": null,
           "Scope": "local"
       }
-    ]```
+    ]
+    ```
 
 [↑ return to TOC](#table-of-contents)
 
