@@ -120,7 +120,7 @@
 |                     |            |
 |---------------------| :--------- |
 | [Blame](https://github.com/8luebottle/TIL/blob/master/Git/blame.md) | 04.27.2020 |
-| [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 02.20.2020 |
+| [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 05.23.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
