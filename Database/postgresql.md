@@ -8,7 +8,7 @@ Postgre의 기본 포트는 ```5432```
  * [Start server](#start-server)
     * [via Terminal](#via-terminal)
     * [via PSequel](#via-psequel)
- * [postgreSQL Commands](#postgresql-commands)  
+ * [postgreSQL Commands](#commands)  
 
 ## Installation
 
@@ -133,7 +133,7 @@ PSequel 을 실행하여, 하기 정보를 입력 후 사용
 ```DROP TABLE tableName CASCADE;```
 
 
-### DUMP
+### Dump
 * Dump SQL File Into the Database   
 ```\i '\file\path\fileName.sql'```  
 ```psql databaseNAme < fileName.sql```  
