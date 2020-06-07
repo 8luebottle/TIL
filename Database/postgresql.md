@@ -95,6 +95,50 @@ PSequel 을 실행하여, 하기 정보를 입력 후 사용
   새 유저 생성.  
   ```CREATE USER "userName";```
 
+
+### Describe
+* Describe Table  
+```\d tableName;```  
+```\d+ tableName;```   
+  ```bash
+  # example
+  # \d tokens;
+                    Table "public.tokens"
+    Column   |  Type  | Collation | Nullable | Default 
+  ------------+--------+-----------+----------+---------
+  token      | text   |           | not null | 
+  created_at | bigint |           | not null | 
+  Indexes:
+      "tokens_pkey" PRIMARY KEY, btree (token)
+  ```
+  ```bash
+  # example
+  # \d+ tokens;
+                            Table "public.tokens"
+    Column   |  Type  | Collation | Nullable | Default | Storage  | Stats target | Description 
+  ------------+--------+-----------+----------+---------+----------+--------------+-------------
+  token      | text   |           | not null |         | extended |              | 
+  created_at | bigint |           | not null |         | plain    |              | 
+  Indexes:
+      "tokens_pkey" PRIMARY KEY, btree (token)
+  Access method: heap
+  ```
+
+
+### Drop
+* Drop Table  
+```DROP TABLE tableName```
+
+* Drop Table which has dependency to other table   
+```DROP TABLE tableName CASCADE;```
+
+
+### DUMP
+* Dump SQL File Into the Database   
+```\i '\file\path\fileName.sql'```  
+```psql databaseNAme < fileName.sql```  
+
+
 ### Grant
 * 선택한 Database 의 Owner 설정  
     ```grant all privileges on database "databaseName" to "userName";```
@@ -113,9 +157,9 @@ PSequel 을 실행하여, 하기 정보를 입력 후 사용
 ```\l```
 
 * List Tables  
-```dt```  
-```dt *```  → 모든 DB의 tables 보기.  
-```dg```  
+```\dt```  
+```\dt *```  → 모든 DB의 tables 보기.  
+```\dg```  
 
   테이블이 존재하지 않을 시
   ```
@@ -123,7 +167,7 @@ PSequel 을 실행하여, 하기 정보를 입력 후 사용
   ```
 
 * List Database Users  
-```du```  
-```du +``` → Description 정보까지 보기.
+```\du```  
+```\du+``` → Description 정보까지 보기.
 
 [↑ return to TOC](#table-of-contents)
