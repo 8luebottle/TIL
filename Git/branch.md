@@ -113,10 +113,10 @@
 1. ### Delete
     #### Delete Branch
     브랜치 삭제  
-    ```git branch -d \<branchName>```
+    ```git branch -d <branchName>```
 
     브랜치 강제 삭제  
-    ```git branch -D \<branchName>```
+    ```git branch -D <branchName>```
     * 대문자 D를 사용  
 
     #### Delete Remote Branch
