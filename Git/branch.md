@@ -111,13 +111,17 @@
 
     
 1. ### Delete
-    #### Delete Branch
+    #### Delete Local Branch
     브랜치 삭제  
     ```git branch -d <branchName>```
 
     브랜치 강제 삭제  
     ```git branch -D <branchName>```
     * 대문자 D를 사용  
+
+    #### Delete All Local Branches Except Master and Develop
+    Master와 Develop 브랜치를 제외한 모든 브랜치 삭제  
+    ```git branch | grep -v "master\|develop" | xargs git branch -D```
 
     #### Delete Remote Branch
     원격 저장소의 브랜치 삭제  
