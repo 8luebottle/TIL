@@ -91,7 +91,7 @@
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 |[Join](https://github.com/8luebottle/TIL/blob/master/Database/join.md)| 06.13.2020 |
 |[Optimizer](https://github.com/8luebottle/TIL/blob/master/Database/optimizer.md)| 04.14.2020 |
-|[postgreSQL](https://github.com/8luebottle/TIL/blob/master/Database/postgresql.md)| 06.08.2020 |
+|[postgreSQL](https://github.com/8luebottle/TIL/blob/master/Database/postgresql.md)| 06.13.2020 |
 |[Redis TTL](https://github.com/8luebottle/TIL/blob/master/Database/redis_ttl.md)| 03.28.2020 |
 |[Redis](https://github.com/8luebottle/TIL/blob/master/Database/redis.md)| 03.12.2020 |
 |[SQL Drop](https://github.com/8luebottle/TIL/blob/master/Database/sql_drop.md)| 03.18.2020 |
