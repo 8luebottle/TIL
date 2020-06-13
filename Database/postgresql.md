@@ -147,20 +147,32 @@ PSequel 을 실행하여, 하기 정보를 입력 후 사용
 * **Explain Analyze**  
   Optimizer 의 실행계획대로 실제 실행한 결과 보기  
   ```EXPLAIN ANALYZE <yourQuery>;```
+
+  ```sql
+  # EXPLAIN ANALYZE SELECT * FROM items ORDER BY created_at DESC  LIMIT 3;
+                              QUERY PLAN
+   -------------------------------------------------------------------
+   Limit  (cost=0.28..0.86 rows=3 width=245) (actual time=1.626..1.630 rows=3 loops=1)
+   ->  Index Scan Backward using idx_items_created_at on items  (cost=0.28..551.08 rows=2864 width=245) (actual time=1.624..1.628 rows=3 loops=1)
+   Planning Time: 0.145 ms
+   Execution Time: 1.655 ms
+   (4 rows)
+  ```
+
 * **Explain w/ Buffers**  
   버퍼 관련 정보가 포함된 실행계획 보기  
   ```EXPLAIN (BUFFERS, ANALYZE) <yourQuery>;```
 
   ```sql
   # EXPLAIN (BUFFERS, ANALYZE) SELECT * FROM items;
-                            QUERY PLAN
+                              QUERY PLAN
    ------------------------------------------------------------------
    Seq Scan on items  (cost=0.00..128.64 rows=2864 width=245) (actual time=0.019..0.669 rows=2864 loops=1) 
    Buffers: shared hit=100 Planning Time: 0.091 ms 
    Execution Time: 0.933 ms
    (4 rows)
   ```
-  
+
 
 ### Grant
 * 선택한 Database 의 Owner 설정  
