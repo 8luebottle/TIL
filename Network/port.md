@@ -22,6 +22,7 @@
     * [HTTP & HTTPS](#http-&-https)
       * 합정역 5번출구
   * [Registered port](#registered-port)
+* [Check Port Info](#check-port-info)
 
 ## About Port
 포트는 데이터를 주고 받을 때 통과하는 통로(또는 문)이다.
@@ -326,5 +327,14 @@ Super User의 권한이 없어도 사용 가능.
 
 동적 포트 | 범위는 (49152~655535)  
 개인적인 용도로 사용한다.
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Check Port Info
+사용중인 포트 정보 보기.  
+```sudo lsof -i -P -n | grep LISTEN```
+
+<img width=800 alt="port info" src="https://user-images.githubusercontent.com/48475824/84724260-b0073500-afc2-11ea-935d-83bcb6c6e3b2.png">
 
 [↑ return to TOC](#table-of-contents)
