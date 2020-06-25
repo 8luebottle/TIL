@@ -5,7 +5,7 @@
 
 [리눅스 관련 포스트](https://babytiger.netlify.com/posts/intro-linux/)
 
-> 링크를 클릭하여 이동 
+> 링크를 클릭하여 이동  
 
 | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#H) | [G](#G) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) |
  [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) |
@@ -107,6 +107,12 @@
     * Divide a file unto serveral parts  
     ```cut```  
 
+
+## F
+  * Find
+    * find a file  
+    ```find / -iname 'fileName'```   
+    ```find / -iname 'fileName*'```
 
 
 ## K
