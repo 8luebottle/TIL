@@ -178,13 +178,13 @@
 ### VS Code
 |                     |            |
 |---------------------| :--------- |
-|[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 07.07.2020 |
+|[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 01.30.2020 |
 
 ### Vim
 |                     |            |
 |---------------------| :--------- |
 |[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
-|[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 02.05.2020 |
+|[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 07.07.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
