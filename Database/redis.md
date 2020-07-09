@@ -34,6 +34,9 @@
 
  * [Redis Memory](#redis-memory)  
    메모리 한계 | 메모리 관리
+   
+ * [Run Redis](#run-redis)  
+   Redis Container 실행 
 
    
  ## Redis Basic
@@ -211,3 +214,13 @@ Eviction 이란 Maxmemory 초과로 데이터가 지워지는 것을 뜻한다.
 List, Hash, Sorted Set 과 같은 구조를 ziplist 로 바꿀 수 있다.
 
 [↑ return to TOC](#table-of-contents)
+
+
+ ## Run Redis
+ ### Run Redis Container
+ 도커에 적재되어 있는 Redis 컨테이너를 백그라운드 모드로 실행시키기.  
+ ```docker run -d redis```   
+ 위의 명령어 입력후 받은 Container ID를 아래와 같이 입력.   
+ ```docker exec -it <containerID> redis-cli```
+ 
+ * ```-d``` : detached mode

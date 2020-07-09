@@ -19,6 +19,12 @@ Vim has 3 modes.
   * Normal Mode → Insert mode   
   <code>i</code> : insert   
   Enter insert mode
+    * Insert at the beginning of the line  
+    <code>I</code>
+    * Insert end of the line  
+    <code>A</code>
+    * Insert at the nend of the word  
+    <code>ea</code>
 
   * Insert mode → Normal Mode   
   <code>v</code> : Visual  
@@ -95,6 +101,7 @@ Vim has 3 modes.
   <code>L</code> : Low
 
 
+
 ## Jumping around
   * Jump to specific line.  
   <code>:\<line#></code>
@@ -123,8 +130,14 @@ Vim has 3 modes.
   * Jump to beginning of the line.  
   <code>0</code>
 
-  * Jumpt to end of the line.  
+  * Jump to end of the line.  
   <code>$</code>
+  
+  * Jump to next paragraph  
+  <code>}</code>
+  
+  * Jump to previous paragraph  
+  <code>{</code>
 
 
 ## Scrolling screen
@@ -144,7 +157,7 @@ Vim has 3 modes.
   d : down
 
   * Move backward half a screen.  
-  <code>ctr</code> + <code>u</code>
+  <code>ctr</code> + <code>u</code>  
   u : up
 
 
@@ -152,7 +165,7 @@ Vim has 3 modes.
   * Find a word under cursor.  
   <code>*</code>
 
-  * Find a character after cursor in the line.
+  * Find a character after cursor in the line   
   <code>f</code>
 
   * Serach string.  
