@@ -59,6 +59,7 @@
 * [Network](#network)
 * [PHP](#php)
 * [Python](#python)
+* [Terraform](#terraform)
 
 
 
@@ -241,5 +242,9 @@
 
 
 ## Python
+
+[↑ return to TOC](#table-of-contents)
+
+## Terraform
 
 [↑ return to TOC](#table-of-contents)
