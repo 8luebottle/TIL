@@ -221,6 +221,7 @@
 ## MacOS
 |                     |            |
 |---------------------| :--------- |
+|[MacOS Commands](https://github.com/8luebottle/TIL/blob/master/MacOS/mac_commands.md)| 07.17.2020 |
 |[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
 
 [↑ return to TOC](#table-of-contents)
