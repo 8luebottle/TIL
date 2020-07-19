@@ -23,6 +23,7 @@
       * 합정역 5번출구
   * [Registered port](#registered-port)
 * [Check Port Info](#check-port-info)
+* [Kill the Port](#kill-the-port)
 
 ## About Port
 포트는 데이터를 주고 받을 때 통과하는 통로(또는 문)이다.
@@ -336,5 +337,37 @@ Super User의 권한이 없어도 사용 가능.
 ```sudo lsof -i -P -n | grep LISTEN```
 
 <img width=800 alt="port info" src="https://user-images.githubusercontent.com/48475824/84724260-b0073500-afc2-11ea-935d-83bcb6c6e3b2.png">
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Kill the Port
+사용중인 특정 port 를 죽이기.  
+
+특정 <code>port number</code> 의 pid를 확인하기 위해 list 보기  
+```lsof -i:<portNumber>```
+
+Kill the process listening to the specific port.  
+```kill <pid>```  
+또는  
+```kill -9 <pid>```
+* ```-9``` 는 즉각 종료시키는 것을 의미한다. (SIGKILL)
+
+**e.g.**  
+로컬에서 8000 번 포트를 사용하고자 한다. 하지만 이미 사용중이라면 아래와 같은 이미 사용중이라는 메세지를 마주하게 될 것이다.  
+```address already in use 127.0.0.1:8000```  
+8000 번 포트를 종료시키기 위해서는 아래와 같은 절차를 밟으면 된다.  
+```
+lsof -i tcp:8000
+```
+```c
+// result
+COMMAND   PID   USER   FD   TYPE       DEVICE SIZE/OFF NODE NAME
+node    95361 <userName>   26u  IPv4 <address>      0t0  TCP localhost:<info> (LISTEN)
+```
+얻은 PID 정보(```95361```)를 참고하여 입력  
+```
+ kill -9 95361
+```
 
 [↑ return to TOC](#table-of-contents)
