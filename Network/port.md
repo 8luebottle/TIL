@@ -354,18 +354,19 @@ Kill the process listening to the specific port.
 * ```-9``` 는 즉각 종료시키는 것을 의미한다. (SIGKILL)
 
 **e.g.**  
-로컬에서 8000 번 포트를 사용하고자 한다. 하지만 이미 사용중이라면 아래와 같은 이미 사용중이라는 메세지를 마주하게 될 것이다.  
-```address already in use 127.0.0.1:8000```  
+로컬에서 8000 번 포트를 사용하고자 한다. 하지만 현재 사용중이라면 아래와 같이 '이미 사용중'이라는 메세지를 마주하게 될 것이다.  
+> address already in use 127.0.0.1:8000
+
 8000 번 포트를 종료시키기 위해서는 아래와 같은 절차를 밟으면 된다.  
 ```
 lsof -i tcp:8000
 ```
 ```c
 // result
-COMMAND   PID   USER   FD   TYPE       DEVICE SIZE/OFF NODE NAME
+COMMAND   PID   USER       FD   TYPE               DEVICE SIZE/OFF NODE NAME
 node    95361 <userName>   26u  IPv4 <address>      0t0  TCP localhost:<info> (LISTEN)
 ```
-얻은 PID 정보(```95361```)를 참고하여 입력  
+얻은 PID 정보(```95361```)를 참고하여 kill 명령어 입력  
 ```
  kill -9 95361
 ```
