@@ -8,6 +8,11 @@ AWS Lambda 는 AWS 플랫폼에서 함수를 실행하여 데이터를 간편하
   * [FaaS](#faas)
 * [Lambda + Other Services](#lambda-+-other-services)
   * [4 Groups](#4-groups)
+* [Lambda Function](#lambda-function)
+  * [Invocation Type](#invocation-type)
+  * [Invocation Pattern](#invocation-pattern)
+    * [Push Model](#push-model)
+    * [Pull Model](#pull-model)
 * [References](#refrences)
 
 ## About
@@ -107,6 +112,41 @@ Lambda는 서버리스 FaaS 에 해당하는 타입이다.
     - Amazon Elastic File System
     - AWS X-Ray
 
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Lambda Function
+
+### Invocation Type
+Invocation Type 을 통해 람다를 동기 또는 비동기로 설정할 수 있다.  
+
+Invocation Type 이 가질수 있는 값은 총 세가지다.
+1. RequestReponse  
+  동기적으로 다루고 싶을 때
+1. Event  
+  비동기적으로 다루고 싶을 때
+1. DryRun  
+
+### Invocation Pattern 
+Invocation 패턴은 총 두개로 나뉜다.  
+1. **Push Model**  
+  다른 AWS 서비스에서 특정 이벤트가 발생시 람다 함수를 호출 하는 모델.
+    * 예) 'S3 버켓에 새 객체가 추가된 경우'를 이벤트 발생이라 볼 수 있다.
+1. **Pull Model**  
+  Data Source에 새 Record가 도달 했을 때 람다 함수를 호출하는 모델.  
+    * 예) Amazon Kinesis에 생긴 New Record  
+      * 여기서 Record 는 스트림에 저장되는 Data 단위를 말한다.
+
+#### Push Model
+* Amazon S3  
+    * Invocation Type : Event  
+* Amazon Gateway
+    * Invocation Type : Event 또는 RequestResponse
+
+#### Pull Model
+
+[↑ return to TOC](#table-of-contents)
 
 
 ## References

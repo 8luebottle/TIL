@@ -70,7 +70,7 @@
 |                     |            |
 |---------------------| :--------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
-|[Lambda](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md)| 07.20.2020 |
+|[Lambda](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md)| 07.22.2020 |
 |[S3](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md)| 06.29.2020 |
 |[SAM](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sam.md)| 04.24.2020 |
 |[SQS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sqs.md)| 07.22.2020 |
