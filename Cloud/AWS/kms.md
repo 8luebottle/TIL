@@ -1,5 +1,5 @@
 # KMS
-> Reference : [Amazon KMS](https://aws.amazon.com/sqs/)
+> Reference : [Amazon KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 **KMS :** **K**ey **M**anagement **S**ervice
 
