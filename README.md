@@ -246,8 +246,12 @@
 
 
 ## Python
+|                     |            |
+|---------------------| :--------- |
+|[Pretty Print JSON](https://github.com/8luebottle/TIL/blob/master/Python/pretty_print_json.md)| 07.27.2020 |
 
 [↑ return to TOC](#table-of-contents)
+
 
 ## Terraform
 
