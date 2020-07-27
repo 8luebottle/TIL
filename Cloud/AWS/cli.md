@@ -5,8 +5,8 @@
 - [About CLI](#about-cli)
   - [aws configure](aws-configure)
     - [4 Prompts](4-prompts)
-    - [aws configure w/o profile option](aws-configure-w/o-profile-option)
-    - [aws configure w/ profile option](aws-configure-w/-profile-option)
+    - [aws configure w/o profile option](aws-configure-wo-profile-option)
+    - [aws configure w/ profile option](aws-configure-w-profile-option)
 
 ## About CLI
 AWS와 관련된 작업을 수행하기 위한 한 방편으로 CLI를 사용할 수 있다.  
