@@ -3,6 +3,7 @@ gorm 은 Go의 ORM 라이브러리이다.
 
 ### Table of Contents
 * Install gorm
+* Import gorm
 * gorm Basic
    * [gorm.Model](#gorm.Model)
    * [Table Name](#table-name)
@@ -28,9 +29,29 @@ gorm 은 Go의 ORM 라이브러리이다.
 
 ## Install gorm
 gorm 패키지 받기  
+
+이전 경로인 ```jinzhu/gorm``` 에서 
 ```go
 go get github.com/jinzhu/gorm 
 ```
+
+아래의 경로로 변경되었다. ```go-gorm```
+```go
+go get github.com/go-gorm
+```
+
+현재(08.03.2020) 두개의 path 모두 사용 가능. 
+
+
+## Import gorm
+Import gorm package  
+```go
+import (
+    "gorm.io/gorm"
+)
+```
+
+
 
 ## gorm Basic
 ### gorm.Model
@@ -43,10 +64,10 @@ gorm.Model 이 갖고 있는 필드는 아래와 같다.
 
 ```go
 type Model struct {
- ID        uint 
- CreatedAt time.Time
- UpdatedAt time.Time
- DeletedAt *time.Time
+    ID        uint 
+    CreatedAt time.Time
+    UpdatedAt time.Time
+    DeletedAt *time.Time
 }
 ```
 gorm 은 ID 이름을 가진 필드를 Primary Key로 인식한다. 직접 ID 를 PK로 지정해 주지 않아도 자동으로 Primary Key 로 설정된다.
@@ -56,7 +77,7 @@ gorm 은 ID 이름을 가진 필드를 Primary Key로 인식한다. 직접 ID �
 
 ```go
 type Room struct {
-	RoomID      int64   `gorm:"primary_key"`
+	RoomID      int64    `gorm:"primary_key"`
 	Name        string   `json:"name"`
 	Open        bool     `json:"open"`
 }
@@ -97,8 +118,8 @@ Column 이름은 필드의 이름으로 자동 설정된다.
 type User struct {
    ID        uint32   	
    Nickname  string    
-	Email     string    
-	Password  string    
+   Email     string    
+   Password  string    
    CreatedAt time.Time 
    UpdatedAt time.Time
 }
@@ -109,6 +130,20 @@ type User struct {
 * Password → password
 * CreatedAt → created_at
 * UpdatedAt → updated_at
+
+#### Column Name Customization
+직접 Column Name 을 커스터마이징 하고자 한다면 column 이라는 태그를 사용한다.
+소문자 snake case 기준으로 명명해준다.
+```go
+type Falcon9 struct{
+    ID            string   `gorm:"column:fid"
+    Diameter      float32  
+    Mass          int64
+    PayloadToLEO  int64    `gorm:"column:payload_leo"
+    PayloadToGTO  int64    `gorm:"column:payload_gto"
+    PayloadToMars int64    `gorm:"column:payload_mars"
+}
+```
 
 
 ### Timestamp Tracking
