@@ -73,7 +73,7 @@ Athena 는 SQL 을 통해 S3에 저장된 데이터(비정형, 반정형, 정형
 * JDBC  
   **J**ava **D**ata**b**ase **C**onnectivity  
 * ODBC  
-  **O**pen **D**ata**b**ase **C**oneectivity
+  **O**pen **D**ata**b**ase **C**onnectivity
 
 [↑ return to TOC](#table-of-contents)
 
