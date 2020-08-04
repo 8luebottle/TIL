@@ -71,8 +71,8 @@
 |---------------------| :--------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
 |[Athena](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/athena.md)| 08.03.2020 |
-|[CloudFront](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudfront.md)| 08.04.2020 |
 |[CLI](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cli.md)| 07.28.2020 |
+|[CloudFront](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudfront.md)| 08.04.2020 |
 |[KMS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/kms.md)| 07.23.2020 |
 |[Lambda](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md)| 07.22.2020 |
 |[S3](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md)| 06.29.2020 |

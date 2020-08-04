@@ -1,0 +1,40 @@
+# CloudFront
+> Reference : [CloudFront](https://aws.amazon.com/ko/cloudfront/features)
+
+<img width="150" alt="CloudFront" src="https://user-images.githubusercontent.com/48475824/89286048-7da5ba00-d68c-11ea-9977-505ca988cd88.png">
+
+
+### Table of Contents
+- [About CloudFront](#about-cloudfront)
+  - [Edge Location](#edge-location)
+- [CloudFront Log](#cloudfront-log)
+
+## About CloudFront  
+CloudFront는 웹 콘텐츠를 유저에게 더 빨리 배포할 수 있도록 지원해주는 아마존 서비스이다.  
+* 웹 콘텐츠 : html, css, js, image, video ...etc  
+
+사용자에게 빠르게 콘텐츠를 전달하기 위해 엣지(Edge) 로케이션을 이용한다. 
+
+### Edge Location  
+![CloudFront Network Map 13May2020 c3b10a8bfd4203333c1ef6878211a8366ff4d1f5](https://user-images.githubusercontent.com/48475824/89286490-44ba1500-d68d-11ea-87e8-515c5b72a4a8.png)
+> 이미지 출처 : [AWS CloudFront](https://aws.amazon.com/ko/cloudfront/features/)
+
+현재(08.04.2020) 전 세계 42개국 94개 도시에 216개의 엣지 로케이션이 존재한다.  
+
+CloudFront는 콘텐츠를 요청한 유저와 제일 가까운 엣지 로케이션에서 콘텐츠를 제공해 줌으로써 지연시간을 줄일 수 있도록 해준다.
+  * 서울에 거주하는 유저가 다른 국가에 있는 콘텐츠를 요청 했을 시, AWS는 서울 엣지 로케이션에서 해당 컨텐츠를 제공해준다.  
+
+유저가 요청한 콘텐츠가 물리적으로 멀리 떨어진 곳에 있을 때 해당 콘텐츠는 여러 네트워크의 경로를 거쳐야 한다. 그로인해 지연시간이 발생하게 되는데 CloudFront는 이러한 병목현상을 줄이기 위해 가까운 엣지 로케이션에서 컨텐츠를 보내주는 역할을 하는 것이다.  
+
+<!-- ### 엣지 로케이션에 콘텐츠가 존재할 시 
+  CloudFront는 존재하는 콘텐츠를 즉각 유저에게 제공해 준다.  
+
+### 엔지 로케이션에 콘텐츠가 존재하지 않을 시  
+  CloudFront는 해당 콘텐츠가 위치한 오리진  -->
+
+[↑ return to TOC](#table-of-contents)
+
+
+## CloudFront Log  
+
+[↑ return to TOC](#table-of-contents)
