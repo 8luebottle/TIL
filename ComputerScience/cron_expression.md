@@ -37,7 +37,8 @@
 * 7 번째 필드 (Optional)  
   년 Year
 
-이를 알기 쉽게 이미지로 표현하자면 아래와 같다.
+이를 알기 쉽게 이미지로 표현하자면 아래와 같다.  
+
 <img width="550" alt="Screen Shot 2020-08-04 at 6 56 39 PM" src="https://user-images.githubusercontent.com/48475824/89280929-47643c80-d684-11ea-8c2c-b80b1264c4d4.png">
 
 
@@ -78,32 +79,32 @@
 ```
 0 0 0 ? * SUN * 
 ```
-At 12:00 AM, only on Sunday
+└─ At 12:00 AM, only on Sunday
 
 ```
 0 0/10 * * * *
 ```
-Every 10 Minutes  
+└── Every 10 Minutes  
 
 ```
 0 24 ? * MON-FRI
 ```
-At 12:00 PM, Monday through Friday
+└── At 12:00 PM, Monday through Friday
 
 ```
 0 30 10 12 * ?
 ```
-At 10:30 AM, on day 12 of the month
+└── At 10:30 AM, on day 12 of the month
 
 ```
 0 0 0 * * ? 2022
 ```
-At 12:00 AM, only in 2022
+└── At 12:00 AM, only in 2022
 
 ```
 0 0 11 L-1 * ?
 ```
-At 11:00 AM, 1 days before the last day of the month
+└── At 11:00 AM, 1 days before the last day of the month
 
 
 [↑ return to TOC](#table-of-contents)
