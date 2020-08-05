@@ -14,6 +14,16 @@
   AWS CloudWatch에서 Cron Expression을 통해 Events 에 스케쥴을 걸어줄 수 있다.  
   <img width="600" alt="Screen Shot 2020-08-04 at 7 03 31 PM" src="https://user-images.githubusercontent.com/48475824/89281549-37992800-d685-11ea-9781-0fcd5624c8ca.png">
 
+  CloudWatch에서 '매주 월요일 0시 0분 0초' 스케쥴링을 건 결과 모습  
+  <img width="542" alt="cron every monday" src="https://user-images.githubusercontent.com/48475824/89363538-6954d200-d70b-11ea-88bc-420dd450d3ca.png">  
+
+  만약 잘 못된 cron expression을 입력한다면 예상 ```Trigger Date``` 이 보이지 않으며 다음 스탭을 진행하는 과정에서 아래와 같은 오류를 만나게 된다.  
+
+  <img width="495" alt="invalid cron expression" src="https://user-images.githubusercontent.com/48475824/89363620-9ef9bb00-d70b-11ea-8e3f-1e92dd9cf7d9.png">
+
+  Error Message : ```Parameter ScheduleExpression is not valid```
+
+**[Fields]**  
 크론 표현식은 보통 6~7 개의 필드가 사용된다.  
 ```sql
 * * * * * * * 
