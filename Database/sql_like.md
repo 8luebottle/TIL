@@ -3,8 +3,8 @@ SQL의 LIKE 연산자
  
 ### Table of Contents
  * [LIKE Operator](#like-operator)
-   * [%](#연산자-%)
-   * [_](#연산자-_)
+   * 연산자 %
+   * 연산자 _
 
 
 ## LIKE Opeartor  
