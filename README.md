@@ -218,7 +218,6 @@
 
 ## JavaScript
 
-built-in_commands
 ## Linux
 |                     |            |
 |---------------------| :--------- |
