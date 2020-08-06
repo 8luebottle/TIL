@@ -1,10 +1,7 @@
 # CloudWatch
 > Reference : [CloudWatch](https://docs.aws.amazon.com/cloudwatch/index.html)
 
-<center>
-    <img width="600" alt="CloudWatch" src="https://user-images.githubusercontent.com/48475824/89538593-be8d0280-d835-11ea-941b-841b67da0c2c.png"><br>
-    Origin : https://aws.amazon.com/es/cloudwatchh
-</center>
+<img width="700" alt="CloudWatch" src="https://user-images.githubusercontent.com/48475824/89538593-be8d0280-d835-11ea-941b-841b67da0c2c.png">
 
 
 ### Table of Contents
