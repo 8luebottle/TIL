@@ -46,6 +46,8 @@ AWS SAM 은 아래의 구성요소로 이루어져 있다.
 - CLI
 
 ### Template Specification
+SAM 의 템플릿은 AWS CloudFormation 템플릿 파일의 포멧과 상당히 비슷하다.  
+* 다른점 : SAM 템플릿은 CloudFromation 에서 없는 Globals 라는 Section을 지니고 있다.  
 
 SAM Template Specification 은 YAML 또는 JSON 형식을 지니고 있다.  
 
@@ -72,7 +74,7 @@ AWSTemplateFormatVersion: 2020-04-23
 
 ### Template Section
 
-템플릿은 반드시 포함시켜야 하는 부분과 선택적인 부분으로 나뉜다.
+템플릿은 반드시 포함시켜야 하는 부분과 선택적인 부분으로 나뉜다.  
 
 1. Required
     * Transform
@@ -126,6 +128,7 @@ AWSTemplateFormatVersion: 2020-04-23
     - **Resource types**  
       
       e.g)  
+      아마존이 제공하는 리소스를 식별하기 위해서 아래와 같은 형식이 사용된다.  
       ```service-provider::service-name::data-type-name```
 
       ```AWS::EC2::Instance```
@@ -156,17 +159,30 @@ AWSTemplateFormatVersion: 2020-04-23
 선택 사항  
 
 1. Globals  
-  공통적인 요소들을 설정한다.
+  Serverless function, APIs, and Simple Table 에서 공통적으로 사용될 요소들을 설정.  
+
+    ```yaml
+    Globals:
+      Function:
+        Runtime: go1.x
+        Timeout: 60
+        Handler: cloudfront-test
+        Environment:
+          Variables:
+            TABLE_NAME: data-table
+    ```
 
 1. Description  
-  템플릿에 관한 설명 (Text String)
+  템플릿에 관한 설명 (Text String).
 
 1. Metadata  
-  템플릿에 관해 추가적으로 전달해줄 정보
+  템플릿에 관해 추가적으로 전달해줄 정보.
 
 1. Parameters  
+  runtime 시 템플릿에 전달할 값.
 
 1. Mappings  
+  <!-- Lookup table과 비슷.  -->
 
 1. Conditions  
 
@@ -184,6 +200,86 @@ AWSTemplateFormatVersion: 2020-04-23
 * AWS::Serverless::HttpApi
 * AWS::Serverless::SimpleTable
 * AWS::Serverless::LayerVersion
+
+**Amazon Athena**
+* AWS::Athena::DataCatalog
+* AWS::Athena::NamedQuery
+* AWS::Athena::WorkGroup
+
+**CloudFront**
+* AWS::CloudFront::CloudFrontOriginAccessIdentity
+* AWS::CloudFront::Distribution
+* AWS::CloudFront::StreamingDistribution
+
+**CloudWatch**
+* AWS::CloudWatch::Alarm
+* AWS::CloudWatch::AnomalyDetector
+* AWS::CloudWatch::CompositeAlarm
+* AWS::CloudWatch::Dashboard
+* AWS::CloudWatch::InsightRule
+
+**Elasticsearch**
+* AWS::Elasticsearch::Domain
+
+**AWS Glue**
+* AWS::Glue::Classifier
+* AWS::Glue::Connection
+* AWS::Glue::Crawler
+* AWS::Glue::Database
+* AWS::Glue::DataCatalogEncryptionSettings
+* AWS::Glue::DevEndpoint
+* AWS::Glue::Job
+* AWS::Glue::MLTransform
+* AWS::Glue::Partition
+* AWS::Glue::SecurityConfiguration
+* AWS::Glue::Table
+* AWS::Glue::Trigger
+* AWS::Glue::Workflow
+
+**IAM**
+* AWS::IAM::AccessKey
+* AWS::IAM::Group
+* AWS::IAM::InstanceProfile
+* AWS::IAM::ManagedPolicy
+* AWS::IAM::Policy
+* AWS::IAM::Role
+* AWS::IAM::ServiceLinkedRole
+* AWS::IAM::User
+* AWS::IAM::UserToGroupAddition
+
+**Lambda**
+* AWS::Lambda::Alias  
+ 람다 함수의 별칭.  
+ 별칭을 사용하여 클라이언트에 다른 버전을 호출할 수 있다.  
+
+* AWS::Lambda::EventInvokeConfig  
+ Version 이나 Alias에 대해 비동기식 호출을 구성해준다.  
+ 람다 함수가 오류를 내뿜을 시 Default 로 비동기 호출을 2번 시도한다.  
+
+* AWS::Lambda::EventSourceMapping  
+ Event Source 와 람다 함수간의 매핑을 맏는다.  
+ 람다는 이벤트 소스에서 항목을 읽고 함수를 트리거한다.  
+**[이벤트 소스 유형]**
+  * [Kinesis](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/with-kinesis.html)
+  * [SQS](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/with-sqs.html)
+  * [DynamoDB](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/with-ddb.html)
+
+* AWS::Lambda::Function  
+ 람다 함수를 만든다. 함수를 생성하려면 배포 패키지(ZIP file)와 실행 역할(execution role)이 필요하다.  
+
+* AWS::Lambda::LayerVersion  
+ ZIP 아카이브에서 람다 계층을 만든다.  
+
+* AWS::Lambda::LayerVersionPermission  
+ 다른 계정에 계층 사용 권한을 부여할 수 있다.  
+
+* AWS::Lambda::Permission  
+ AWS 서비스 또는 타 계쩡에 함수를 사용할 권한을 부여한다.  
+
+* AWS::Lambda::Version  
+ 람다 함수의 코드 및 구성에서 버전을 만든다.  
+ 버전을 사용하여 변경되지 않은 함수 코드 및 구성의 스냅샷을 만든다.
+
 
 #### Function
 ```AWS::Serverless::Function``` 은 람다 함수, IAM 실행역할(IAM execution role)과 이벤트 소스 매핑(event source mapping)을 생성한다.
@@ -237,7 +333,8 @@ AWSTemplateFormatVersion: 2020-04-23
 
 * Description  
   자료형 : string
-  해당 람다 함수에 관한 설명
+  해당 람다 함수에 관한 설명  
+  최소 0자 최대 256자 까지  
 
 * Envrionment  
   자료형 : Function Environment 객체  
@@ -276,7 +373,9 @@ AWSTemplateFormatVersion: 2020-04-23
 * **FunctionName**  
   자료형 : string  
   람다 함수명.  
-  최대 64 Characters 까지  
+  최소 1 Character 에서 최대 64 Characters 까지  
+    * 길이제한은 전체 ARN에만 적용된다. (Partial ARN에는 적용되지 않음)
+
   직접 함수명을 지정해 주지 않는다면 AWS CloudFormation 이 유니크한 이름을 생성시켜준다.  
 
   * 이름 형식의 예)  
