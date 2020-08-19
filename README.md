@@ -77,7 +77,7 @@
 |[EC2](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/ec2.md)| 08.05.2020 |
 |[KMS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/kms.md)| 07.23.2020 |
 |[Lambda](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md)| 07.22.2020 |
-|[S3](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md)| 06.29.2020 |
+|[S3](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md)| 08.20.2020 |
 |[SAM](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sam.md)| 08.08.2020 |
 |[SQS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sqs.md)| 07.22.2020 |
 
