@@ -10,6 +10,8 @@
   - [Pricing](#pricing)
 - [Accesing Athena](#accessing-athena)
 - [Athena with other services](#athena-with-other-services)
+- [Query](#query)
+  - [Output File](#output-file)
 
 
 ## About Athena 
@@ -114,5 +116,25 @@ Athena 는 SQL 을 통해 S3에 저장된 데이터(비정형, 반정형, 정형
 * Connector for JDBC-Compliant Data Sources
 * Redis Connector
 * TPC Benchmark DS (TPC-DS) Connector
+
+[↑ return to TOC](#table-of-contents)
+
+
+## Query
+### Output File
+아테나를 통해 쿼리문을 실행한 후, 결과는 아래와 같은 파일로 S3(지정해 놓은)에 저장된다.  
+
+파일명은 쿼리의 고유 아이디```(Query ID)```로 정해진다.
+
+쿼리가 성공했다면, S3 에서 다음과 같은 두 가지의 파일을 찾아 볼 수 있다.
+1. ```QueryID.csv```  
+  쿼리 결과  
+  DML 쿼리 결과물은 CSV 형식으로 저장된다.  
+  S3 에서 해당 파일을 다운로드 하거나 쿼리 기록(History)에서 다운로드 가능하다.  
+1. ```QueryID.csv.metadata```  
+  쿼리 메타 데이터  
+  DML, DDL 쿼리 메타데이터 파일은 이진 형식으로 저장된다.  
+  이 안에는 쿼리에 대한 주요 정보들이 있기 때문에 무턱대고 삭제해서는 안된다.
+
 
 [↑ return to TOC](#table-of-contents)
