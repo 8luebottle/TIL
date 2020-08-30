@@ -169,7 +169,7 @@
 | [Go Playground](https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md) | 01.21.2020 |
 | [Package fmt](https://github.com/8luebottle/TIL/blob/master/Go/package_fmt.md) | 04.22.2020 |
 | [Package gorm](https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md) | 08.03.2020 |
-| [Package http](https://github.com/8luebottle/TIL/blob/master/Go/package_http.md) | 03.01.2020 |
+| [Package http](https://github.com/8luebottle/TIL/blob/master/Go/package_http.md) | 08.30.2020 |
 | [Package json](https://github.com/8luebottle/TIL/blob/master/Go/package_json.md) | 02.25.2020 |
 | [Package jwt](https://github.com/8luebottle/TIL/blob/master/Go/package_jwt.md) | 03.17.2020 |
 | [Package os](https://github.com/8luebottle/TIL/blob/master/Go/package_os.md) | 05.08.2020 |

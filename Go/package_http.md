@@ -9,6 +9,7 @@
 
 * http 코드 열어보기
   * [ResponseWriter](#responsewriter)
+  * [timeoutWriter](#timeoutwriter)
   * [Handler](#handler)
   * [Flusher](#flusher)
   * [Hijacker](#Hijacker)
@@ -28,7 +29,7 @@
 **HTTP :** **H**yper**T**ext **T**ransfer **P**rotocol  
 현재 전세계 대부분의 클라이언트와 서버는 HTTP 를 통해 통신한다.  
 HTTP는 HyperText들의 문서들을 주고 받는데 사용되는 프로토콜이다.
-   * HTTP가 처음 만들어 졌을 때는 HTML만을 전송하고자 하였으나 시간이 흐르면서 다른 모든 종료의 리소스들을 전송할 수 있게 되었다.
+   * HTTP가 처음 만들어 졌을 때는 HTML만을 전송하고자 하였으나 시간이 흐르면서 다른 모든 종류의 리소스들을 전송할 수 있게 되었다.
 
 **HTTP 용어 분석**  
 HyperText → 하이퍼텍스트를 기반으로  
@@ -64,16 +65,62 @@ type ResponseWriter interface {
     ```
     * Contenty 타입을 application/json 으로 지정
 
-* ```Write``` 는 데이터를 쓴다.
-    * ```Header``` 에 Content-Type이 담겨져 있지 않다면, ```Write``` 는 Content-Type 셋을 추가시킨다.을
-    * ```WriteHeader```가 호출되기 전이라면, ```Write``` 는 데이터를 쓰기 전에 ```WriteHeader(http.StatusOK)``` 를 호출한다.
-    * ```Writer``` 가 쓰게 될 데이터의 총 사이즈가 몇 kb밖에 안된다면 ```Flush``` 는 호출되지 않는다. Content-Length 헤더는 자동으로 추가된다.
+* `Write` 는 데이터를 쓴다.
+    * `Header` 에 Content-Type이 담겨져 있지 않다면, `Write` 는 Content-Type 셋을 추가시킨다.
+    * `WriteHeader`가 호출되기 전이라면, `Write` 는 데이터를 쓰기 전에 `WriteHeader(http.StatusOK)` 를 호출한다.
+    * ```Writer``` 가 쓰게 될 데이터의 총 사이즈가 몇 kb밖에 안된다면 `Flush` 는 호출되지 않는다. Content-Length 헤더는 자동으로 추가된다.
 
-* ```WriteHeader``` 는 HTTP 응답 헤더를 제공된 상태코드와 함께 보낸다.
+* `WriteHeader` 는 HTTP 응답 헤더를 제공된 상태코드와 함께 보낸다.
     * status code 는 유효한 코드여야 한다. (1xx-5xx의 범주)
+
 
 [Return to TOC](#table-of-contents)
 
+
+### timeoutWriter
+
+```go
+type timeoutWriter struct {
+  w     ResponseWriter
+  h     Header
+  wbuf  bytes.Buffer
+  req   *Request
+  
+  mu            sync.Mutex
+  timeOut       bool
+  wroteHeader   bool
+  code          int
+}
+```
+`timeoutWriter` 는 `ResponseWriter` 인터페이스와 `Header` 맵을 내장하고 있다.  
+
+#### WriterHeader
+  ```go
+  func (tw *timeoutWriter) WriteHeader(code int) {
+    tw.mu.Lock()
+    defer tw.mu.Unlock()
+    tw.writeHeaderLocked(code)
+  }
+  ```
+  * code  
+  parmeter `code` 는 status code 를 의미한다.  
+    ```go
+    # e.g.,
+    w.WriteHeader(200)
+    w.WriteHeader(http.StatusBadRequest)
+    ```
+
+#### Header
+```go
+func (tw *timeoutWriter) Header() Header { return tw.h }
+```
+* `timoutWriter` 에 내장되어 있는 `Header` 맵을 리턴한다.  
+   ```go
+    type Header map[string][]string
+   ```  
+   `Header` 는 key-value 짝으로 이루어진 HTTP 해더이다.  
+
+[Return to TOC](#table-of-contents)
 
 ### Handler
 Handler 인터페이스는 응답 처리를 위해 사용된다.  
