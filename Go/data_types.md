@@ -17,8 +17,8 @@ Go의 자료형에 대하여.
   * [Element Access](#element-access)
 
 ## Numeric Types
-Go에서 숫자는 정수, 실수, 복소수로 표현할 수 있다.
-> <small>int, uint, float의 뒤에 붙은 숫자는 bits를 말한다. </small>  
+Go에서 숫자는 정수, 실수, 복소수로 표현할 수 있다.  
+> int, uint, float의 뒤에 붙은 숫자는 bits를 말한다.
 
 Numeric Types 에서 별칭을 가진 두 자료형이 존재한다.  
 아래 자료형의 공통점은 문자(`단일문자` 또는 `문자열`)를 나타낼 때 쓰인다는 것이다.  
@@ -45,10 +45,11 @@ Numeric Types 에서 별칭을 가진 두 자료형이 존재한다.
 * **rune**  
 `rune` == `int32`  
   - 보통 유니코드 문자 코드를 저장할 때 사용.  
-    <small>유니코드를 사용하기에 전세계의 거의 모든 문자를 표현 가능하다.</small>
-  - 반드시 **single quotation marks** `''` 를 사용. Double quotation marks `""` 를 사용시 컴파일 오류 발생.
-  - 문자는 저장 가능하지만 문자열은 저장할 수 없다.  
-    <small>문자열은 string 을 사용한다.</small>
+    > 유니코드를 사용하기에 전세계의 거의 모든 문자를 표현 가능하다.
+  - 반드시 **single quotation marks** `''` 를 사용.   
+    > Double quotation marks `""` 를 사용시 컴파일 오류 발생.
+  - 문자는 저장 가능하지만 문자열은 저장할 수 없다.   
+    > 문자열은 string 을 사용한다.
 
 * **uint**  
 부호 없는 정수 (unsigned interger)  
@@ -164,12 +165,12 @@ type _string struct {
 ### Concatenate  
 문자열은 `+` 또는 `+=` 연산자를 통해 연결시킬 수 있다.  
 ```go
-	s1 := "Baby "
-	s2 := "Tiger "
-	s3 := "or 8luebottle"
+  s1 := "Baby "
+  s2 := "Tiger "
+  s3 := "or 8luebottle"
 	
-	s1 = s1 + s2 // Baby Tiger
-	s1 += s3     // Baby Tiger or 8luebottle
+  s1 = s1 + s2 // Baby Tiger
+  s1 += s3     // Baby Tiger or 8luebottle
 ```
 
 [↑ Return to TOC](#table-of-contents)
@@ -194,9 +195,9 @@ type _string struct {
 문자열의 길이 측정은 `built-in` 타입인 `len` 을 통해 한다.  
 문자열에 저장된 바이트의 개수를 알 수 있다. 
 ```go
-	s := "Your time is limited, so don't waste it living someone else's life."
+  s := "Your time is limited, so don't waste it living someone else's life."
 
-	len(s) // 67
+  len(s) // 67
 ```
 
 [↑ Return to TOC](#table-of-contents)
