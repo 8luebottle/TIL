@@ -161,7 +161,7 @@
 | [Bcrypt](https://github.com/8luebottle/TIL/blob/master/Go/bcrypt.md)|02.19.2020|
 | [Channel](https://github.com/8luebottle/TIL/blob/master/Go/channel.md)|07.19.2020|
 | [Constants](https://github.com/8luebottle/TIL/blob/master/Go/constants.md) | 01.27.2020 |
-| [Data Types](https://github.com/8luebottle/TIL/blob/master/Go/data_types.md)  | 01.27.2020 |
+| [Data Types](https://github.com/8luebottle/TIL/blob/master/Go/data_types.md)  | 09.06.2020 |
 | [Dependency](https://github.com/8luebottle/TIL/blob/master/Go/dependency.md)  | 04.20.2020 |
 | [Duck Typing](https://github.com/8luebottle/TIL/blob/master/Go/duck_typing.go)  | 02.05.2020 |
 | [For Loop](https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md) | 02.05.2020 |
