@@ -5,53 +5,41 @@
 > Consistency is one of the biggest factors to accomplishment and success.  
 <img width="530" alt="TIL" src="https://user-images.githubusercontent.com/48475824/72317542-f9361e80-36dc-11ea-9633-ef6bf88725c7.png">
 
+# About
+<details>
+    <summary>About 8luebottle's TIL</summary>
 
-#### 📌 Available Languages
+#### 📌 &nbsp; Available Languages
 * 🇰🇷 Korean
 
-#### 📌 Commit Message Convention
-``` MM.DD.YYYY : <Categories>```
+#### 📌 &nbsp; Commit Message Convention
+`MM.DD.YYYY : <Categories>`
 
-#### 📌 TIL File Extensions
+#### 📌 &nbsp; TIL File Extensions
 * .md
 * .ipynb
 
-#### 📌 Table Format
+#### 📌 &nbsp; Table Format
 | Title |Last Updated|
 |-------| :--------: |
 |ABCDEFG| MM.DD.YYYY |
 
+#### 📌 &nbsp; Total Count
+`Category Name (total count)`
 
-### 📄Table of Contents
+</details>
+
+## 📄 Table of Contents
 * [Cloud](#cloud)
-    ```
-    ├── AWS
-    ├── CloudComputing
-    └── GCP
-    ```
 * [ComputerScience](#computer-science)
 * [Database](#database)
-    ```
-    ├── SQL
-    └── NoSQL
-    ```
 * [Docker](#docker)
 * [Django](#django)
 * [Echo](#echo)
 * [Elastic](#elastic)
-    ```
-    ├── Elasticsearch
-    ├── Logstash
-    └── Kibana
-    ```
 * [Git](#git)
 * [Go](#go)
 * [IDE](#ide)
-    ```
-    ├── IntelliJ
-    ├── Vim
-    └── VSCode
-    ```
 * [Infrastructure](#infrastructure)
 * [JavaScript](#javascript)
 * [Linux](#linux)
@@ -61,17 +49,16 @@
 * [Python](#python)
 * [Terraform](#terraform)
 * [Tool](#tool)
-    ```
-    └── Datadog
-    ```
 
 
 # 🗂 Categories
 
 ## Cloud
-### AWS
-|                     |            |
-|---------------------| :--------- |
+<details>
+  <summary>AWS (11)</summary>
+    
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
 |[Athena](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/athena.md)| 08.19.2020 |
 |[CLI](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cli.md)| 07.28.2020 |
@@ -86,17 +73,26 @@
 
 [↑ return to TOC](#table-of-contents)
 
-### Cloud Computing
-|                     |            |
-|---------------------| :--------- |
+</details>
+
+<details>
+  <summary>Cloud Computing (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Cloud Computing](https://github.com/8luebottle/TIL/blob/master/Cloud/CloudComputing/cloud_computing.md)| 04.10.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Computer Science
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Computer Science (5)</summary>
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Cron Expression](https://github.com/8luebottle/TIL/blob/master/ComputerScience/cron_expression.md)| 08.05.2020 |
 |[Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md)| 02.10.2020 |
 |[Middleware](https://github.com/8luebottle/TIL/blob/master/ComputerScience/middleware.md)| 04.17.2020 |
@@ -105,10 +101,16 @@
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Database
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Database (9)</summary>
+    
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Connect to Database from Command Line](https://github.com/8luebottle/TIL/blob/master/Database/connect_db_from_cli.md)| 03.29.2020 |
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 |[Join](https://github.com/8luebottle/TIL/blob/master/Database/join.md)| 06.13.2020 |
@@ -121,45 +123,66 @@
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Docker
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Docker (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 | [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md) | 05.07.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
 
 
 ## Django
 
 
 ## Echo
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Echo (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 | [Echo-Middleware](https://github.com/8luebottle/TIL/blob/master/Echo/middleware.md) | 04.20.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Elastic
 
-[↑ return to TOC](#table-of-contents)
-
 
 ## Git
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Git (3)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 | [Alias](https://github.com/8luebottle/TIL/blob/master/Git/alias.md) | 07.12.2020 |
 | [Blame](https://github.com/8luebottle/TIL/blob/master/Git/blame.md) | 04.27.2020 |
 | [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 06.13.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Go
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Go (24)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 | [Arrays](https://github.com/8luebottle/TIL/blob/master/Go/arrays.md)  | 01.27.2020 |
 | [Bcrypt](https://github.com/8luebottle/TIL/blob/master/Go/bcrypt.md)|02.19.2020|
 | [Channel](https://github.com/8luebottle/TIL/blob/master/Go/channel.md)|07.19.2020|
@@ -187,43 +210,73 @@
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## IDE
-### IntelliJ
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>IntelliJ (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 04.24.2020 |
 
-### VS Code
-|                     |            |
-|---------------------| :--------- |
+[↑ return to TOC](#table-of-contents)
+
+</details>
+
+<details>
+  <summary>VS Code (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 01.30.2020 |
 
-### Vim
-|                     |            |
-|---------------------| :--------- |
+[↑ return to TOC](#table-of-contents)
+
+</details>
+
+
+<details>
+  <summary>VIM (2)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
 |[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 07.07.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 
 ## Infrastructure
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Infrastructure (3)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Durability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/durability.md) | 07.30.2020 |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
 |[IaC](https://github.com/8luebottle/TIL/blob/master/Infrastructure/iac.md) | 05.02.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## JavaScript
 
 ## Linux
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Linux (5)</summary>
+    
+|           Title	       |  Last Updated   |
+|--------------------------| :-------------- |
 |[compgen](https://github.com/8luebottle/TIL/blob/master/Linux/compgen.md)| 08.06.2020 |
 |[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
 |[Linux Commands](https://github.com/8luebottle/TIL/blob/master/Linux/linux_commands.md)| 06.25.2020 |
@@ -232,19 +285,31 @@
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## MacOS
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>MacOS (2)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[MacOS Commands](https://github.com/8luebottle/TIL/blob/master/MacOS/mac_commands.md)| 07.17.2020 |
 |[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Network
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Network (4)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[HTTP CORS](https://github.com/8luebottle/TIL/blob/master/Network/http-cors.md)| 04.17.2020 |
 |[Port](https://github.com/8luebottle/TIL/blob/master/Network/port.md)| 07.19.2020 |
 |[SMTP](https://github.com/8luebottle/TIL/blob/master/Network/smtp.md)| 03.16.2020 |
@@ -252,22 +317,27 @@
 
 [↑ return to TOC](#table-of-contents)
 
-## PHP
+</details>
 
-[↑ return to TOC](#table-of-contents)
+## PHP
 
 
 ## Python
-|                     |            |
-|---------------------| :--------- |
+
+<details>
+  <summary>Python (1)</summary>
+
+|           Title	         |  Last Updated   |
+|--------------------------| :-------------- |
 |[Pretty Print JSON](https://github.com/8luebottle/TIL/blob/master/Python/pretty_print_json.md)| 07.27.2020 |
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
 
 ## Terraform
 
-[↑ return to TOC](#table-of-contents)
 
 ## Tool
 ### Datadog
