@@ -29,7 +29,7 @@
 
 </details>
 
-## 📄 Table of Contents
+## Table of Contents
 * [Cloud](#cloud)
 * [ComputerScience](#computer-science)
 * [Database](#database)
@@ -91,6 +91,7 @@
 
 <details>
   <summary>Computer Science (5)</summary>
+    
 |           Title	         |  Last Updated   |
 |--------------------------| :-------------- |
 |[Cron Expression](https://github.com/8luebottle/TIL/blob/master/ComputerScience/cron_expression.md)| 08.05.2020 |
