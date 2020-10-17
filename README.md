@@ -30,8 +30,9 @@
 </details>
 
 ## Table of Contents
+* [Big Data](#big-data)
 * [Cloud](#cloud)
-* [ComputerScience](#computer-science)
+* [Computer Science](#computer-science)
 * [Database](#database)
 * [Docker](#docker)
 * [Django](#django)
@@ -52,6 +53,14 @@
 
 
 # 🗂 Categories
+
+## Big Data
+<details>
+    <summary>Hadoop (0)</summary>
+    
+[↑ return to TOC](#table-of-contents)
+    
+</details>
 
 ## Cloud
 <details>
