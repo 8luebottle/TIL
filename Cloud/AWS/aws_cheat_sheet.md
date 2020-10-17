@@ -27,6 +27,8 @@
     * [List Objects](#list-objects)
   * GET
     * [Get Bucket Location](#get-bucket-location)
+  * [REMOVE](#remove)
+    * [Remove Multiple Files](#remove-multiple-files)
 
 
 ## Athena
@@ -427,6 +429,21 @@ The total number of items to return.
 `aws s3api get-bucket-location --bucket <bucketName>`  
 * w/ **--profile** option  
 `aws --profile <profileName> s3api get-bucket-location --bucket <bucketName>`  
+
+
+### REMOVE
+#### Remove Multiple Files
+Remove multiple files by `--exclude` and `--include` arguments   
+`aws s3 rm s3://bucketName/path --recursive --exclude "*" --include "pattern*"`
+
+```
+# example code
+aws s3 rm s3://cloudfront-test/logs --recursive --exclude "*" --include "abcdefghijklmnopqr/2020/10/04/*"
+```
+
+* **Results**      
+![remove-multiple-objects](https://user-images.githubusercontent.com/48475824/95204315-e8a37680-081e-11eb-8361-873b5a800fa7.png)
+
 
 
 [↑ return to TOC](#table-of-contents)
