@@ -60,7 +60,7 @@
 |           Title	         |  Last Updated   |
 |--------------------------| :-------------- |
 |[Athena](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/athena.md)| 08.19.2020 |
-|[AWS Cheat Sheet](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_cheat_sheet.md)| 10.06.2020 |
+|[AWS Cheat Sheet](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_cheat_sheet.md)| 10.17.2020 |
 |[AWS Glossary](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md)| 01.29.2020 |
 |[CLI](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cli.md)| 07.28.2020 |
 |[CloudFront](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudfront.md)| 08.15.2020 |
