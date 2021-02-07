@@ -10,6 +10,7 @@
     * [Create](#create)
     * [Show](#show)
     * [Merge](#merge)
+    * [Pull](#pull)
     * [Name](#name)
     * [Delete](#delete)
 
@@ -19,15 +20,15 @@
 1. ### Create
     #### Create New branch
     새 브랜치 만들기  
-    <code>git branch \<newBranchName></code>
+    `git branch <newBranchName>`
 
     #### Create New Branch & Checkout
     새 브랜치 만듬과 동시에 체크아웃 하기  
-    <code>git checkout -b \<newBranchName></code>
+    `git checkout -b <newBranchName>`
 
     #### Create Tracking Branch
     원격 브랜치를 트래킹하는 새 브랜치 만들기  
-    <code>git checkout --track \<remote/branchName></code>
+    `git checkout --track <remote/branchName>`
     * branchName 을 가진 트래킹 브랜치가 생성된다.
 
     [Return to TOC](#table-of-contents)
@@ -36,7 +37,7 @@
 1. ### Show
     #### Show All Branch (Remote + Local)
     원격저장소와 로컬 저장소의 브랜치 보기  
-    <code>git branch -a</code>
+    `git branch -a`
     ```
     develop
     feature/channel
@@ -49,7 +50,7 @@
 
     #### Show Local Branches Only
     로컬 저장소의 브랜치 보기  
-    <code>git branch </code>
+    `git branch `
     
     ```
     develop
@@ -60,7 +61,7 @@
 
     #### Show Remote Branches Only
     원격 저장소의 브랜치 보기  
-    <code>git branch -r</code>  
+    `git branch -r`  
     ```
     origin/HEAD -> origin/master
     origin/develop
@@ -69,7 +70,7 @@
 
     #### Show Branch w/ Last Commit Info
     로컬 브랜치의 마지막 커밋 정보 보기  
-    <code>git branch -v</code>
+    `git branch -v`
     ```
     develop         322bd34 Service
     feature/channel d7631d3 WIP : Channel
@@ -83,48 +84,53 @@
     > 둘 이상의 브랜치를 하나로 합치는 명령어
 
     #### Merge Branch
-    > 머지 시키는 명령어는 <code>merge</code> 외에도 두 가지 방법이 더 존재한다.  
+    > 머지 시키는 명령어는 `merge` 외에도 두 가지 방법이 더 존재한다.  
 
     1. Straight Merge   
-        <code>git merge \<branchName></code>
+        `git merge <branchName>`
         * 한 브랜치의 모든 변경 히스토리가 다른 브랜치에 머지 된다.
 
     2. Squashed Commit  
-        <code>git merge --squash \<branchName></code>
+        `git merge --squash <branchName>`
         * 한 브랜치의 최종 커밋 히스토리만이 머지 된다.
 
     3. Cherry-picking :cherries:  
-        <code>git cherry-pick \<commitName></code>
+        `git cherry-pick <commitName>`
         * 다른 브랜치의 특정 커밋만이 현재의 브랜치에 머지 된다.
 
     #### Merge Branch w/o Commit
     커밋 없이 브랜치 머지 시키기  
-    <code>git merge --no-commit \<branchName></code>
+    `git merge --no-commit <branchName>`
 
     [Return to TOC](#table-of-contents)
 
+1. ### Pull
+    #### Pull origin branch to a local branch
+    원격 브랜치를 새로 생성한 로컬 브랜치에 풀받기  
+    `git checkout -b <localBranchName> origin/<remoteBranchName>`  
+    \<remoteBranchName> 이름을 가진 원격 브랜치를 \<localBranchName> 을 가진 브랜치에 담는다.
 
 1. ### Name
     #### Move or Change Branch Name
     브랜치명을 변경하기 혹은 브랜치 옮기기  
-    <code>git checkout -m \<selectedBranch> \<newBranch></code>
+    `git checkout -m <selectedBranch> <newBranch>`
 
     
 1. ### Delete
     #### Delete Local Branch
     브랜치 삭제  
-    ```git branch -d <branchName>```
+    `git branch -d <branchName>`
 
     브랜치 강제 삭제  
-    ```git branch -D <branchName>```
+    `git branch -D <branchName>`
     * 대문자 D를 사용  
 
     #### Delete All Local Branches Except Master and Develop
     Master와 Develop 브랜치를 제외한 모든 브랜치 삭제  
-    ```git branch | grep -v "master\|develop" | xargs git branch -D```
+    `git branch | grep -v "master|develop" | xargs git branch -D`
 
     #### Delete Remote Branch
     원격 저장소의 브랜치 삭제  
-    ```git push <remoteName> --delete <branchName>```
+    `git push <remoteName> --delete <branchName>`
 
     [Return to TOC](#table-of-contents)
