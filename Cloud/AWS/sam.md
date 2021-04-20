@@ -547,7 +547,7 @@ AWS SAM 명령어에 대해 알아보자.
       AWS 리전 설정  
       예) ```us-west-2```
       
-    * `--debug`
+    * `--debug`  
       CLI 상에 Debug Log 메시지를 Timestamp와 함께 보여준다.   
       예) `2021-04-20 10:52:34,540 | 1 resources found in the stack `
       
