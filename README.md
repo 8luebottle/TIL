@@ -66,7 +66,7 @@
 <details>
   <summary>AWS (12)</summary>
     
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Athena](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/athena.md)| 08.19.2020 |
 |[AWS Cheat Sheet](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_cheat_sheet.md)| 10.17.2020 |
@@ -88,7 +88,7 @@
 <details>
   <summary>Cloud Computing (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Cloud Computing](https://github.com/8luebottle/TIL/blob/master/Cloud/CloudComputing/cloud_computing.md)| 04.10.2020 |
 
@@ -102,7 +102,7 @@
 <details>
   <summary>Computer Science (5)</summary>
     
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Cron Expression](https://github.com/8luebottle/TIL/blob/master/ComputerScience/cron_expression.md)| 08.05.2020 |
 |[Data Transmission](https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md)| 02.10.2020 |
@@ -119,8 +119,8 @@
 
 <details>
   <summary>Database (9)</summary>
-    
-|           Title	         |  Last Updated   |
+
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Connect to Database from Command Line](https://github.com/8luebottle/TIL/blob/master/Database/connect_db_from_cli.md)| 03.29.2020 |
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
@@ -142,7 +142,7 @@
 <details>
   <summary>Docker (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 | [Docker Commands](https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md) | 05.07.2020 |
 
@@ -159,7 +159,7 @@
 <details>
   <summary>Echo (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 | [Echo-Middleware](https://github.com/8luebottle/TIL/blob/master/Echo/middleware.md) | 04.20.2020 |
 
@@ -176,7 +176,7 @@
 <details>
   <summary>Git (3)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 | [Alias](https://github.com/8luebottle/TIL/blob/master/Git/alias.md) | 07.12.2020 |
 | [Blame](https://github.com/8luebottle/TIL/blob/master/Git/blame.md) | 04.27.2020 |
@@ -192,7 +192,7 @@
 <details>
   <summary>Go (24)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 | [Arrays](https://github.com/8luebottle/TIL/blob/master/Go/arrays.md)  | 01.27.2020 |
 | [Bcrypt](https://github.com/8luebottle/TIL/blob/master/Go/bcrypt.md)|02.19.2020|
@@ -229,7 +229,7 @@
 <details>
   <summary>IntelliJ (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[IntelliJ Commands](https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md)| 04.24.2020 |
 
@@ -240,7 +240,7 @@
 <details>
   <summary>VS Code (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[VS Code Commands](https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md)| 01.30.2020 |
 
@@ -252,7 +252,7 @@
 <details>
   <summary>VIM (2)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Setup](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md) | 	01.30.2020 |
 |[Vim Commands](https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md)| 07.07.2020 |
@@ -268,7 +268,7 @@
 <details>
   <summary>Infrastructure (3)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Durability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/durability.md) | 07.30.2020 |
 |[Stability](https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md) | 02.24.2020 |
@@ -285,8 +285,8 @@
 
 <details>
   <summary>Linux (5)</summary>
-    
-|           Title	       |  Last Updated   |
+
+|           Title        |  Last Updated   |
 |--------------------------| :-------------- |
 |[compgen](https://github.com/8luebottle/TIL/blob/master/Linux/compgen.md)| 08.06.2020 |
 |[GDB](https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md)| 02.10.2020 |
@@ -304,7 +304,7 @@
 <details>
   <summary>MacOS (2)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[MacOS Commands](https://github.com/8luebottle/TIL/blob/master/MacOS/mac_commands.md)| 07.17.2020 |
 |[Switch Focus](https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md)| 02.15.2020 |
@@ -319,7 +319,7 @@
 <details>
   <summary>Network (4)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[HTTP CORS](https://github.com/8luebottle/TIL/blob/master/Network/http-cors.md)| 04.17.2020 |
 |[Port](https://github.com/8luebottle/TIL/blob/master/Network/port.md)| 07.19.2020 |
@@ -332,13 +332,21 @@
 
 ## PHP
 
+<details>
+  <summary>PHP (1)</summary>
+
+|           Title          |  Last Updated   |
+|--------------------------| :-------------- |
+|[Functions](https://github.com/8luebottle/TIL/blob/master/PHP/functions.md)| 05.12.2021 |
+
+</details>
 
 ## Python
 
 <details>
   <summary>Python (1)</summary>
 
-|           Title	         |  Last Updated   |
+|           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Pretty Print JSON](https://github.com/8luebottle/TIL/blob/master/Python/pretty_print_json.md)| 07.27.2020 |
 
