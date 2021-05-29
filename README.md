@@ -74,7 +74,7 @@
 |[CLI](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cli.md)| 07.28.2020 |
 |[CloudFront](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudfront.md)| 08.15.2020 |
 |[CloudWatch](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudwatch.md)| 08.06.2020 |
-|[EC2](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/ec2.md)| 05.07.2021 |
+|[EC2](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/ec2.md)| 05.29.2021 |
 |[KMS](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/kms.md)| 07.23.2020 |
 |[Lambda](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md)| 07.22.2020 |
 |[S3](https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md)| 08.20.2020 |

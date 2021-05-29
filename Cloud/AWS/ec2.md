@@ -9,9 +9,9 @@
 - [Instance](#instance)
   - [Instance Types](#instance-types)
   - [Instance Lifecycle](#instance-lifecycle)
+- [AMI](#ami)
 - [Load Balancing](#load-balancing)
 - [Auto Scaling](#auto-scaling)
-
 
 
 ## About EC2  
@@ -27,16 +27,18 @@ EC2란 AWS 에서 제공해주는 확장식 컴퓨팅이다.
 
 ## Instance
 하나의 EC2 인스턴스는 한대의 컴퓨터라고 볼 수 있다.  
-AWS 로 부터 한대의 컴퓨터(EC2 Instance)를 빌려 원하는 OS 및 프로그램을 설치 할 수 있다.  
+AWS 로 부터 한대의 컴퓨터(EC2 Instance)를 빌려 원하는 OS 및 프로그램을 설치 할 수 있다.
 
-### Instance types
-AWS 가 제공하는 인스턴스 유형은 상당히 많다.  
-이 인스턴스들은 총 5가지로 그룹핑 된다.  
+### Instance types  
+인스턴스를 고를 때는 보통 메모리 용량과 연산력을 기준으로 결정하게 된다.  
+AWS 가 제공하는 인스턴스 유형은 상당히 많다. 이 인스턴스들은 총 5가지로 그룹핑 된다.  
+
 * General Purpose 범용 
 * Compute Optimized 컴퓨팅 최적화 
 * Storage Optimized 스토리지 최적화
 * Memory Optimized 메모리 최적화
 * Accelerated Computing 가속화된 컴퓨팅
+
 
 #### General Purpose
 * A1
@@ -142,6 +144,36 @@ AWS 가 제공하는 인스턴스 유형은 상당히 많다.
 
 **종료**
 - 상태가 `shutting-down` 또는 `terminated`로 변경되는 순간 요금이 발생하지 않는다.  
+
+
+[↑ return to TOC](#table-of-contents)
+
+
+## AMI  
+AMI : Amazon Machine Image  
+
+EC2 인스턴스를 띄우기 위해서는 AMI 가 필요하다.  
+AMI에는 인스턴스의 구성요소인 OS, 애플리케이션 서버, 아키텍쳐와 같은 정보가 담겨 있다.  
+
+한번 생성해 놓은 AMI는 지속적으로 재사용 가능하다.  
+- 기존에 만들어 놓은 AMI를 통해 동일한 환경을 지닌 새 인스턴스를 빠르게 띄울 수 있다.  
+
+AMI의 컨텐츠는 암호화 되어 있다.  
+
+### AMI 선택 시 고려할 요소  
+- Architecture
+- Launch Permissions  
+  - public
+  - explicit
+  - implicit
+- OS
+- Region
+- Storage for the root device  
+  - Boot time
+  - Device volume
+  - Data persistence
+  - Size limit
+  - Stopped state
 
 
 [↑ return to TOC](#table-of-contents)
