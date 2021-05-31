@@ -318,12 +318,13 @@
 ## Network
 
 <details>
-  <summary>Network (6)</summary>
+  <summary>Network (7)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Data Transmission Modes](https://github.com/8luebottle/TIL/blob/master/Network/data_transmission_modes.md)| 05.29.2021 |
 |[HTTP CORS](https://github.com/8luebottle/TIL/blob/master/Network/http-cors.md)| 04.17.2020 |
+|[Hub](https://github.com/8luebottle/TIL/blob/master/Network/hub.md)| 05.31.2021 |
 |[Network Topology](https://github.com/8luebottle/TIL/blob/master/Network/network_topology.md)| 05.21.2021 |
 |[Port](https://github.com/8luebottle/TIL/blob/master/Network/port.md)| 07.19.2020 |
 |[SMTP](https://github.com/8luebottle/TIL/blob/master/Network/smtp.md)| 03.16.2020 |
