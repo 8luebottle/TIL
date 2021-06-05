@@ -118,13 +118,14 @@
 ## Database
 
 <details>
-  <summary>Database (9)</summary>
+  <summary>Database (10)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Connect to Database from Command Line](https://github.com/8luebottle/TIL/blob/master/Database/connect_db_from_cli.md)| 03.29.2020 |
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 |[Join](https://github.com/8luebottle/TIL/blob/master/Database/join.md)| 06.13.2020 |
+|[Logical Storage Structure](https://github.com/8luebottle/TIL/blob/master/Network/logical_storage_structure.md)| 06.05.2021 |
 |[Optimizer](https://github.com/8luebottle/TIL/blob/master/Database/optimizer.md)| 04.14.2020 |
 |[postgreSQL](https://github.com/8luebottle/TIL/blob/master/Database/postgresql.md)| 06.13.2020 |
 |[Redis TTL](https://github.com/8luebottle/TIL/blob/master/Database/redis_ttl.md)| 03.28.2020 |
