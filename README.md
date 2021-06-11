@@ -175,7 +175,7 @@
 ## Git
 
 <details>
-  <summary>Git (4)</summary>
+  <summary>Git (5)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
