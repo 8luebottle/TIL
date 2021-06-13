@@ -30,26 +30,21 @@
 </details>
 
 ## Table of Contents
-* [Big Data](#big-data)
-* [Cloud](#cloud)
-* [Computer Science](#computer-science)
-* [Database](#database)
-* [Docker](#docker)
-* [Django](#django)
-* [Echo](#echo)
-* [Elastic](#elastic)
-* [Git](#git)
-* [Go](#go)
-* [IDE](#ide)
-* [Infrastructure](#infrastructure)
-* [JavaScript](#javascript)
-* [Linux](#linux)
-* [MacOS](#macos)
-* [Network](#network)
-* [PHP](#php)
-* [Python](#python)
-* [Terraform](#terraform)
-* [Tool](#tool)
+    
+|     |        |
+|:---:|--------|
+|**B**|[Big Data](#big-data)|
+|**C**|[Cloud](#cloud) \| [Computer Science](#computer-science)|
+|**D**|[Database](#database) \| [Docker](#docker) \| [Django](#django)|
+|**E**|[Echo](#echo) \| [Elastic](#elastic)|
+|**G**|[Git](#git) \| [Go](#go)|
+|**I**|[IDE](#ide) \| [Infrastructure](#infrastructure)|
+|**J**|[JavaScript](#javascript)|
+|**L**|[Linux](#linux)| 
+|**M**|[MacOS](#macos)|
+|**N**|[Network](#network)|
+|**P**|[PHP](#php) \| [Python](#python)|
+|**T**|[Terraform](#terraform) \| [Tool](#tool)|   
 
 
 # 🗂 Categories
