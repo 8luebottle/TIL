@@ -44,11 +44,11 @@ Oracle DB에서 블록의 크기는 보통 8KB 크기를 가진다. 이는, 단�
 `Tablespace` 내부의 `Extent`를 관리하는 방법은 두 가지가 존재한다.  
 사용자가 어떠한 방법을 선택했느냐에 따라 Oracle DB 는 Extent 를 달리 관리한다.
 
-- **Dictionary Managed Tablespace**
-  괴거 Oracle Version 8 까지 차용되던 방법으로써 데이터 딕셔너리를 통해 Extent를 관리한다.  
+- **Dictionary Managed Tablespace**  
+  과거 Oracle Version 8 까지 차용되던 방법으로써 데이터 딕셔너리(data dictionary)를 통해 Extent를 관리한다.  
   - I/O Bottleneck 의 문제로 인해 현재는 Locally Managed 방식이 사용된다.
 
-- **Locally Managed Tablespace**
+- **Locally Managed Tablespace**   
   기본 세팅은 Locally Managed 로 되어 있다.  
   비트맵(bitmaps)을 이용해 Extent를 관리한다.  
   - **ASSM:** Automatic Segment Space Managment  
