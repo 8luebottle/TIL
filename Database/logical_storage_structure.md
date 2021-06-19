@@ -7,6 +7,7 @@
 * [Data Block](#data-block)
   * [Data Block & OS Block](#data-block-&-os-block)
 * [Extent](#extent)
+  * [Size Limit](#size-limit)
 * [Segment](#segment)
 
 
@@ -34,7 +35,11 @@ Oracle DB에서 블록의 크기는 보통 8KB 크기를 가진다. 이는, 단�
 - 제일 작은 크기의 블록은 `2KB` 이다.  
 
 ### Data Block & OS Block  
-  ![data-block os-block](https://user-images.githubusercontent.com/48475824/122288724-e4426800-cf2c-11eb-94f3-1e070b9faf7d.png)
+  ![data-block os-block](https://user-images.githubusercontent.com/48475824/122288724-e4426800-cf2c-11eb-94f3-1e070b9faf7d.png)  
+
+-  **블록 사이즈 지정**  
+  데이터 블록 사이즈는 `DB_BLOCK_SIZE` 파라미터를 통해 설정 한다.  
+  사용자가 이를 직접 지정해주지 않았다면 OS가 제공해주는 기본 사이즈로 자동 지정된다. 이는 OS 마다 다르지만 보통 `4KB` 또는 `8KB` 로 설정되어 있다.  
 
 [↑ return to TOC](#table-of-contents)
 
@@ -52,12 +57,26 @@ Oracle DB에서 블록의 크기는 보통 8KB 크기를 가진다. 이는, 단�
   기본 세팅은 Locally Managed 로 되어 있다.  
   비트맵(bitmaps)을 이용해 Extent를 관리한다.  
   - **ASSM:** Automatic Segment Space Managment  
-    ASSM 의 장점은 아래와 같다. 
+    ASSM 의 장점은 아래와 같다.  
     - 관리하기가 단순해짐  
-      수동으로 관리할 필요가 없다. 
+      수동으로 관리할 필요가 없다.  
     - 동시성이 향상됨  
       다수의 transaction이 동시적으로 데이터 블록들을 검색할 수 있다.  
   - **MSSM:** Manual Segment Space Management  
+
+### Size Limit 
+`Extent`의 사이즈는 무한정으로 설정할수 없다. 한 개의 Object가 지닐 수 있는 `Extent`의 사이즈는 한계가 정해져 있으며, 이는 두 가지 타입으로 나뉜다.  
+
+1. Soft Limit  
+1. Hard Limit  
+
+- **Recommended Block Size (KB)**  
+
+  |soft Limit|Hard Limit|
+  |:--:|:--:|
+  |2|100|
+  |4|200|
+  |8|300|
 
 [↑ return to TOC](#table-of-contents)
 
