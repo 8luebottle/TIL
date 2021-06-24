@@ -1,13 +1,20 @@
 # Stash 
-`stash` 는 로컬에서 수정한 내역을 임시로 저장할 수 있게 해주는 명령어 이다.  
-
+`stash` 는 로컬에서 수정한 내역을 임시로 저장할 수 있게 해주는 명령어다.  
 
 ### Table of Contents
 * [About](#about)
   * [LIFO](#lifo)
   * [Apply & Pop](#apply-&-pop)
   * [When to use git stash](#when-to-use-git-stash)
-* [Commands](#commands)
+
+* [Commands](#commands)  
+  * [Stash](#stash)
+  * [Apply](#apply)
+  * [Clear](#clear)
+  * [Drop](#drop)
+  * [List](#list)
+  * [Pop](#pop)
+  * [Show](#show)
 
 ## About
 보통 로컬 리포지토리에서 변경을 가한 내역을 바로 `commit` 하고 싶지 않은 경우 사용한다.  
@@ -83,19 +90,79 @@ stash 적용시 ID 를 명시하지 않는다면, 제일 마지막으로 stack�
 [↑ return to TOC](#table-of-contents)
 
 
-## Commands  
-- `git stash`  
-- `git stash list`  
-- `git stash show`  
-  - `git stash show -p`
-  - `git stash show -p <stashID>`
-  - `git stash show -p <stashID> --name-only`
-  - `git stash show -p | git apply --reverse`
-  - `git stash show -p | git apply -R`
-- `git stash apply`  
+## Commands
+
+### Stash
+- **`git stash`**  
+  git stash 로 임시 저장된 내용은 `WIP on <branchName>: <commitHash>` 형태로 기록된다.
+  - `WIP on feature_device_control: 123456d`
+
+### Apply
+- **`git stash apply`**  
+  가장 최근에 임시저장해 놓은 stash 를 해당 브랜치(현재 checkout 되어 있는)에 적용 시키기.  
+
   - `git stash apply <stashID>`  
-- `git stash drop`
+    특정 stash ID 를 명시함으로써 해당 ID를 지닌 stash 를 현재 브랜치에 적용시켜준다.  
+    - `git stash apply stash@{13}`
+
+### Clear
+- **`git stash clear`**  
+  stash stack 에 있는 모든 stash를 삭제해주는 명령어.  
+
+### Drop
+- **`git stash drop`**  
+  가장 최신 stash 를 제거 하는 명령어.  
+
   - `git stash drop <stashID>`
-- `git stash pop`
+    ID 를 통해 특정 stash 를 제거하는 명령어.  
+    - `git stash drop stash@{22}`  
+
+### List
+- **`git stash list`**   
+  stash stack 에 쌓인 전체 stash 리스트를 나열한다.  
+  만약 stash를 apply만 하고(`git stash apply`) 지우지 않았다면 리스트에 그대로 남아있게 된다.  
+
+  ```
+  stash@{0}: WIP on develop: 12b3456 enhance: net drive API (#100)
+  stash@{1}: WIP on add_smart_search: 54321zy feat: keword search (#98)
+  stash@{2}: WIP on doc_mail_sender: 77377eb doc: mail sender (#77)
+  ```
+
+### Pop
+- **`git stash pop`**  
+  가장 최신의 stash 를 적용(`apply`)과 동시에 제거(`drop`)를 수행해주는 명령어.  
+  - 만약 stash 가 진행되던 중 충돌이 발생했다면 제거되지 않은 채로 stash stack에 남아있게 된다. 충돌을 해결 한 후 stash stack 에서 제거해주면 된다.  
+
+### Show
+- **`git stash show`**   
+  해당 명령어를 통해 가장 최신 stash의 파일 리스트를 살펴볼 수 있다.  
+  - 수정이 이루어진 파일명
+  - 추가/삭제된 코드 정보  
+  
+  ```
+  prefix/file_name1.ext   |  16 +++++++++
+  prefix/file_name2.ext   | 411 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------------------------------------------------------------------
+  prefix/file_name3.ext   |  41 ++++++++++++-----------
+  prefix/file_name4.ext   |  60 +++++++++++++++++++++++++++++++++
+  4 files changed, 313 insertions(+), 215 deletions(-)
+  ```
+
+  - `git stash show -p`  
+    제일 최신 stash(`stash@{0}`)를 변경 이전(Original Parent)의 상태와 비교해 볼 수 있다.  
+
+  - `git stash show -p <stashID>`  
+    제일 최신 stash 가 아닌, 특정한 stash의 변경 사항을 살펴보고자 할 때 stash ID를 명시해준다.  
+    - `git stash show -P stash@{5}`
+
+  - `git stash show -p <stashID> --name-only`  
+    특정 stash의 변경된 파일명만 나열하고자 할 때 사용한다.  
+    - `git stash show -p stash@{7} --name-only`
+
+  - `git stash show -p | git apply --reverse`  
+    Apply 한 stash 내역들을 되돌리고자 할 때 사용한다.  
+
+  - `git stash show -p | git apply -R`  
+    위의 명령과 동일한 기능을 한다. 좀 더 짧게 쓴 버전이라고 생각하면 된다.  
+
 
 [↑ return to TOC](#table-of-contents)

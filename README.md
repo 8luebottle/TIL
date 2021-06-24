@@ -179,7 +179,7 @@
 | [Alias](https://github.com/8luebottle/TIL/blob/master/Git/alias.md) | 07.12.2020 |
 | [Blame](https://github.com/8luebottle/TIL/blob/master/Git/blame.md) | 04.27.2020 |
 | [Branch](https://github.com/8luebottle/TIL/blob/master/Git/branch.md) | 02.08.2021 |
-| [Stash](https://github.com/8luebottle/TIL/blob/master/Git/stash.md) | 06.11.2021 |
+| [Stash](https://github.com/8luebottle/TIL/blob/master/Git/stash.md) | 06.24.2021 |
 
 [↑ return to TOC](#table-of-contents)
 
