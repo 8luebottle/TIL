@@ -114,7 +114,7 @@
 ## Database
 
 <details>
-  <summary>Database (10)</summary>
+  <summary>Database (11)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -122,6 +122,7 @@
 |[DB Index](https://github.com/8luebottle/TIL/blob/master/Database/db_index.md)| 03.09.2020 |
 |[Join](https://github.com/8luebottle/TIL/blob/master/Database/join.md)| 06.13.2020 |
 |[Logical Storage Structure](https://github.com/8luebottle/TIL/blob/master/Database/logical_storage_structure.md)| 06.19.2021 |
+|[MySQL Option Files](https://github.com/8luebottle/TIL/blob/master/Database/mysql_option_files.md)| 06.25.2021 |
 |[Optimizer](https://github.com/8luebottle/TIL/blob/master/Database/optimizer.md)| 04.14.2020 |
 |[postgreSQL](https://github.com/8luebottle/TIL/blob/master/Database/postgresql.md)| 06.13.2020 |
 |[Redis TTL](https://github.com/8luebottle/TIL/blob/master/Database/redis_ttl.md)| 03.28.2020 |
