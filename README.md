@@ -95,7 +95,7 @@
 ## Computer Science
 
 <details>
-  <summary>Computer Science (6)</summary>
+  <summary>Computer Science (7)</summary>
     
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -104,6 +104,7 @@
 |[Middleware](https://github.com/8luebottle/TIL/blob/master/ComputerScience/middleware.md)| 04.17.2020 |
 |[MMU](https://github.com/8luebottle/TIL/blob/master/ComputerScience/mmu.md)| 06.13.2021 |
 |[Program Counter](https://github.com/8luebottle/TIL/blob/master/ComputerScience/program_counter.md)| 04.07.2020 |
+|[Scheduling](https://github.com/8luebottle/TIL/blob/master/ComputerScience/scheduling.md)| 07.04.2021 |
 |[TDD](https://github.com/8luebottle/TIL/blob/master/ComputerScience/tdd.md)| 05.07.2020 |
 
 [↑ return to TOC](#table-of-contents)
