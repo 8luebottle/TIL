@@ -318,7 +318,7 @@
 ## Network
 
 <details>
-  <summary>Network (8)</summary>
+  <summary>Network (9)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |

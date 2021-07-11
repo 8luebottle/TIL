@@ -28,7 +28,7 @@ MMU가 담당하는 역할은 몇가지가 존재하는데 그 중 주된 역할
 ### 2 Registers
 MMU 에는 두개의 레지스터가 존재한다.  
 - **MDR : Memory Data Register**  
-  메모리(메인 메모리)에 본내지게 될 데이터가 저장된다.  
+  메모리(메인 메모리)에 보내지게 될 데이터가 저장된다.  
 - **MAR : Memory Address Register**  
   논리적 주소는 MAR 에 저장된다.  
 
