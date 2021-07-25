@@ -76,18 +76,18 @@
 |[SAM][AWS_SAM]| 04.20.2021 |
 |[SQS][AWS_SQS]| 07.22.2020 |
 
-[AWS_Athena]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/athena.md
-[AWS_Cheat-Sheet]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_cheat_sheet.md
-[AWS_Glossary]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/aws_glossary.md
-[AWS_CLI]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cli.md
-[AWS_CloudFront]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudfront.md
-[AWS_CloudWatch]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/cloudwatch.md
-[AWS_EC2]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/ec2.md
-[AWS_KMS]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/kms.md
-[AWS_Lambda]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/lambda.md
-[AWS_S3]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/s3.md
-[AWS_SAM]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sam.md
-[AWS_SQS]: https://github.com/8luebottle/TIL/blob/master/Cloud/AWS/sqs.md
+[AWS_Athena]: ./Cloud/AWS/athena.md
+[AWS_Cheat-Sheet]: ./Cloud/AWS/aws_cheat_sheet.md
+[AWS_Glossary]: ./Cloud/AWS/aws_glossary.md
+[AWS_CLI]: ./Cloud/AWS/cli.md
+[AWS_CloudFront]: ./Cloud/AWS/cloudfront.md
+[AWS_CloudWatch]: ./Cloud/AWS/cloudwatch.md
+[AWS_EC2]: ./Cloud/AWS/ec2.md
+[AWS_KMS]: ./Cloud/AWS/kms.md
+[AWS_Lambda]: ./Cloud/AWS/lambda.md
+[AWS_S3]: ./Cloud/AWS/s3.md
+[AWS_SAM]: ./Cloud/AWS/sam.md
+[AWS_SQS]: ./Cloud/AWS/sqs.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -100,7 +100,7 @@
 |--------------------------| :-------------- |
 |[Cloud Computing][CloudComputing_Cloud-Computing]| 04.10.2020 |
 
-[CloudComputing_Cloud-Computing]: https://github.com/8luebottle/TIL/blob/master/Cloud/CloudComputing/cloud_computing.md
+[CloudComputing_Cloud-Computing]: ./Cloud/CloudComputing/cloud_computing.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -122,13 +122,13 @@
 |[Scheduling][ComputerScience_Scheduling]| 07.06.2021 |
 |[TDD][ComputerScience_TDD]| 05.07.2020 |
 
-[ComputerScience_Cron-Expression]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/cron_expression.md
-[ComputerScience_Data-Transmission]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/data_transmission.md
-[ComputerScience_Middleware]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/middleware.md
-[ComputerScience_MMU]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/mmu.md
-[ComputerScience_Program-Counter]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/program_counter.md
-[ComputerScience_Scheduling]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/scheduling.md
-[ComputerScience_TDD]: https://github.com/8luebottle/TIL/blob/master/ComputerScience/tdd.md
+[ComputerScience_Cron-Expression]: ./ComputerScience/cron_expression.md
+[ComputerScience_Data-Transmission]: ./ComputerScience/data_transmission.md
+[ComputerScience_Middleware]: ./ComputerScience/middleware.md
+[ComputerScience_MMU]: ./ComputerScience/mmu.md
+[ComputerScience_Program-Counter]: ./ComputerScience/program_counter.md
+[ComputerScience_Scheduling]: ./ComputerScience/scheduling.md
+[ComputerScience_TDD]: ./ComputerScience/tdd.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -154,17 +154,17 @@
 |[SQL DROP][DB_SQL-DROP]| 03.18.2020 |
 |[SQL LIKE][DB_SQL-LIKE]| 08.07.2020 |
 
-[DB_Connect-to-Database-from-Command-Line]: https://github.com/8luebottle/TIL/blob/master/Database/connect_db_from_cli.md 
-[DB_DB-Index]: https://github.com/8luebottle/TIL/blob/master/Database/db_index.md
-[DB_JOIN]: https://github.com/8luebottle/TIL/blob/master/Database/join.md
-[DB_Logical-Storage-Structure]: https://github.com/8luebottle/TIL/blob/master/Database/logical_storage_structure.md
-[DB_MySQL-Option-Files]: https://github.com/8luebottle/TIL/blob/master/Database/mysql_option_files.md
-[DB_Optimizer]: https://github.com/8luebottle/TIL/blob/master/Database/optimizer.md
-[DB_postgreSQL]: https://github.com/8luebottle/TIL/blob/master/Database/postgresql.md
-[DB_Redis-TTL]: https://github.com/8luebottle/TIL/blob/master/Database/redis_ttl.md
-[DB_Redis]: https://github.com/8luebottle/TIL/blob/master/Database/redis.md
-[DB_SQL-DROP]: https://github.com/8luebottle/TIL/blob/master/Database/sql_drop.md
-[DB_SQL-LIKE]: https://github.com/8luebottle/TIL/blob/master/Database/sql_like.md
+[DB_Connect-to-Database-from-Command-Line]: ./Database/connect_db_from_cli.md 
+[DB_DB-Index]: ./Database/db_index.md
+[DB_JOIN]: ./Database/join.md
+[DB_Logical-Storage-Structure]: ./Database/logical_storage_structure.md
+[DB_MySQL-Option-Files]: ./Database/mysql_option_files.md
+[DB_Optimizer]: ./Database/optimizer.md
+[DB_postgreSQL]: ./Database/postgresql.md
+[DB_Redis-TTL]: ./Database/redis_ttl.md
+[DB_Redis]: ./Database/redis.md
+[DB_SQL-DROP]: ./Database/sql_drop.md
+[DB_SQL-LIKE]: ./Database/sql_like.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -180,7 +180,7 @@
 |--------------------------| :-------------- |
 | [Docker Commands][Docker_Docker-Commands]| 05.07.2020 |
 
-[Docker_Docker-Commands]: https://github.com/8luebottle/TIL/blob/master/Docker/docker_commands.md
+[Docker_Docker-Commands]: ./Docker/docker_commands.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -199,7 +199,7 @@
 |--------------------------| :-------------- |
 | [Echo-Middleware][Echo_Echo-Middleware]| 04.20.2020 |
 
-[Echo_Echo-Middleware]: https://github.com/8luebottle/TIL/blob/master/Echo/middleware.md
+[Echo_Echo-Middleware]: ./Echo/middleware.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -222,11 +222,11 @@
 | [Branch][Git_Branch]| 02.08.2021 |
 | [Stash][Git_Stash]| 06.24.2021 |
 
-[Git_dot-git]: https://github.com/8luebottle/TIL/blob/master/Git/.git.md
-[Git_Alias]: https://github.com/8luebottle/TIL/blob/master/Git/alias.md
-[Git_Blame]: https://github.com/8luebottle/TIL/blob/master/Git/blame.md
-[Git_Branch]: https://github.com/8luebottle/TIL/blob/master/Git/branch.md
-[Git_Stash]: https://github.com/8luebottle/TIL/blob/master/Git/stash.md
+[Git_dot-git]: ./Git/.git.md
+[Git_Alias]: ./Git/alias.md
+[Git_Blame]: ./Git/blame.md
+[Git_Branch]: ./Git/branch.md
+[Git_Stash]: ./Git/stash.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -265,30 +265,30 @@
 | [Slices][Go_Slices]| 02.04.2020 |
 | [Variables][Go_Variables]| 01.27.2020 |
 
-[Go_Array]: https://github.com/8luebottle/TIL/blob/master/Go/arrays.md
-[Go_Bcrypt]: https://github.com/8luebottle/TIL/blob/master/Go/bcrypt.md
-[Go_Channel]: https://github.com/8luebottle/TIL/blob/master/Go/channel.md
-[Go_Constants]: https://github.com/8luebottle/TIL/blob/master/Go/constants.md
-[Go_Data-Types]: https://github.com/8luebottle/TIL/blob/master/Go/data_types.md
-[Go_Dependency]: https://github.com/8luebottle/TIL/blob/master/Go/dependency.md
-[Go_Duck-Typing]: https://github.com/8luebottle/TIL/blob/master/Go/duck_typing.go
-[Go_For-Loop]: https://github.com/8luebottle/TIL/blob/master/Go/for_loop.md
-[Go_Functions]: https://github.com/8luebottle/TIL/blob/master/Go/functions.md
-[Go_Go-Playground]: https://github.com/8luebottle/TIL/blob/master/Go/go_playground.md
-[Go_Package-fmt]: https://github.com/8luebottle/TIL/blob/master/Go/package_fmt.md
-[Go_Package-gorm]: https://github.com/8luebottle/TIL/blob/master/Go/package_gorm.md
-[Go_Package-http]: https://github.com/8luebottle/TIL/blob/master/Go/package_http.md
-[Go_Package-json]: https://github.com/8luebottle/TIL/blob/master/Go/package_json.md
-[Go_Package-jwt]: https://github.com/8luebottle/TIL/blob/master/Go/package_jwt.md
-[Go_Package-os]: https://github.com/8luebottle/TIL/blob/master/Go/package_os.md
-[Go_Package-redis]: https://github.com/8luebottle/TIL/blob/master/Go/package_redis.md
-[Go_Package-smtp]: https://github.com/8luebottle/TIL/blob/master/Go/package_smtp.md
-[Go_Package-utf8]: https://github.com/8luebottle/TIL/blob/master/Go/package_utf8.md
-[Go_Pacakge-viper]: https://github.com/8luebottle/TIL/blob/master/Go/package_viper.md
-[Go_Pointer]: https://github.com/8luebottle/TIL/blob/master/Go/pointer.md
-[Go_Setup-Go-Compiler]: https://github.com/8luebottle/TIL/blob/master/Go/setup_go_compiler.md
-[Go_Slices]: https://github.com/8luebottle/TIL/blob/master/Go/slices.md
-[Go_Variables]: https://github.com/8luebottle/TIL/blob/master/Go/variables.md
+[Go_Array]: ./Go/arrays.md
+[Go_Bcrypt]: ./Go/bcrypt.md
+[Go_Channel]: ./Go/channel.md
+[Go_Constants]: ./Go/constants.md
+[Go_Data-Types]: ./Go/data_types.md
+[Go_Dependency]: ./Go/dependency.md
+[Go_Duck-Typing]: ./Go/duck_typing.go
+[Go_For-Loop]: ./Go/for_loop.md
+[Go_Functions]: ./Go/functions.md
+[Go_Go-Playground]: ./Go/go_playground.md
+[Go_Package-fmt]: ./Go/package_fmt.md
+[Go_Package-gorm]: ./Go/package_gorm.md
+[Go_Package-http]: ./Go/package_http.md
+[Go_Package-json]: ./Go/package_json.md
+[Go_Package-jwt]: ./Go/package_jwt.md
+[Go_Package-os]: ./Go/package_os.md
+[Go_Package-redis]: ./Go/package_redis.md
+[Go_Package-smtp]: ./Go/package_smtp.md
+[Go_Package-utf8]: ./Go/package_utf8.md
+[Go_Pacakge-viper]: ./Go/package_viper.md
+[Go_Pointer]: ./Go/pointer.md
+[Go_Setup-Go-Compiler]: ./Go/setup_go_compiler.md
+[Go_Slices]: ./Go/slices.md
+[Go_Variables]: ./Go/variables.md
 
 
 [↑ return to TOC](#table-of-contents)
@@ -305,7 +305,7 @@
 |--------------------------| :-------------- |
 |[IntelliJ Commands][IntelliJ_IntelliJ-Commands]| 04.24.2020 |
 
-[IntelliJ_IntelliJ-Commands]: https://github.com/8luebottle/TIL/blob/master/IDE/IntelliJ/intellij_commands.md
+[IntelliJ_IntelliJ-Commands]: ./IDE/IntelliJ/intellij_commands.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -318,7 +318,7 @@
 |--------------------------| :-------------- |
 |[VS Code Commands][VSCode_VS-Code-Commands]| 01.30.2020 |
 
-[VSCode_VS-Code-Commands]: https://github.com/8luebottle/TIL/blob/master/IDE/VSCode/vscode_commands.md
+[VSCode_VS-Code-Commands]: ./IDE/VSCode/vscode_commands.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -333,8 +333,8 @@
 |[Setup][VIM_Setup]| 01.30.2020 |
 |[Vim Commands][VIM_Vim-Commands]| 07.07.2020 |
 
-[VIM_Setup]: https://github.com/8luebottle/TIL/blob/master/IDE/Vim/setup.md
-[VIM_Vim-Commands]: https://github.com/8luebottle/TIL/blob/master/IDE/Vim/vim_commands.md
+[VIM_Setup]: ./IDE/Vim/setup.md
+[VIM_Vim-Commands]: ./IDE/Vim/vim_commands.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -353,9 +353,9 @@
 |[Stability][Infrastructure_Stability]| 02.24.2020 |
 |[IaC][Infrastructure_IaC]| 05.02.2020 |
 
-[Infrastructure_Durability]: https://github.com/8luebottle/TIL/blob/master/Infrastructure/durability.md
-[Infrastructure_Stability]: https://github.com/8luebottle/TIL/blob/master/Infrastructure/stability.md
-[Infrastructure_IaC]: https://github.com/8luebottle/TIL/blob/master/Infrastructure/iac.md
+[Infrastructure_Durability]: ./Infrastructure/durability.md
+[Infrastructure_Stability]: ./Infrastructure/stability.md
+[Infrastructure_IaC]: ./Infrastructure/iac.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -377,11 +377,11 @@
 |[LXC][Linux_LXC]| 04.28.2020 |
 |[Makefile][Linux_Makefile]| 08.06.2020 |
 
-[Linux_compgen]: https://github.com/8luebottle/TIL/blob/master/Linux/compgen.md
-[Linux_GLB]: https://github.com/8luebottle/TIL/blob/master/Linux/gdb.md
-[Linux_Linux-Commands]: https://github.com/8luebottle/TIL/blob/master/Linux/linux_commands.md
-[Linux_LXC]: https://github.com/8luebottle/TIL/blob/master/Linux/lxc.md
-[Linux_Makefile]: https://github.com/8luebottle/TIL/blob/master/Linux/makefile.md
+[Linux_compgen]: ./Linux/compgen.md
+[Linux_GLB]: ./Linux/gdb.md
+[Linux_Linux-Commands]: ./Linux/linux_commands.md
+[Linux_LXC]: ./Linux/lxc.md
+[Linux_Makefile]: ./Linux/makefile.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -398,8 +398,8 @@
 |[MacOS Commands][MacOS_Commands]| 07.17.2020 |
 |[Switch Focus][MacOS_Switch-Focus]| 02.15.2020 |
 
-[MacOS_Commands]: https://github.com/8luebottle/TIL/blob/master/MacOS/mac_commands.md
-[MacOS_Switch-Focus]: https://github.com/8luebottle/TIL/blob/master/MacOS/switch_focus.md
+[MacOS_Commands]: ./MacOS/mac_commands.md
+[MacOS_Switch-Focus]: ./MacOS/switch_focus.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -423,15 +423,15 @@
 |[SMTP][Network_SMTP]| 03.16.2020 |
 |[SSH][Network_SSH]| 04.28.2020 |
 
-[Network_Data-Transmission-Modes]: https://github.com/8luebottle/TIL/blob/master/Network/data_transmission_modes.md
-[Network_HTTP-CORS]: https://github.com/8luebottle/TIL/blob/master/Network/http-cors.md
-[Network_Hub]: https://github.com/8luebottle/TIL/blob/master/Network/hub.md
-[Network_Network-Topology]: https://github.com/8luebottle/TIL/blob/master/Network/network_topology.md
-[Network_Port]: https://github.com/8luebottle/TIL/blob/master/Network/port.md
-[Network_Proxy-Server]: https://github.com/8luebottle/TIL/blob/master/Network/proxy_server.md
-[Network_RJ45]: https://github.com/8luebottle/TIL/blob/master/Network/rj45.md
-[Network_SMTP]: https://github.com/8luebottle/TIL/blob/master/Network/smtp.md
-[Network_SSH]: https://github.com/8luebottle/TIL/blob/master/Network/ssh.md
+[Network_Data-Transmission-Modes]: ./Network/data_transmission_modes.md
+[Network_HTTP-CORS]: ./Network/http-cors.md
+[Network_Hub]: ./Network/hub.md
+[Network_Network-Topology]: ./Network/network_topology.md
+[Network_Port]: ./Network/port.md
+[Network_Proxy-Server]: ./Network/proxy_server.md
+[Network_RJ45]: ./Network/rj45.md
+[Network_SMTP]: ./Network/smtp.md
+[Network_SSH]: ./Network/ssh.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -446,7 +446,7 @@
 |--------------------------| :-------------- |
 |[Functions][PHP_Functions]| 05.12.2021 |
 
-[PHP_Functions]: https://github.com/8luebottle/TIL/blob/master/PHP/functions.md
+[PHP_Functions]: ./PHP/functions.md
 
 </details>
 
@@ -459,7 +459,7 @@
 |--------------------------| :-------------- |
 |[Pretty Print JSON][Python_Pretty-Print-JSON]| 07.27.2020 |
 
-[Python_Pretty-Print-JSON]: https://github.com/8luebottle/TIL/blob/master/Python/pretty_print_json.md
+[Python_Pretty-Print-JSON]: ./Python/pretty_print_json.md
 
 [↑ return to TOC](#table-of-contents)
 
