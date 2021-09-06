@@ -1,3 +1,41 @@
+# A
+
+## array_merge
+
+둘 이상의 배열을 병합해 준다.
+
+`function array_merge (array $array1, array $array2 = null, array $_ = null) array`
+
+```php
+$toms_pet = '{"cat": 5, "dog": 3}';
+$johns_pet = '{"cat": 10, "dog": 1, "parrot": 1}';
+
+$pets = array_merge(json_decode($toms_pet),json_decode($johns_pet));
+```
+
+- **Return values**
+  - array ⇒ 병합된 배열이 리턴된다.  
+    - Key 가 string 일 시  
+      배열에 동일한 Key 가 존재한다면 해당 Key 의 값은 제일 마지막으로 덧붙여진 배열의 값으로 대체된다.
+    - Key 가 Numeric 일 시  
+      key 가 numeric 형태라면 해당 키값에 덮어쓰기가 진행되는 것이 아니라, 기존 array 에 다른 array 가 덧붙여진다. Key 는 1씩 증가된다.
+
+      ```php
+      $numeric_array1 = array(1=>'Last Year', 3=>2020);
+      $numeric_array2 = array(1=>'Current Year', 3=>2021);
+      print_r(array_merge($numeric_array1, $numeric_array2));
+      ```
+      ```php
+      // RESULT
+      Array
+      (
+          [0] => Last Year
+          [1] => 2020
+          [2] => Current Year
+          [3] => 2021
+      )
+      ```
+
 # D
 
 ## define

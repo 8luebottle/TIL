@@ -444,7 +444,7 @@
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
-|[Functions][PHP_Functions]| 05.12.2021 |
+|[Functions][PHP_Functions]| 09.06.2021 |
 
 [PHP_Functions]: ./PHP/functions.md
 
