@@ -40,7 +40,7 @@
 |**G**|[Git](#git) \| [Go](#go)|
 |**I**|[IDE](#ide) \| [Infrastructure](#infrastructure)|
 |**J**|[JavaScript](#javascript)|
-|**L**|[Linux](#linux)| 
+|**L**|[Linux](#linux)|
 |**M**|[MacOS](#macos)|
 |**N**|[Network](#network)|
 |**P**|[PHP](#php) \| [Python](#python)|
@@ -444,7 +444,7 @@
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
-|[Functions][PHP_Functions]| 09.06.2021 |
+|[Functions][PHP_Functions]| 09.13.2021 |
 
 [PHP_Functions]: ./PHP/functions.md
 

@@ -120,6 +120,56 @@ echo $result[4]; // Undefined array key
     나뉜 문자열들이 배열에 담겨 리턴된다.
 
 
+# H
+
+## http_build_query
+
+URL-encoded 된 문자열로 만들어준다.
+
+`http_build_query( mixed $data, string $numeric_prefix = ?, string $arg_separator = ?,int $encoding_type = PHP_QUERY_RFC1738): string`
+
+```php
+$data = array(
+  'limit' => 10,
+  'keyword' => "prime",
+  'is_deleted' => false
+);
+
+echo http_build_query($data) . "\n"; // limit=10&keyword=prime&is_deleted=0
+```
+
+- **Parameters**
+  - `data`  
+    배열 또는 객체
+    - **배열**: 일차원 배열, 또는 다른 배열을 포함한 배열
+    - **객체**: Public 속성들만 결과에 나타남
+
+  - `numeric_prefix`  
+    주어진 `data`가 배열인 경우 Key 값이 0, 1, 2 ... n+1 형태로 주어진다.  
+    `numeric_prefix`를 통해 Key 에 prefix 를 더해줄 수 있다.  
+    ```php
+    $data = array( 'zero', 'one');
+
+    echo http_build_query($data, 'number'); // number_0=zero&number_1=one 
+    ```
+
+  - `arg_separator`  
+    구분자를 통해 요소들을 나누어 줄 수 있다.  
+    만약 `arg_separator`를 지정해 주지 않으면, [`arg_separator.output`](http://new.lug.or.kr/files/docs/PHP/ini.core.html#ini.arg-separator.output) 이 사용된다.  
+
+  - `encoding_type`  
+    기본 인코딩 유형은 **PHP_QUERY_RFC1738**  
+    - **PHP_QUERY_RFC1738**  
+      [RFC 1738](http://www.faqs.org/rfcs/rfc1738.html)
+      - 공백: `+` 로 인코딩 됨.
+    - **PHP_QUERY_RFC3986**  
+      [RFC 3986](http://www.faqs.org/rfcs/rfc3986.html)
+      - 공백: `%20` 로 인코딩 됨.
+
+- **Return Value**  
+  URL-encoded 된 문자열
+
+
 # I
 
 ## isset
