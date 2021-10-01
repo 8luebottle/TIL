@@ -473,7 +473,7 @@
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
-|[sudo ap-get growth++][sudo_app-get_growth]| 10.01.2021 |
+|[sudo ap-get growth++][sudo_app-get_growth]| 10.02.2021 |
 
 [sudo_app-get_growth]: ./TechEvents/sudo_app-get_growth++.md
 
