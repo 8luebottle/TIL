@@ -46,7 +46,7 @@
     - (주간/일간) 업무 계획을 세울 때, 공부 계획도 함께 수립  
       <img width="600" alt="rachel-study-plan" src="https://user-images.githubusercontent.com/48475824/135649718-09637905-f914-4ff2-b281-116d923ad9fe.png">  
       <img width="600" alt="rachel-study-plan2" src="https://user-images.githubusercontent.com/48475824/135649868-467eafb8-b514-45d0-ba7b-6404d84bc65f.png">  
-      - [얼또: 레이첼이 페북에서 운영하는 그룹 (얼리 또라이)]((https://www.facebook.com/groups/earlyddorai/))
+      - [얼또: 레이첼이 페북에서 운영하는 그룹 (얼리 또라이)](https://www.facebook.com/groups/earlyddorai/)
 
 **[공부]**
 - 공부를 해야하는 맥락이 현실과 매우 밀접해야 하는 사람.
@@ -58,7 +58,7 @@
 **[블로그]**
 - 새로운 기술 사용법 보다는 실제로 겪은 문제 해결 과정  
   1. 내가 겪은 문제 상황을 자유롭게 노트에 작성  
-    <img width="600" alt="rachel-note" src="https://user-images.githubusercontent.com/48475824/135650533-727d823d-f5ca-4108-957f-b0fb34e0d699.png">
+    <img width="600" alt="rachel-note" src="https://user-images.githubusercontent.com/48475824/135650533-727d823d-f5ca-4108-957f-b0fb34e0d699.png"><br>  
       - 잘 정리된 형식일 필요 없음
       - 그저 내가 기억할 수 있는 키워드면 충분  
       
