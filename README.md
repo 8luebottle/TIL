@@ -44,7 +44,7 @@
 |**M**|[MacOS](#macos)|
 |**N**|[Network](#network)|
 |**P**|[PHP](#php) \| [Python](#python)|
-|**T**|[Terraform](#terraform) \| [Tool](#tool)|
+|**T**|[Tech Events](#tech-events)|
 
 
 # 🗂 Categories
@@ -466,8 +466,17 @@
 </details>
 
 
-## Terraform
+## Tech Events
 
+<details>
+  <summary> Events (1)</summary>
 
-## Tool
-### Datadog
+|           Title          |  Last Updated   |
+|--------------------------| :-------------- |
+|[sudo ap-get growth++][sudo_app-get_growth]| 10.01.2021 |
+
+[sudo_app-get_growth]: ./TechEvents/sudo_app-get_growth++.md
+
+[↑ return to TOC](#table-of-contents)
+
+</details>
