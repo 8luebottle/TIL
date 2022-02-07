@@ -145,7 +145,7 @@
 |[Connect to Database from Command Line][DB_Connect-to-Database-from-Command-Line]| 03.29.2020 |
 |[DB Index][DB_DB-Index]| 03.09.2020 |
 |[JOIN][DB_JOIN]| 06.13.2020 |
-|[Logical Storage Structure][DB_Logical-Storage-Structure]| 06.19.2021 |
+|[Logical Storage Structure][DB_Logical-Storage-Structure]| 02.08.2022 |
 |[MySQL Option Files][DB_MySQL-Option-Files]| 06.25.2021 |
 |[Optimizer][DB_Optimizer]| 04.14.2020 |
 |[postgreSQL][DB_postgreSQL]| 06.13.2020 |
