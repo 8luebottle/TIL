@@ -138,7 +138,7 @@
 ## Database
 
 <details>
-  <summary>Database (12)</summary>
+  <summary>Database (13)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -149,6 +149,7 @@
 |[Logical Storage Structure][DB_Logical-Storage-Structure]| 02.08.2022 |
 |[MySQL Option Files][DB_MySQL-Option-Files]| 06.25.2021 |
 |[Optimizer][DB_Optimizer]| 04.14.2020 |
+|[Performance Tuning][DB_Performance-Tuning]| 02.12.2022 |
 |[postgreSQL][DB_postgreSQL]| 06.13.2020 |
 |[Redis TTL][DB_Redis-TTL]| 03.28.2020 |
 |[Redis][DB_Redis]| 06.30.2020 |
@@ -162,6 +163,7 @@
 [DB_Logical-Storage-Structure]: ./Database/logical_storage_structure.md
 [DB_MySQL-Option-Files]: ./Database/mysql_option_files.md
 [DB_Optimizer]: ./Database/optimizer.md
+[DB_Performance-Tuning]: ./Database/performance_tuning.md
 [DB_postgreSQL]: ./Database/postgresql.md
 [DB_Redis-TTL]: ./Database/redis_ttl.md
 [DB_Redis]: ./Database/redis.md
