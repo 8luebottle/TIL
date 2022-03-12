@@ -349,15 +349,17 @@
 ## Infrastructure
 
 <details>
-  <summary>Infrastructure (3)</summary>
+  <summary>Infrastructure (4)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Durability][Infrastructure_Durability]| 07.30.2020 |
+|[ElasticMQ][Infrastructure_ElasticMQ]|03.12.2022|
 |[Stability][Infrastructure_Stability]| 02.24.2020 |
 |[IaC][Infrastructure_IaC]| 05.02.2020 |
 
 [Infrastructure_Durability]: ./Infrastructure/durability.md
+[Infrastructure_ElasticMQ]: ./Infrastructure/elasticmq.md
 [Infrastructure_Stability]: ./Infrastructure/stability.md
 [Infrastructure_IaC]: ./Infrastructure/iac.md
 
