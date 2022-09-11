@@ -12,6 +12,8 @@
 - [AMI](#ami)
 - [Load Balancing](#load-balancing)
 - [Auto Scaling](#auto-scaling)
+- [EC2 CLI Commands](#ec2-cli-commands)
+  - [modify-instance-attribute](#modify-instance-attribute)
 
 
 ## About EC2  
@@ -122,6 +124,10 @@ AWS 가 제공하는 인스턴스 유형은 상당히 많다. 이 인스턴스�
   - Amazon EBS Volume 에 대한 Storage
 - 중지된 Instance를 실행시킬 시 `stopped` → `running` 상태로 전환된다.  
   상태의 전환과정 중에 대한 비용은 초 단위로 청구된다. 이 역시 최소 1분의 요금이 부과됨.
+- 중지 방지(`stop protection`) 사용.  
+  중지 방지 사용을 통해 실수로 인스턴스를 중지(stop) 또는 종료(terminate) 시키는 것을 미연에 방지할 수 있다.  
+  - spot instance 는 해당 기능 사용 불가.
+  
 
 **최대 절전 모드 (suspend-to-disk)**
 - 최대 절전 모드는 Amazon EBS 지원 Instance만 해당.
@@ -185,5 +191,40 @@ AMI의 컨텐츠는 암호화 되어 있다.
 
 
 ## Auto Scaling
+
+[↑ return to TOC](#table-of-contents)
+
+## EC2 CLI Commands
+### `modify-instance-attribute`
+> EC2 인스턴스의 속성 변경하기
+
+#### `--disable-api-stop`
+> 실행 중이거나 중단된 instance 의 중지 방지를 **활성화** 시키기.
+
+`aws ec2 modify-instance-attribute --instance-id <instanceID> --disable-api-stop`
+
+#### `--no-disable-api-stop`
+> 실행 중이거나 중단된 instance 의 중지 방지를 **비활성화** 시키기.
+
+`aws ec2 modify-instance-attribute --instance-id <instanceID> --no-disable-api-stop`
+
+- The Result:  
+  ```shell
+  {
+      "StoppingInstances": [
+          {
+              "CurrentState": {
+                  "Code": 64,
+                  "Name": "stopping"
+              },
+              "InstanceId": “<instanceID>”,
+              "PreviousState": {
+                  "Code": 16,
+                  "Name": "running"
+              }
+          }
+      ]
+  }
+  ```
 
 [↑ return to TOC](#table-of-contents)

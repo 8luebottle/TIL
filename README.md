@@ -68,7 +68,7 @@
 |[CLI][AWS_CLI]| 07.28.2020 |
 |[CloudFront][AWS_CloudFront]| 08.15.2020 |
 |[CloudWatch][AWS_CloudWatch]| 08.06.2020 |
-|[EC2][AWS_EC2]| 05.29.2021 |
+|[EC2][AWS_EC2]| 09.11.2022 |
 |[KMS][AWS_KMS]| 07.23.2020 |
 |[Lambda][AWS_Lambda]| 07.22.2020 |
 |[S3][AWS_S3]| 07.25.2021 |
