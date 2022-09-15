@@ -58,7 +58,7 @@
 
 ## Cloud
 <details>
-  <summary>AWS (12)</summary>
+  <summary>AWS (13)</summary>
     
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -73,6 +73,7 @@
 |[Lambda][AWS_Lambda]| 07.22.2020 |
 |[S3][AWS_S3]| 07.25.2021 |
 |[SAM][AWS_SAM]| 04.20.2021 |
+|[SES][AWS_SES]|09.15.2022|
 |[SQS][AWS_SQS]| 07.22.2020 |
 
 [AWS_Athena]: ./Cloud/AWS/athena.md
@@ -86,6 +87,7 @@
 [AWS_Lambda]: ./Cloud/AWS/lambda.md
 [AWS_S3]: ./Cloud/AWS/s3.md
 [AWS_SAM]: ./Cloud/AWS/sam.md
+[AWS_SES]: ./Cloud/AWS/ses.md
 [AWS_SQS]: ./Cloud/AWS/sqs.md
 
 [↑ return to TOC](#table-of-contents)
