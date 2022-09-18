@@ -183,7 +183,7 @@
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
-| [Docker Commands][Docker_Docker-Commands]| 05.07.2020 |
+| [Docker Commands][Docker_Docker-Commands]| 09.18.2022 |
 
 [Docker_Docker-Commands]: ./Docker/docker_commands.md
 
