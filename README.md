@@ -374,11 +374,12 @@
 ## Linux
 
 <details>
-  <summary>Linux (6)</summary>
+  <summary>Linux (7)</summary>
 
 | Title                                  | Last Updated |
 |----------------------------------------|:-------------|
 | [compgen][Linux_compgen]               | 08.06.2020   |
+| [cURL Command in Linux][Linux_curl]    | 09.27.2022   |
 | [GDB][Linux_GLB]                       | 02.10.2020   |
 | [Linux Commands][Linux_Linux-Commands] | 06.25.2020   |
 | [LXC][Linux_LXC]                       | 04.28.2020   |
@@ -386,6 +387,7 @@
 | [stress][Linux_stress]                 | 09.04.2022   |
 
 [Linux_compgen]: ./Linux/compgen.md
+[Linux_curl]: ./Linux/curl.md
 [Linux_GLB]: ./Linux/gdb.md
 [Linux_Linux-Commands]: ./Linux/linux_commands.md
 [Linux_LXC]: ./Linux/lxc.md
