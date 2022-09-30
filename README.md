@@ -39,6 +39,7 @@
 |**G**|[Git](#git) \| [Go](#go)|
 |**I**|[IDE](#ide) \| [Infrastructure](#infrastructure)|
 |**J**|[JavaScript](#javascript)|
+|**K**|[Kubernetes](#kubernetes)|
 |**L**|[Linux](#linux)|
 |**M**|[MacOS](#macos)|
 |**N**|[Network](#network)|
@@ -370,6 +371,16 @@
 
 
 ## JavaScript
+
+## Kubernetes
+
+<details>
+    <summary>Kubernetes (0)</summary>
+    
+[↑ return to TOC](#table-of-contents)
+    
+</details>
+
 
 ## Linux
 
