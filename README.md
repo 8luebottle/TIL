@@ -374,7 +374,7 @@
 ## Linux
 
 <details>
-  <summary>Linux (7)</summary>
+  <summary>Linux (8)</summary>
 
 | Title                                  | Last Updated |
 |----------------------------------------|:-------------|
@@ -384,6 +384,7 @@
 | [Linux Commands][Linux_Linux-Commands] | 06.25.2020   |
 | [LXC][Linux_LXC]                       | 04.28.2020   |
 | [Makefile][Linux_Makefile]             | 08.06.2020   |
+| [OS Version][Linux_OS-Version]         | 09.30.2022   |
 | [stress][Linux_stress]                 | 09.04.2022   |
 
 [Linux_compgen]: ./Linux/compgen.md
@@ -392,6 +393,7 @@
 [Linux_Linux-Commands]: ./Linux/linux_commands.md
 [Linux_LXC]: ./Linux/lxc.md
 [Linux_Makefile]: ./Linux/makefile.md
+[Linux_OS-Version]: ./Linux/os_version.md
 [Linux_stress]: ./Linux/stress.md
 
 [↑ return to TOC](#table-of-contents)
