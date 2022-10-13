@@ -225,7 +225,7 @@
 | [.git][Git_dot-git]| 05.15.2021 |
 | [Alias][Git_Alias]| 07.12.2020 |
 | [Blame][Git_Blame]| 04.27.2020 |
-| [Branch][Git_Branch]| 02.08.2021 |
+| [Branch][Git_Branch]| 10.13.2022 |
 | [Stash][Git_Stash]| 06.24.2021 |
 
 [Git_dot-git]: ./Git/.git.md

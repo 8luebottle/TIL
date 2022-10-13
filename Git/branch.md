@@ -72,10 +72,20 @@
     로컬 브랜치의 마지막 커밋 정보 보기  
     `git branch -v`
     ```
-    develop         322bd34 Service
-    feature/channel d7631d3 WIP : Channel
-    * feature/user    15dcbce WIP : Restart
-    master          8356e72 Initial commit
+    develop          322bd34 Service
+    feature/channel  d7631d3 WIP : Channel
+    * feature/user   15dcbce WIP : Restart
+    main             8356e72 Initial commit
+    ```
+
+    #### Show both Local & Remote Branch w/ Last Commit Info
+    로컬 브랜치의 마지막 커밋 정보 및 연결된 원격 브랜치 보기  
+    `git branch -vv`
+    ```
+    develop           322bd34 [origin/develop: ahead 1] Service
+    feature/channel   d7631d3 [origin/feature/channel] WIP : Channel
+    * feature/user    15dcbce [origin/feature/user: gone] WIP : Restart
+    main              8356e72 [origin/main] Initial commit
     ```
 
     [Return to TOC](#table-of-contents)
