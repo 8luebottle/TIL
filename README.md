@@ -112,7 +112,7 @@
 ## Computer Science
 
 <details>
-  <summary>Computer Science (7)</summary>
+  <summary>Computer Science (8)</summary>
 
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -123,6 +123,7 @@
 |[Program Counter][ComputerScience_Program-Counter]| 04.07.2020 |
 |[Scheduling][ComputerScience_Scheduling]| 07.06.2021 |
 |[TDD][ComputerScience_TDD]| 05.07.2020 |
+|[Thread-safe Data Structures][ComputerScience_Thread-Safe-Data-Structures]| 05.06.2023 |
 
 [ComputerScience_Cron-Expression]: ./ComputerScience/cron_expression.md
 [ComputerScience_Data-Transmission]: ./ComputerScience/data_transmission.md
@@ -131,6 +132,7 @@
 [ComputerScience_Program-Counter]: ./ComputerScience/program_counter.md
 [ComputerScience_Scheduling]: ./ComputerScience/scheduling.md
 [ComputerScience_TDD]: ./ComputerScience/tdd.md
+[COmputerScience_Thread-Safe-Data-Structures]: ./ComputerScience/thread-safe_data_structures.md
 
 [↑ return to TOC](#table-of-contents)
 
