@@ -177,6 +177,16 @@ Image의 목록을 출력하는 명령어.
   docker images <option> <imageName>
   ```
 
+  * 최신 다운로드된 Docker Image 기준으로 이미지를 포멧팅 및 정렬.
+    ```bash
+    docker images --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.CreatedAt}}" --filter "dangling=false" | tail -n +2 | sort -k4 -r
+    ```
+    * `--filter "dangling=false"`: 쓸모없는(dangling) 이미지를 필터링하여 출력에서 제외
+    * `tail -n +2`: 테이블의 헤더 제외 (첫번째 줄 제외한 나머지 출력)
+    * `sort -k4 -r`: 
+      * `-k4`: 네 번째 열(`CreatedAt`)을 기준으로 정렬
+      * `-r`: 역순으로 정렬
+
 [↑ return to TOC](#table-of-contents)
 
 ## import
