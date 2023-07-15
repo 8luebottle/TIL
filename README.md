@@ -444,6 +444,7 @@
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Data Transmission Modes][Network_Data-Transmission-Modes]| 05.29.2021 |
+|[DNS][Network_DNS]| 07.16.2023 |
 |[HTTP CORS][Network_HTTP-CORS]| 04.17.2020 |
 |[Hub][Network_Hub]| 05.31.2021 |
 |[Network Topology][Network_Network-Topology]| 06.15.2021 |
@@ -454,6 +455,7 @@
 |[SSH][Network_SSH]| 04.28.2020 |
 
 [Network_Data-Transmission-Modes]: ./Network/data_transmission_modes.md
+[Network_DNS]: ./Network/dns.md
 [Network_HTTP-CORS]: ./Network/http-cors.md
 [Network_Hub]: ./Network/hub.md
 [Network_Network-Topology]: ./Network/network_topology.md
