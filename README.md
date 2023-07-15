@@ -59,7 +59,7 @@
 
 ## Cloud
 <details>
-  <summary>AWS (14)</summary>
+  <summary>AWS (15)</summary>
     
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
@@ -73,6 +73,7 @@
 |[KMS][AWS_KMS]| 07.23.2020 |
 |[Lambda][AWS_Lambda]| 07.22.2020 |
 |[RDS][AWS_RDS]|05.31.2023|
+|[Route53][AWS_Route53]|07.15.2023|
 |[S3][AWS_S3]| 07.25.2021 |
 |[SAM][AWS_SAM]| 04.20.2021 |
 |[SES][AWS_SES]|09.15.2022|
@@ -88,6 +89,7 @@
 [AWS_KMS]: ./Cloud/AWS/kms.md
 [AWS_Lambda]: ./Cloud/AWS/lambda.md
 [AWS_RDS]: ./Cloud/AWS/rds.md
+[AWS_Route53]: ./Cloud/AWS/route53.md
 [AWS_S3]: ./Cloud/AWS/s3.md
 [AWS_SAM]: ./Cloud/AWS/sam.md
 [AWS_SES]: ./Cloud/AWS/ses.md
