@@ -1,55 +1,62 @@
 # 🗃 TIL
+
 ![Made with love by 8luebottle](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8Fby-%208luebottle%20-blue)
 
 > Consistency is one of the biggest factors to accomplishment and success.  
-<img width="530" alt="TIL" src="https://user-images.githubusercontent.com/48475824/72317542-f9361e80-36dc-11ea-9633-ef6bf88725c7.png">
+> <img width="530" alt="TIL" src="https://user-images.githubusercontent.com/48475824/72317542-f9361e80-36dc-11ea-9633-ef6bf88725c7.png">
 
 # About
+
 <details>
     <summary>About 8luebottle's TIL</summary>
 
 #### 📌 &nbsp; Available Languages
-* 🇰🇷 Korean
+
+- 🇰🇷 Korean
 
 #### 📌 &nbsp; Commit Message Convention
+
 `MM.DD.YYYY : <Categories>`
 
 #### 📌 &nbsp; TIL File Extensions
-* .md
-* .ipynb
+
+- .md
+- .ipynb
 
 #### 📌 &nbsp; Table Format
-| Title |Last Updated|
-|-------| :--------: |
-|ABCDEFG| MM.DD.YYYY |
+
+| Title   | Last Updated |
+| ------- | :----------: |
+| ABCDEFG |  MM.DD.YYYY  |
 
 #### 📌 &nbsp; Total Count
+
 `Category Name (total count)`
 
 </details>
 
 ## Table of Contents
 
-|     |        |
-|:---:|--------|
-|**B**|[Big Data](#big-data)|
-|**C**|[Cloud](#cloud) \| [Computer Science](#computer-science)|
-|**D**|[Database](#database) \| [Docker](#docker) \| [Django](#django)|
-|**E**|[Echo](#echo) \| [Elastic](#elastic)|
-|**G**|[Git](#git) \| [Go](#go)|
-|**I**|[IDE](#ide) \| [Infrastructure](#infrastructure)|
-|**J**|[JavaScript](#javascript)|
-|**K**|[Kubernetes](#kubernetes)|
-|**L**|[Linux](#linux)|
-|**M**|[MacOS](#macos)|
-|**N**|[Network](#network)|
-|**P**|[PHP](#php) \| [Python](#python)|
-|**T**|[Tech Events](#tech-events)|
-
+|       |                                                                 |
+| :---: | --------------------------------------------------------------- |
+| **B** | [Big Data](#big-data)                                           |
+| **C** | [Cloud](#cloud) \| [Computer Science](#computer-science)        |
+| **D** | [Database](#database) \| [Docker](#docker) \| [Django](#django) |
+| **E** | [Echo](#echo) \| [Elastic](#elastic)                            |
+| **G** | [Git](#git) \| [Go](#go)                                        |
+| **I** | [IDE](#ide) \| [Infrastructure](#infrastructure)                |
+| **J** | [JavaScript](#javascript)                                       |
+| **K** | [Kubernetes](#kubernetes)                                       |
+| **L** | [Linux](#linux)                                                 |
+| **M** | [MacOS](#macos)                                                 |
+| **N** | [Network](#network)                                             |
+| **P** | [PHP](#php) \| [Python](#python)                                |
+| **T** | [Tech Events](#tech-events)                                     |
 
 # 🗂 Categories
 
 ## Big Data
+
 <details>
     <summary>Hadoop (0)</summary>
     
@@ -58,6 +65,7 @@
 </details>
 
 ## Cloud
+
 <details>
   <summary>AWS (15)</summary>
     
@@ -102,9 +110,9 @@
 <details>
   <summary>Cloud Computing (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Cloud Computing][CloudComputing_Cloud-Computing]| 04.10.2020 |
+| Title                                             | Last Updated |
+| ------------------------------------------------- | :----------- |
+| [Cloud Computing][CloudComputing_Cloud-Computing] | 04.10.2020   |
 
 [CloudComputing_Cloud-Computing]: ./Cloud/CloudComputing/cloud_computing.md
 
@@ -112,22 +120,21 @@
 
 </details>
 
-
 ## Computer Science
 
 <details>
   <summary>Computer Science (8)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Cron Expression][ComputerScience_Cron-Expression]| 08.05.2020 |
-|[Data Transmission][ComputerScience_Data-Transmission]| 02.10.2020 |
-|[Middleware][ComputerScience_Middleware]| 04.17.2020 |
-|[MMU][ComputerScience_MMU]| 06.13.2021 |
-|[Program Counter][ComputerScience_Program-Counter]| 04.07.2020 |
-|[Scheduling][ComputerScience_Scheduling]| 07.06.2021 |
-|[TDD][ComputerScience_TDD]| 05.07.2020 |
-|[Thread-safe Data Structures][ComputerScience_Thread-Safe-Data-Structures]| 05.06.2023 |
+| Title                                                                      | Last Updated |
+| -------------------------------------------------------------------------- | :----------- |
+| [Cron Expression][ComputerScience_Cron-Expression]                         | 08.05.2020   |
+| [Data Transmission][ComputerScience_Data-Transmission]                     | 02.10.2020   |
+| [Middleware][ComputerScience_Middleware]                                   | 04.17.2020   |
+| [MMU][ComputerScience_MMU]                                                 | 06.13.2021   |
+| [Program Counter][ComputerScience_Program-Counter]                         | 04.07.2020   |
+| [Scheduling][ComputerScience_Scheduling]                                   | 07.06.2021   |
+| [TDD][ComputerScience_TDD]                                                 | 05.07.2020   |
+| [Thread-safe Data Structures][ComputerScience_Thread-Safe-Data-Structures] | 05.06.2023   |
 
 [ComputerScience_Cron-Expression]: ./ComputerScience/cron_expression.md
 [ComputerScience_Data-Transmission]: ./ComputerScience/data_transmission.md
@@ -142,30 +149,31 @@
 
 </details>
 
-
 ## Database
 
 <details>
   <summary>Database (13)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Buffer Pool][DB_Buffer_Pool]| 02.10.2022 |
-|[Connect to Database from Command Line][DB_Connect-to-Database-from-Command-Line]| 03.29.2020 |
-|[DB Index][DB_DB-Index]| 03.09.2020 |
-|[JOIN][DB_JOIN]| 06.13.2020 |
-|[Logical Storage Structure][DB_Logical-Storage-Structure]| 02.08.2022 |
-|[MySQL Option Files][DB_MySQL-Option-Files]| 06.25.2021 |
-|[Optimizer][DB_Optimizer]| 04.14.2020 |
-|[Performance Tuning][DB_Performance-Tuning]| 02.12.2022 |
-|[postgreSQL][DB_postgreSQL]| 06.13.2020 |
-|[Redis TTL][DB_Redis-TTL]| 03.28.2020 |
-|[Redis][DB_Redis]| 06.30.2020 |
-|[SQL DROP][DB_SQL-DROP]| 03.18.2020 |
-|[SQL LIKE][DB_SQL-LIKE]| 08.07.2020 |
+| Title                                                                             | Last Updated |
+| --------------------------------------------------------------------------------- | :----------- |
+| [Buffer Pool][DB_Buffer_Pool]                                                     | 02.10.2022   |
+| [Caching Mechanisms][DB_Caching_Mechanisms]                                       | 07.24.2023   |
+| [Connect to Database from Command Line][DB_Connect-to-Database-from-Command-Line] | 03.29.2020   |
+| [DB Index][DB_DB-Index]                                                           | 03.09.2020   |
+| [JOIN][DB_JOIN]                                                                   | 06.13.2020   |
+| [Logical Storage Structure][DB_Logical-Storage-Structure]                         | 02.08.2022   |
+| [MySQL Option Files][DB_MySQL-Option-Files]                                       | 06.25.2021   |
+| [Optimizer][DB_Optimizer]                                                         | 04.14.2020   |
+| [Performance Tuning][DB_Performance-Tuning]                                       | 02.12.2022   |
+| [postgreSQL][DB_postgreSQL]                                                       | 06.13.2020   |
+| [Redis TTL][DB_Redis-TTL]                                                         | 03.28.2020   |
+| [Redis][DB_Redis]                                                                 | 06.30.2020   |
+| [SQL DROP][DB_SQL-DROP]                                                           | 03.18.2020   |
+| [SQL LIKE][DB_SQL-LIKE]                                                           | 08.07.2020   |
 
 [DB_Buffer_Pool]: ./Database/buffer_pool.md
-[DB_Connect-to-Database-from-Command-Line]: ./Database/connect_db_from_cli.md 
+[DB_Caching_Mechanisms]: ./Database/caching_mechanisms.md
+[DB_Connect-to-Database-from-Command-Line]: ./Database/connect_db_from_cli.md
 [DB_DB-Index]: ./Database/db_index.md
 [DB_JOIN]: ./Database/join.md
 [DB_Logical-Storage-Structure]: ./Database/logical_storage_structure.md
@@ -182,15 +190,14 @@
 
 </details>
 
-
 ## Docker
 
 <details>
   <summary>Docker (1)</summary>
 
-|           Title          | Last Updated |
-|--------------------------|:-------------|
-| [Docker Commands][Docker_Docker-Commands]| 05.25.2023   |
+| Title                                     | Last Updated |
+| ----------------------------------------- | :----------- |
+| [Docker Commands][Docker_Docker-Commands] | 05.25.2023   |
 
 [Docker_Docker-Commands]: ./Docker/docker_commands.md
 
@@ -198,18 +205,16 @@
 
 </details>
 
-
 ## Django
-
 
 ## Echo
 
 <details>
   <summary>Echo (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-| [Echo-Middleware][Echo_Echo-Middleware]| 04.20.2020 |
+| Title                                   | Last Updated |
+| --------------------------------------- | :----------- |
+| [Echo-Middleware][Echo_Echo-Middleware] | 04.20.2020   |
 
 [Echo_Echo-Middleware]: ./Echo/middleware.md
 
@@ -217,22 +222,20 @@
 
 </details>
 
-
 ## Elastic
-
 
 ## Git
 
 <details>
   <summary>Git (5)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-| [.git][Git_dot-git]| 05.15.2021 |
-| [Alias][Git_Alias]| 07.12.2020 |
-| [Blame][Git_Blame]| 04.27.2020 |
-| [Branch][Git_Branch]| 10.13.2022 |
-| [Stash][Git_Stash]| 06.24.2021 |
+| Title                | Last Updated |
+| -------------------- | :----------- |
+| [.git][Git_dot-git]  | 05.15.2021   |
+| [Alias][Git_Alias]   | 07.12.2020   |
+| [Blame][Git_Blame]   | 04.27.2020   |
+| [Branch][Git_Branch] | 10.13.2022   |
+| [Stash][Git_Stash]   | 06.24.2021   |
 
 [Git_dot-git]: ./Git/.git.md
 [Git_Alias]: ./Git/alias.md
@@ -244,38 +247,37 @@
 
 </details>
 
-
 ## Go
 
 <details>
   <summary>Go (24)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-| [Arrays][Go_Array]| 01.27.2020 |
-| [Bcrypt][Go_Bcrypt]|02.19.2020|
-| [Channel][Go_Channel]|07.19.2020|
-| [Constants][Go_Constants]| 01.27.2020 |
-| [Data Types][Go_Data-Types]| 09.06.2020 |
-| [Dependency][Go_Dependency]| 04.20.2020 |
-| [Duck Typing][Go_Duck-Typing]| 02.05.2020 |
-| [For Loop][Go_For-Loop]| 02.05.2020 |
-| [Functions][Go_Functions]| 02.01.2020 |
-| [Go Playground][Go_Go-Playground]| 01.21.2020 |
-| [Package fmt][Go_Package-fmt]| 04.22.2020 |
-| [Package gorm][Go_Package-gorm]| 08.03.2020 |
-| [Package http][Go_Package-http]| 08.30.2020 |
-| [Package json][Go_Package-json]| 02.25.2020 |
-| [Package jwt][Go_Package-jwt]| 03.17.2020 |
-| [Package os][Go_Package-os]| 05.08.2020 |
-| [Package redis][Go_Package-redis]| 03.13.2020 |
-| [Package smtp][Go_Package-smtp]| 03.17.2020 |
-| [Package utf8][Go_Package-utf8]| 07.20.2020 |
-| [Package viper][Go_Pacakge-viper]| 03.21.2020 |
-| [Pointer][Go_Pointer]| 02.02.2020 |
-| [Setup Go Compiler][Go_Setup-Go-Compiler]| 01.22.2020 |
-| [Slices][Go_Slices]| 02.04.2020 |
-| [Variables][Go_Variables]| 01.27.2020 |
+| Title                                     | Last Updated |
+| ----------------------------------------- | :----------- |
+| [Arrays][Go_Array]                        | 01.27.2020   |
+| [Bcrypt][Go_Bcrypt]                       | 02.19.2020   |
+| [Channel][Go_Channel]                     | 07.19.2020   |
+| [Constants][Go_Constants]                 | 01.27.2020   |
+| [Data Types][Go_Data-Types]               | 09.06.2020   |
+| [Dependency][Go_Dependency]               | 04.20.2020   |
+| [Duck Typing][Go_Duck-Typing]             | 02.05.2020   |
+| [For Loop][Go_For-Loop]                   | 02.05.2020   |
+| [Functions][Go_Functions]                 | 02.01.2020   |
+| [Go Playground][Go_Go-Playground]         | 01.21.2020   |
+| [Package fmt][Go_Package-fmt]             | 04.22.2020   |
+| [Package gorm][Go_Package-gorm]           | 08.03.2020   |
+| [Package http][Go_Package-http]           | 08.30.2020   |
+| [Package json][Go_Package-json]           | 02.25.2020   |
+| [Package jwt][Go_Package-jwt]             | 03.17.2020   |
+| [Package os][Go_Package-os]               | 05.08.2020   |
+| [Package redis][Go_Package-redis]         | 03.13.2020   |
+| [Package smtp][Go_Package-smtp]           | 03.17.2020   |
+| [Package utf8][Go_Package-utf8]           | 07.20.2020   |
+| [Package viper][Go_Pacakge-viper]         | 03.21.2020   |
+| [Pointer][Go_Pointer]                     | 02.02.2020   |
+| [Setup Go Compiler][Go_Setup-Go-Compiler] | 01.22.2020   |
+| [Slices][Go_Slices]                       | 02.04.2020   |
+| [Variables][Go_Variables]                 | 01.27.2020   |
 
 [Go_Array]: ./Go/arrays.md
 [Go_Bcrypt]: ./Go/bcrypt.md
@@ -302,20 +304,18 @@
 [Go_Slices]: ./Go/slices.md
 [Go_Variables]: ./Go/variables.md
 
-
 [↑ return to TOC](#table-of-contents)
 
 </details>
-
 
 ## IDE
 
 <details>
   <summary>IntelliJ (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[IntelliJ Commands][IntelliJ_IntelliJ-Commands]| 04.24.2020 |
+| Title                                           | Last Updated |
+| ----------------------------------------------- | :----------- |
+| [IntelliJ Commands][IntelliJ_IntelliJ-Commands] | 04.24.2020   |
 
 [IntelliJ_IntelliJ-Commands]: ./IDE/IntelliJ/intellij_commands.md
 
@@ -326,9 +326,9 @@
 <details>
   <summary>VS Code (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[VS Code Commands][VSCode_VS-Code-Commands]| 01.30.2020 |
+| Title                                       | Last Updated |
+| ------------------------------------------- | :----------- |
+| [VS Code Commands][VSCode_VS-Code-Commands] | 01.30.2020   |
 
 [VSCode_VS-Code-Commands]: ./IDE/VSCode/vscode_commands.md
 
@@ -336,14 +336,13 @@
 
 </details>
 
-
 <details>
   <summary>VIM (2)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Setup][VIM_Setup]| 01.30.2020 |
-|[Vim Commands][VIM_Vim-Commands]| 07.07.2020 |
+| Title                            | Last Updated |
+| -------------------------------- | :----------- |
+| [Setup][VIM_Setup]               | 01.30.2020   |
+| [Vim Commands][VIM_Vim-Commands] | 07.07.2020   |
 
 [VIM_Setup]: ./IDE/Vim/setup.md
 [VIM_Vim-Commands]: ./IDE/Vim/vim_commands.md
@@ -352,19 +351,17 @@
 
 </details>
 
-
-
 ## Infrastructure
 
 <details>
   <summary>Infrastructure (4)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Durability][Infrastructure_Durability]| 07.30.2020 |
-|[ElasticMQ][Infrastructure_ElasticMQ]|03.12.2022|
-|[Stability][Infrastructure_Stability]| 02.24.2020 |
-|[IaC][Infrastructure_IaC]| 05.02.2020 |
+| Title                                   | Last Updated |
+| --------------------------------------- | :----------- |
+| [Durability][Infrastructure_Durability] | 07.30.2020   |
+| [ElasticMQ][Infrastructure_ElasticMQ]   | 03.12.2022   |
+| [Stability][Infrastructure_Stability]   | 02.24.2020   |
+| [IaC][Infrastructure_IaC]               | 05.02.2020   |
 
 [Infrastructure_Durability]: ./Infrastructure/durability.md
 [Infrastructure_ElasticMQ]: ./Infrastructure/elasticmq.md
@@ -374,7 +371,6 @@
 [↑ return to TOC](#table-of-contents)
 
 </details>
-
 
 ## JavaScript
 
@@ -387,14 +383,13 @@
     
 </details>
 
-
 ## Linux
 
 <details>
   <summary>Linux (8)</summary>
 
 | Title                                  | Last Updated |
-|----------------------------------------|:-------------|
+| -------------------------------------- | :----------- |
 | [compgen][Linux_compgen]               | 08.06.2020   |
 | [cURL Command in Linux][Linux_curl]    | 09.27.2022   |
 | [GDB][Linux_GLB]                       | 02.10.2020   |
@@ -417,16 +412,15 @@
 
 </details>
 
-
 ## MacOS
 
 <details>
   <summary>MacOS (2)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[MacOS Commands][MacOS_Commands]| 07.17.2020 |
-|[Switch Focus][MacOS_Switch-Focus]| 02.15.2020 |
+| Title                              | Last Updated |
+| ---------------------------------- | :----------- |
+| [MacOS Commands][MacOS_Commands]   | 07.17.2020   |
+| [Switch Focus][MacOS_Switch-Focus] | 02.15.2020   |
 
 [MacOS_Commands]: ./MacOS/mac_commands.md
 [MacOS_Switch-Focus]: ./MacOS/switch_focus.md
@@ -435,24 +429,23 @@
 
 </details>
 
-
 ## Network
 
 <details>
   <summary>Network (9)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Data Transmission Modes][Network_Data-Transmission-Modes]| 05.29.2021 |
-|[DNS][Network_DNS]| 07.16.2023 |
-|[HTTP CORS][Network_HTTP-CORS]| 04.17.2020 |
-|[Hub][Network_Hub]| 05.31.2021 |
-|[Network Topology][Network_Network-Topology]| 06.15.2021 |
-|[Port][Network_Port]| 07.15.2021 |
-|[Proxy Server][Network_Proxy-Server]| 07.11.2021 |
-|[RJ45][Network_RJ45]| 06.04.2021 |
-|[SMTP][Network_SMTP]| 03.16.2020 |
-|[SSH][Network_SSH]| 04.28.2020 |
+| Title                                                      | Last Updated |
+| ---------------------------------------------------------- | :----------- |
+| [Data Transmission Modes][Network_Data-Transmission-Modes] | 05.29.2021   |
+| [DNS][Network_DNS]                                         | 07.16.2023   |
+| [HTTP CORS][Network_HTTP-CORS]                             | 04.17.2020   |
+| [Hub][Network_Hub]                                         | 05.31.2021   |
+| [Network Topology][Network_Network-Topology]               | 06.15.2021   |
+| [Port][Network_Port]                                       | 07.15.2021   |
+| [Proxy Server][Network_Proxy-Server]                       | 07.11.2021   |
+| [RJ45][Network_RJ45]                                       | 06.04.2021   |
+| [SMTP][Network_SMTP]                                       | 03.16.2020   |
+| [SSH][Network_SSH]                                         | 04.28.2020   |
 
 [Network_Data-Transmission-Modes]: ./Network/data_transmission_modes.md
 [Network_DNS]: ./Network/dns.md
@@ -474,9 +467,9 @@
 <details>
   <summary>PHP (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Functions][PHP_Functions]| 09.13.2021 |
+| Title                      | Last Updated |
+| -------------------------- | :----------- |
+| [Functions][PHP_Functions] | 09.13.2021   |
 
 [PHP_Functions]: ./PHP/functions.md
 
@@ -487,9 +480,9 @@
 <details>
   <summary>Python (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Pretty Print JSON][Python_Pretty-Print-JSON]| 07.27.2020 |
+| Title                                         | Last Updated |
+| --------------------------------------------- | :----------- |
+| [Pretty Print JSON][Python_Pretty-Print-JSON] | 07.27.2020   |
 
 [Python_Pretty-Print-JSON]: ./Python/pretty_print_json.md
 
@@ -497,15 +490,14 @@
 
 </details>
 
-
 ## Tech Events
 
 <details>
   <summary> Events (1)</summary>
 
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[sudo ap-get growth++][sudo_app-get_growth]| 10.02.2021 |
+| Title                                       | Last Updated |
+| ------------------------------------------- | :----------- |
+| [sudo ap-get growth++][sudo_app-get_growth] | 10.02.2021   |
 
 [sudo_app-get_growth]: ./TechEvents/sudo_app-get_growth++.md
 
