@@ -1,83 +1,107 @@
 # AWS CHEAT SHEET
+
 > Reference : [AWS CLI](#https://docs.aws.amazon.com/cli/latest/index.html)
 
 ### Table of Contents
-* [Athena](#athena)  
+
+- [Athena](#athena)  
   Partition Projections
-    * [DROP](#drop)
-      * [Drop Table](#drop-table)
-    * [SHOW](#show)
-      * [Show Create Table](#show-create-table)
-      * [Show Partitions](#show-partitions)
-    * [REPAIR](#repair)  
 
-  CLI Commands  
-  * LIST  
-    * [List Data Catalogs](#list-data-catalogs)
-    * [List Database](#list-database)
-    * [List Table Metadata](#list-table-metadata)
-    * [List Query Execution](#list-query-execution)
-  * GET  
-    * [Get Query Results](#get-query-results)
+  - [DROP](#drop)
+    - [Drop Table](#drop-table)
+  - [SHOW](#show)
+    - [Show Create Table](#show-create-table)
+    - [Show Partitions](#show-partitions)
+  - [REPAIR](#repair)
 
-* [S3](#s3)  
   CLI Commands
-  * LIST
-    * [List Buckets](#list-buckets)
-    * [List Objects](#list-objects)
-  * GET
-    * [Get Bucket Location](#get-bucket-location)
-  * [REMOVE](#remove)
-    * [Remove Multiple Files](#remove-multiple-files)
 
+  - LIST
+    - [List Data Catalogs](#list-data-catalogs)
+    - [List Database](#list-database)
+    - [List Table Metadata](#list-table-metadata)
+    - [List Query Execution](#list-query-execution)
+  - GET
+    - [Get Query Results](#get-query-results)
+
+- [CloudTrail](#cloudtrail)
+
+  CLI Commands
+
+  - Lookup
+    - [Lookup Events](#lookup-events)
+
+- [S3](#s3)  
+  CLI Commands
+  - LIST
+    - [List Buckets](#list-buckets)
+    - [List Objects](#list-objects)
+  - GET
+    - [Get Bucket Location](#get-bucket-location)
+  - [REMOVE](#remove)
+    - [Remove Multiple Files](#remove-multiple-files)
 
 ## Athena
+
 <details>
   <summary>Partition Projections</summary>
 
 ### DROP
+
 #### Drop Table
+
 ```sql
 ALTER TABLE  <tableName>
 DROP IF EXISTS PARTITION(year='yyyy', month='MM', day='dd')
 ```
 
 ### SHOW
+
 #### Show Create Table
+
 ```sql
 SHOW CREATE TABLE <tableName>
 ```
+
 👉🏻 This shows table, and configuration info.
 
 #### Show Partitions
+
 ```sql
 SHOW PARTITIONS <tableName>
 ```
+
 👉🏻 This shows whole partitioned data.
 
 [↑ return to TOC](#table-of-contents)
 
 #### REPAIR
+
 ##### Repair Manually
-If your data looks like this,   
-`s3://bucketName/path/distributionID/yyyy/MM/dd/hh`   
+
+If your data looks like this,  
+`s3://bucketName/path/distributionID/yyyy/MM/dd/hh`  
 than
+
 ```sql
 ALTER TABLE <db>.<bucketName>
-ADD PARTITION (year='yyyy',month='MM', day='dd') 
+ADD PARTITION (year='yyyy',month='MM', day='dd')
 LOCATION 's3://bucketName/path/distributionID/yyyy/MM/dd/hh'
 ```
+
 ```sql
 # example code
 ALTER TABLE default.cloudfront-test
-ADD PARTITION (year='2020',month='10', day='05') 
+ADD PARTITION (year='2020',month='10', day='05')
 LOCATION 's3://cloudfront-test/logs/abcdeabcded/2020/10/05/00'
 ```
 
 ##### Repair Automatically
+
 If your data looks like this,
 `s3://bucketName/path/distributionID/year=2020/month=10/day=05/hour=00`  
 than
+
 ```sql
 MSCK REPAIR TABLE <tableName>;
 ```
@@ -89,11 +113,15 @@ MSCK REPAIR TABLE <tableName>;
 <details>
   <summary>CLI Commands</summary>
 
-### LIST  
+### LIST
+
 #### List Data Catalogs
-`aws athena --list-data-catalogs`  
+
+`aws athena --list-data-catalogs`
+
 > example of output:
-```  
+
+```
 {
   "DataCatalogsSummary": [
       {
@@ -103,6 +131,7 @@ MSCK REPAIR TABLE <tableName>;
   ]
 }
 ```
+
 **DataCatalogsSummary** ⇒ A summary list of data catalogs  
 **CatalogName** ⇒ The name of the data catalog  
 **Type** ⇒ The data catalog type.
@@ -110,9 +139,12 @@ MSCK REPAIR TABLE <tableName>;
 [↑ return to TOC](#table-of-contents)
 
 #### List Database
-`aws athena list-databases --catalog-name <catalogName>`  
-* NOTE : Case-insensitive
-> example : `aws athena list-databases --catalog-name AwsDataCatalog`  
+
+`aws athena list-databases --catalog-name <catalogName>`
+
+- NOTE : Case-insensitive
+  > example : `aws athena list-databases --catalog-name AwsDataCatalog`
+
 ```{
     "DatabaseList": [
         {
@@ -134,11 +166,13 @@ MSCK REPAIR TABLE <tableName>;
 [↑ return to TOC](#table-of-contents)
 
 #### List Table Metadata
+
 `aws athena list-table-metadata --catalog-name <catalogName> --database-name <databaseName>`
 
-* w/ **--max-items** option  
-`aws athena list-table-metadata --catalog-name <catalogName> --database-name <databaseName> --max-items <totalNumber>`  
-> example of : `aws athena list-table-metadata --catalog-name AwsDataCatalog --database-name geography --max-items 2`
+- w/ **--max-items** option  
+  `aws athena list-table-metadata --catalog-name <catalogName> --database-name <databaseName> --max-items <totalNumber>`
+  > example of : `aws athena list-table-metadata --catalog-name AwsDataCatalog --database-name geography --max-items 2`
+
 ```
 {
     "TableMetadataList": [
@@ -248,8 +282,10 @@ MSCK REPAIR TABLE <tableName>;
 
 [↑ return to TOC](#table-of-contents)
 
-#### List Query Execution  
-`aws athena list-query-executions`  
+#### List Query Execution
+
+`aws athena list-query-executions`
+
 ```
 {
     "QueryExecutionIds": [
@@ -264,12 +300,14 @@ MSCK REPAIR TABLE <tableName>;
    ]
 }
 ```
+
 **QueryExecutionIds** ⇒ The unique IDs of each query execution.
 
-* w/ **--max-items** option  
-`aws athena list-query-executions --max-items <totalNumber>`
+- w/ **--max-items** option  
+  `aws athena list-query-executions --max-items <totalNumber>`
 
 > example : `aws athena list-query-executions --max-items 3`
+
 ```
 {
     "QueryExecutionIds": [
@@ -280,16 +318,19 @@ MSCK REPAIR TABLE <tableName>;
    “NextToken”: “eyJOZXXXXXXXXXXXXXfQ==”
 }
 ```
-**NextToken** ⇒ A token to be used by the next reuqest if this request is truncacted.
 
+**NextToken** ⇒ A token to be used by the next reuqest if this request is truncacted.
 
 [↑ return to TOC](#table-of-contents)
 
-### GET  
+### GET
 
-#### Get Query Results  
+#### Get Query Results
+
 `aws athena get-query-execution --query-execution-id <executionID>`
-> example : `aws athena-get-query-exectution --query-execution-id XXXXXXXX-1a00-XXXX-a348-XXXXXXXXXXXX`  
+
+> example : `aws athena-get-query-exectution --query-execution-id XXXXXXXX-1a00-XXXX-a348-XXXXXXXXXXXX`
+
 ```
 
 {
@@ -322,33 +363,85 @@ MSCK REPAIR TABLE <tableName>;
 
 [↑ return to TOC](#table-of-contents)
 
+</details>
+
+## CloudTrail
+
+<details>
+  <summary>CLI Commands</summary>
+
+### Lookup
+
+#### Lookup Events
+
+`aws cloudtrail lookup-events --lookup-attributes AttributeKey=EventName,AttributeValue=StopInstances`
+
+This command is used to fetch CloudTrail events that are associated with instances being stopped in your AWS environment.
+
+> example of output:
+
+```shell
+ "Events": [
+        {
+            "EventId": "XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX",
+            "EventName": "StopInstances",
+            "ReadOnly": "false",
+            "AccessKeyId": "XXXXXXXXXXX",
+            "EventTime": 16543210.0,
+            "EventSource": "ec2.amazonaws.com",
+            "Username": "username", # Who stopped the instance
+            "Resources": [
+                {
+                    "ResourceType": "AWS::EC2::Instance",
+                    "ResourceName": "i-XXXXXXXXXX"
+                },
+                {
+                    "ResourceType": "AWS::EC2::Instance",
+                    "ResourceName": "i-XXXXXXXXX"
+                }
+            ],
+            "CloudTrailEvent": "{\"CloudEventInfo\"}"
+        }
+    ]
+```
+
+- `EventTime`: when the event occured
+- `EventName`: name of the event
+- `Resources`: information about the resources affected by the event
 
 </details>
 
 ## S3
+
 <details>
   <summary>CLI Commands</summary>
 
 ### LIST
+
 #### List Buckets
-`aws s3 ls <bucketName>`   
+
+`aws s3 ls <bucketName>`
+
 > example : `aws s3 ls bluebottle`
+
 ```
 2020-10-05 17:08:50 mybucketA
 2020-10-06 14:55:44 mybucketB
 ```
 
-* w/ **--profile** option  
-`aws --profile <profileName> s3 ls <bucketName>`
+- w/ **--profile** option  
+  `aws --profile <profileName> s3 ls <bucketName>`
 
-* w/ **--human-readable** option  
-  `aws s3 ls s3://bucketName/path --human-readable`   
+- w/ **--human-readable** option  
+  `aws s3 ls s3://bucketName/path --human-readable`  
   Displays the size of the obejcts in human readable format.
 
-* w/ **--recursive** option  
-`aws s3 ls s3://bucketName --recursive`  
-  Displays all files include sub-directories.  
-  > example : `aws s3 ls s3://bluebottle --recursive` 
+- w/ **--recursive** option  
+  `aws s3 ls s3://bucketName --recursive`  
+   Displays all files include sub-directories.
+
+  > example : `aws s3 ls s3://bluebottle --recursive`
+
   ```
   2020-09-24 12:45:12  1364 path/2020/10/09/abcd.metadata
   ```
@@ -358,7 +451,9 @@ MSCK REPAIR TABLE <tableName>;
   1. **Third column** : object name
 
 `aws s3api list-buckets`
-> example of output : 
+
+> example of output :
+
 ```
 {
     "Buckets": [
@@ -381,15 +476,17 @@ MSCK REPAIR TABLE <tableName>;
     },
 }
 ```
-👉🏻 &nbsp;Buckets are returned in alphabetical order.
 
+👉🏻 &nbsp;Buckets are returned in alphabetical order.
 
 [↑ return to TOC](#table-of-contents)
 
-
 #### List Objects
-`aws s3 ls s3://<buckentName>/<path>/`  
-> example : `aws s3 ls s3://bluebottle/shop/`  
+
+`aws s3 ls s3://<buckentName>/<path>/`
+
+> example : `aws s3 ls s3://bluebottle/shop/`
+
 ```
       PRE 2002/
       PRE 2003/
@@ -411,29 +508,32 @@ MSCK REPAIR TABLE <tableName>;
       PRE 2019/
       PRE 2020/
 ```
+
 > **PRE** stands for **Pre**fix of ann S3 object.
 
-* w/ **--profile** option  
-`aws --profile <profileName> s3 ls <bucketName>`  
+- w/ **--profile** option  
+  `aws --profile <profileName> s3 ls <bucketName>`
 
+`aws s3api list-objects --bucket <bucketName>`
 
-`aws s3api list-objects --bucket <bucketName>`  
-
-* w/ **--max-items** option  
-`aws s3api list-objects --bucket <bucketName> --max-items <totalNumber>`  
-The total number of items to return.
-
+- w/ **--max-items** option  
+  `aws s3api list-objects --bucket <bucketName> --max-items <totalNumber>`  
+  The total number of items to return.
 
 ### GET
-#### Get Bucket Location
-`aws s3api get-bucket-location --bucket <bucketName>`  
-* w/ **--profile** option  
-`aws --profile <profileName> s3api get-bucket-location --bucket <bucketName>`  
 
+#### Get Bucket Location
+
+`aws s3api get-bucket-location --bucket <bucketName>`
+
+- w/ **--profile** option  
+  `aws --profile <profileName> s3api get-bucket-location --bucket <bucketName>`
 
 ### REMOVE
+
 #### Remove Multiple Files
-Remove multiple files by `--exclude` and `--include` arguments   
+
+Remove multiple files by `--exclude` and `--include` arguments  
 `aws s3 rm s3://bucketName/path --recursive --exclude "*" --include "pattern*"`
 
 ```
@@ -441,10 +541,8 @@ Remove multiple files by `--exclude` and `--include` arguments
 aws s3 rm s3://cloudfront-test/logs --recursive --exclude "*" --include "abcdefghijklmnopqr/2020/10/04/*"
 ```
 
-* **Results**      
-![remove-multiple-objects](https://user-images.githubusercontent.com/48475824/95204315-e8a37680-081e-11eb-8361-873b5a800fa7.png)
-
-
+- **Results**  
+  ![remove-multiple-objects](https://user-images.githubusercontent.com/48475824/95204315-e8a37680-081e-11eb-8361-873b5a800fa7.png)
 
 [↑ return to TOC](#table-of-contents)
 

@@ -72,7 +72,7 @@
 |           Title          |  Last Updated   |
 |--------------------------| :-------------- |
 |[Athena][AWS_Athena]| 08.19.2020 |
-|[AWS Cheat Sheet][AWS_Cheat-Sheet]| 10.17.2020 |
+|[AWS Cheat Sheet][AWS_Cheat-Sheet]| 08.12.2023 |
 |[AWS Glossary][AWS_Glossary]| 01.29.2020 |
 |[CLI][AWS_CLI]| 07.28.2020 |
 |[CloudFront][AWS_CloudFront]| 08.15.2020 |
