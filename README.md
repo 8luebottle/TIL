@@ -26,7 +26,7 @@
 #### 📌 &nbsp; Table Format
 
 | Title   | Last Updated |
-| ------- | :----------: |
+|---------|:------------:|
 | ABCDEFG |  MM.DD.YYYY  |
 
 #### 📌 &nbsp; Total Count
@@ -69,23 +69,23 @@
 <details>
   <summary>AWS (15)</summary>
     
-|           Title          |  Last Updated   |
-|--------------------------| :-------------- |
-|[Athena][AWS_Athena]| 08.19.2020 |
-|[AWS Cheat Sheet][AWS_Cheat-Sheet]| 08.12.2023 |
-|[AWS Glossary][AWS_Glossary]| 01.29.2020 |
-|[CLI][AWS_CLI]| 07.28.2020 |
-|[CloudFront][AWS_CloudFront]| 08.15.2020 |
-|[CloudWatch][AWS_CloudWatch]| 08.06.2020 |
-|[EC2][AWS_EC2]| 09.11.2022 |
-|[KMS][AWS_KMS]| 07.23.2020 |
-|[Lambda][AWS_Lambda]| 07.22.2020 |
-|[RDS][AWS_RDS]|05.31.2023|
-|[Route53][AWS_Route53]|07.15.2023|
-|[S3][AWS_S3]| 07.25.2021 |
-|[SAM][AWS_SAM]| 04.20.2021 |
-|[SES][AWS_SES]|09.15.2022|
-|[SQS][AWS_SQS]| 07.22.2020 |
+| Title                              | Last Updated |
+|------------------------------------|:-------------|
+| [Athena][AWS_Athena]               | 08.19.2020   |
+| [AWS Cheat Sheet][AWS_Cheat-Sheet] | 08.12.2023   |
+| [AWS Glossary][AWS_Glossary]       | 01.29.2020   |
+| [CLI][AWS_CLI]                     | 07.28.2020   |
+| [CloudFront][AWS_CloudFront]       | 08.15.2020   |
+| [CloudWatch][AWS_CloudWatch]       | 08.06.2020   |
+| [EC2][AWS_EC2]                     | 09.11.2022   |
+| [KMS][AWS_KMS]                     | 07.23.2020   |
+| [Lambda][AWS_Lambda]               | 07.22.2020   |
+| [RDS][AWS_RDS]                     | 05.31.2023   |
+| [Route53][AWS_Route53]             | 07.15.2023   |
+| [S3][AWS_S3]                       | 07.25.2021   |
+| [SAM][AWS_SAM]                     | 04.20.2021   |
+| [SES][AWS_SES]                     | 09.15.2022   |
+| [SQS][AWS_SQS]                     | 07.22.2020   |
 
 [AWS_Athena]: ./Cloud/AWS/athena.md
 [AWS_Cheat-Sheet]: ./Cloud/AWS/aws_cheat_sheet.md
@@ -111,7 +111,7 @@
   <summary>Cloud Computing (1)</summary>
 
 | Title                                             | Last Updated |
-| ------------------------------------------------- | :----------- |
+|---------------------------------------------------|:-------------|
 | [Cloud Computing][CloudComputing_Cloud-Computing] | 04.10.2020   |
 
 [CloudComputing_Cloud-Computing]: ./Cloud/CloudComputing/cloud_computing.md
@@ -123,12 +123,13 @@
 ## Computer Science
 
 <details>
-  <summary>Computer Science (8)</summary>
+  <summary>Computer Science (9)</summary>
 
 | Title                                                                      | Last Updated |
-| -------------------------------------------------------------------------- | :----------- |
+|----------------------------------------------------------------------------|:-------------|
 | [Cron Expression][ComputerScience_Cron-Expression]                         | 08.05.2020   |
 | [Data Transmission][ComputerScience_Data-Transmission]                     | 02.10.2020   |
+| [Garbage Collection][ComputerScience_Garbage-Collection]                   | 10.09.2023   |
 | [Middleware][ComputerScience_Middleware]                                   | 04.17.2020   |
 | [MMU][ComputerScience_MMU]                                                 | 06.13.2021   |
 | [Program Counter][ComputerScience_Program-Counter]                         | 04.07.2020   |
@@ -138,12 +139,13 @@
 
 [ComputerScience_Cron-Expression]: ./ComputerScience/cron_expression.md
 [ComputerScience_Data-Transmission]: ./ComputerScience/data_transmission.md
+[ComputerScience_Garbage-Collection]: ./ComputerScience/garbage_collection.md
 [ComputerScience_Middleware]: ./ComputerScience/middleware.md
 [ComputerScience_MMU]: ./ComputerScience/mmu.md
 [ComputerScience_Program-Counter]: ./ComputerScience/program_counter.md
 [ComputerScience_Scheduling]: ./ComputerScience/scheduling.md
 [ComputerScience_TDD]: ./ComputerScience/tdd.md
-[COmputerScience_Thread-Safe-Data-Structures]: ./ComputerScience/thread-safe_data_structures.md
+[ComputerScience_Thread-Safe-Data-Structures]: ./ComputerScience/thread-safe_data_structures.md
 
 [↑ return to TOC](#table-of-contents)
 
@@ -155,7 +157,7 @@
   <summary>Database (13)</summary>
 
 | Title                                                                             | Last Updated |
-| --------------------------------------------------------------------------------- | :----------- |
+|-----------------------------------------------------------------------------------|:-------------|
 | [Buffer Pool][DB_Buffer_Pool]                                                     | 02.10.2022   |
 | [Caching Mechanisms][DB_Caching_Mechanisms]                                       | 07.24.2023   |
 | [Connect to Database from Command Line][DB_Connect-to-Database-from-Command-Line] | 03.29.2020   |
@@ -196,7 +198,7 @@
   <summary>Docker (1)</summary>
 
 | Title                                     | Last Updated |
-| ----------------------------------------- | :----------- |
+|-------------------------------------------|:-------------|
 | [Docker Commands][Docker_Docker-Commands] | 05.25.2023   |
 
 [Docker_Docker-Commands]: ./Docker/docker_commands.md
@@ -213,7 +215,7 @@
   <summary>Echo (1)</summary>
 
 | Title                                   | Last Updated |
-| --------------------------------------- | :----------- |
+|-----------------------------------------|:-------------|
 | [Echo-Middleware][Echo_Echo-Middleware] | 04.20.2020   |
 
 [Echo_Echo-Middleware]: ./Echo/middleware.md
@@ -230,7 +232,7 @@
   <summary>Git (5)</summary>
 
 | Title                | Last Updated |
-| -------------------- | :----------- |
+|----------------------|:-------------|
 | [.git][Git_dot-git]  | 05.15.2021   |
 | [Alias][Git_Alias]   | 07.12.2020   |
 | [Blame][Git_Blame]   | 04.27.2020   |
@@ -253,7 +255,7 @@
   <summary>Go (24)</summary>
 
 | Title                                     | Last Updated |
-| ----------------------------------------- | :----------- |
+|-------------------------------------------|:-------------|
 | [Arrays][Go_Array]                        | 01.27.2020   |
 | [Bcrypt][Go_Bcrypt]                       | 02.19.2020   |
 | [Channel][Go_Channel]                     | 07.19.2020   |
@@ -314,7 +316,7 @@
   <summary>IntelliJ (1)</summary>
 
 | Title                                           | Last Updated |
-| ----------------------------------------------- | :----------- |
+|-------------------------------------------------|:-------------|
 | [IntelliJ Commands][IntelliJ_IntelliJ-Commands] | 04.24.2020   |
 
 [IntelliJ_IntelliJ-Commands]: ./IDE/IntelliJ/intellij_commands.md
@@ -327,7 +329,7 @@
   <summary>VS Code (1)</summary>
 
 | Title                                       | Last Updated |
-| ------------------------------------------- | :----------- |
+|---------------------------------------------|:-------------|
 | [VS Code Commands][VSCode_VS-Code-Commands] | 01.30.2020   |
 
 [VSCode_VS-Code-Commands]: ./IDE/VSCode/vscode_commands.md
@@ -340,7 +342,7 @@
   <summary>VIM (2)</summary>
 
 | Title                            | Last Updated |
-| -------------------------------- | :----------- |
+|----------------------------------|:-------------|
 | [Setup][VIM_Setup]               | 01.30.2020   |
 | [Vim Commands][VIM_Vim-Commands] | 07.07.2020   |
 
@@ -357,7 +359,7 @@
   <summary>Infrastructure (4)</summary>
 
 | Title                                   | Last Updated |
-| --------------------------------------- | :----------- |
+|-----------------------------------------|:-------------|
 | [Durability][Infrastructure_Durability] | 07.30.2020   |
 | [ElasticMQ][Infrastructure_ElasticMQ]   | 03.12.2022   |
 | [Stability][Infrastructure_Stability]   | 02.24.2020   |
@@ -389,7 +391,7 @@
   <summary>Linux (8)</summary>
 
 | Title                                  | Last Updated |
-| -------------------------------------- | :----------- |
+|----------------------------------------|:-------------|
 | [compgen][Linux_compgen]               | 08.06.2020   |
 | [cURL Command in Linux][Linux_curl]    | 09.27.2022   |
 | [GDB][Linux_GLB]                       | 02.10.2020   |
@@ -418,7 +420,7 @@
   <summary>MacOS (2)</summary>
 
 | Title                              | Last Updated |
-| ---------------------------------- | :----------- |
+|------------------------------------|:-------------|
 | [MacOS Commands][MacOS_Commands]   | 07.17.2020   |
 | [Switch Focus][MacOS_Switch-Focus] | 02.15.2020   |
 
@@ -435,7 +437,7 @@
   <summary>Network (9)</summary>
 
 | Title                                                      | Last Updated |
-| ---------------------------------------------------------- | :----------- |
+|------------------------------------------------------------|:-------------|
 | [Data Transmission Modes][Network_Data-Transmission-Modes] | 05.29.2021   |
 | [DNS][Network_DNS]                                         | 07.16.2023   |
 | [HTTP CORS][Network_HTTP-CORS]                             | 04.17.2020   |
