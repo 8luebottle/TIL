@@ -252,7 +252,7 @@
 ## Go
 
 <details>
-  <summary>Go (24)</summary>
+  <summary>Go (25)</summary>
 
 | Title                                     | Last Updated |
 |-------------------------------------------|:-------------|
@@ -260,6 +260,7 @@
 | [Bcrypt][Go_Bcrypt]                       | 02.19.2020   |
 | [Channel][Go_Channel]                     | 07.19.2020   |
 | [Constants][Go_Constants]                 | 01.27.2020   |
+| [Context][Go_Context]                     | 10.22.2023   |
 | [Data Types][Go_Data-Types]               | 09.06.2020   |
 | [Dependency][Go_Dependency]               | 04.20.2020   |
 | [Duck Typing][Go_Duck-Typing]             | 02.05.2020   |
@@ -285,6 +286,7 @@
 [Go_Bcrypt]: ./Go/bcrypt.md
 [Go_Channel]: ./Go/channel.md
 [Go_Constants]: ./Go/constants.md
+[Go_Context]: ./Go/context.md
 [Go_Data-Types]: ./Go/data_types.md
 [Go_Dependency]: ./Go/dependency.md
 [Go_Duck-Typing]: ./Go/duck_typing.go
